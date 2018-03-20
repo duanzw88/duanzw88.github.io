@@ -1,0 +1,1106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: indexminipq.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_47e8bd7b1768c3ca68889cedd10c80ed.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_9b154e750cd6c3d176e4ecfc6e04b422.html">module</a></li><li class="navelem"><a class="el" href="../../dir_730e3d2e1bd24dffc9b89d39f823faa6.html">map</a></li><li class="navelem"><a class="el" href="../../dir_04b53c11008c891bfae371b11c6d589f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">indexminipq.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;float.h&gt;</code><br />
+<code>#include &quot;assert.h&quot;</code><br />
+<code>#include &quot;mem.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d78/indexminipq_8h_source.html">indexminipq.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+indexminipq.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/db4/indexminipq_8c__incl.png" border="0" usemap="#indexminipq_8c" alt=""/></div>
+<map name="indexminipq_8c" id="indexminipq_8c">
+<area shape="rect" id="node6" href="../../d6/d78/indexminipq_8h.html" title="indexminipq.h" alt="" coords="352,79,456,104"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d81/structiminipq__t.html">iminipq_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0acb682b8260ab1c60b918599864e2e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;&#160;&#160;iminipq_p</td></tr>
+<tr class="separator:a0acb682b8260ab1c60b918599864e2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae7e11d9afb180d923f9d2f9ffa23d361"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361">exch</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, int j)</td></tr>
+<tr class="separator:ae7e11d9afb180d923f9d2f9ffa23d361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57afb279bfcb81e977e6d03e042e4a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2">greater</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, int j)</td></tr>
+<tr class="separator:ad57afb279bfcb81e977e6d03e042e4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dccd36e4203ffa3150555594ddad69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69">sink</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int k)</td></tr>
+<tr class="separator:af1dccd36e4203ffa3150555594ddad69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5189ab54e5c1af2eedc34bb08073c472"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472">swim</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int k)</td></tr>
+<tr class="separator:a5189ab54e5c1af2eedc34bb08073c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2702df1ffbf55795864ec75dee9a1c40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a2702df1ffbf55795864ec75dee9a1c40">iminipq_new</a> (int size)</td></tr>
+<tr class="separator:a2702df1ffbf55795864ec75dee9a1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1b91b6344589ba1f5c73c5b4566198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a5b1b91b6344589ba1f5c73c5b4566198">iminipq_free</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> *iminipq)</td></tr>
+<tr class="separator:a5b1b91b6344589ba1f5c73c5b4566198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc67389b606921af423a47b5b23a2f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#aadc67389b606921af423a47b5b23a2f6">iminipq_clean</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:aadc67389b606921af423a47b5b23a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267e244499cf88c7074843926d35c6e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a267e244499cf88c7074843926d35c6e5">iminipq_size</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a267e244499cf88c7074843926d35c6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a40b12629ab5c5e4ccf3df9332b7c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a86a40b12629ab5c5e4ccf3df9332b7c9">iminipq_count</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a86a40b12629ab5c5e4ccf3df9332b7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74725fb330ede8763d74fe4ac942fb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81">iminipq_change_key</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, double key)</td></tr>
+<tr class="separator:a74725fb330ede8763d74fe4ac942fb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aced42b8ba8bba60628169abe1a42ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a9aced42b8ba8bba60628169abe1a42ce">iminipq_decrease_key</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, double key)</td></tr>
+<tr class="separator:a9aced42b8ba8bba60628169abe1a42ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2cc0adde7054ad8e60a194d0039a67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a0d2cc0adde7054ad8e60a194d0039a67">iminipq_increase_key</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, double key)</td></tr>
+<tr class="separator:a0d2cc0adde7054ad8e60a194d0039a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6dd461412fdb976398b5c6d23dba17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a0e6dd461412fdb976398b5c6d23dba17">iminipq_delete_min</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a0e6dd461412fdb976398b5c6d23dba17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2dde375c636752368c620a52c019476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476">iminipq_delete</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i)</td></tr>
+<tr class="separator:ab2dde375c636752368c620a52c019476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc25e22c14844491aa352f3d6da32973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#abc25e22c14844491aa352f3d6da32973">iminipq_insert</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i, double key)</td></tr>
+<tr class="separator:abc25e22c14844491aa352f3d6da32973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68384b5704c6ae55e5d1565bc2fb4d62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62">iminipq_contains</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i)</td></tr>
+<tr class="separator:a68384b5704c6ae55e5d1565bc2fb4d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9110b522969515a6a6142c37eb0801c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a9110b522969515a6a6142c37eb0801c3">iminipq_is_empty</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a9110b522969515a6a6142c37eb0801c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793aa1289d8b0e35f6ec6b52fb6761ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a793aa1289d8b0e35f6ec6b52fb6761ea">iminipq_key_of</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq, int i)</td></tr>
+<tr class="separator:a793aa1289d8b0e35f6ec6b52fb6761ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6a891cdae55a908c3659545cbbec74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a8e6a891cdae55a908c3659545cbbec74">iminipq_min_index</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a8e6a891cdae55a908c3659545cbbec74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbffa35d4b91e68d9de086bc52129bcb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#afbffa35d4b91e68d9de086bc52129bcb">iminipq_min_key</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:afbffa35d4b91e68d9de086bc52129bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ce7cb571abb0952ee010fa05e160f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db6/indexminipq_8c.html#a62ce7cb571abb0952ee010fa05e160f8">iminipq_print</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq)</td></tr>
+<tr class="separator:a62ce7cb571abb0952ee010fa05e160f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>最小索引队列，最短路径规划时用到 </p><dl class="section author"><dt>作者</dt><dd>duanzw </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018/3/1 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V0.1 </dd></dl>
+<dl class="section user"><dt>Copyright (c):</dt><dd>重庆甲虫网络科技有限公司 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a0acb682b8260ab1c60b918599864e2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0acb682b8260ab1c60b918599864e2e5">&#9670;&nbsp;</a></span>T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;&#160;&#160;iminipq_p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae7e11d9afb180d923f9d2f9ffa23d361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e11d9afb180d923f9d2f9ffa23d361">&#9670;&nbsp;</a></span>exch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void exch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_ae7e11d9afb180d923f9d2f9ffa23d361_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_ae7e11d9afb180d923f9d2f9ffa23d361_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_ae7e11d9afb180d923f9d2f9ffa23d361_icgraph" id="d6/db6/indexminipq_8c_ae7e11d9afb180d923f9d2f9ffa23d361_icgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="211,5,348,31"/>
+<area shape="rect" id="node10" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476" title="iminipq_delete" alt="" coords="226,153,333,179"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="106,79,151,104"/>
+<area shape="rect" id="node15" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="103,180,155,205"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="564,129,689,155"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="737,129,875,155"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="923,179,1032,204"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="754,80,858,105"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="935,129,1020,155"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="1080,155,1226,180"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1274,148,1412,187"/>
+<area shape="rect" id="node12" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="208,104,351,129"/>
+<area shape="rect" id="node14" href="../../d6/db6/indexminipq_8c.html#a0d2cc0adde7054ad8e60a194d0039a67" title="iminipq_increase_key" alt="" coords="205,55,354,80"/>
+<area shape="rect" id="node13" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="405,129,516,155"/>
+<area shape="rect" id="node16" href="../../d6/db6/indexminipq_8c.html#a9aced42b8ba8bba60628169abe1a42ce" title="iminipq_decrease_key" alt="" coords="203,203,357,228"/>
+<area shape="rect" id="node17" href="../../d6/db6/indexminipq_8c.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="228,252,331,277"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad57afb279bfcb81e977e6d03e042e4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57afb279bfcb81e977e6d03e042e4a2">&#9670;&nbsp;</a></span>greater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int greater </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_ad57afb279bfcb81e977e6d03e042e4a2_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_ad57afb279bfcb81e977e6d03e042e4a2_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_ad57afb279bfcb81e977e6d03e042e4a2_icgraph" id="d6/db6/indexminipq_8c_ad57afb279bfcb81e977e6d03e042e4a2_icgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="120,153,165,179"/>
+<area shape="rect" id="node15" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="117,104,169,129"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="222,104,365,129"/>
+<area shape="rect" id="node12" href="../../d6/db6/indexminipq_8c.html#a0d2cc0adde7054ad8e60a194d0039a67" title="iminipq_increase_key" alt="" coords="219,255,368,280"/>
+<area shape="rect" id="node13" href="../../d6/db6/indexminipq_8c.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="419,167,555,192"/>
+<area shape="rect" id="node14" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476" title="iminipq_delete" alt="" coords="240,153,347,179"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="431,92,543,117"/>
+<area shape="rect" id="node5" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="603,92,728,117"/>
+<area shape="rect" id="node6" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="776,92,914,117"/>
+<area shape="rect" id="node10" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="962,141,1070,167"/>
+<area shape="rect" id="node11" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="793,43,897,68"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="974,92,1058,117"/>
+<area shape="rect" id="node8" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="1118,117,1264,143"/>
+<area shape="rect" id="node9" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1312,111,1450,149"/>
+<area shape="rect" id="node16" href="../../d6/db6/indexminipq_8c.html#a9aced42b8ba8bba60628169abe1a42ce" title="iminipq_decrease_key" alt="" coords="217,55,371,80"/>
+<area shape="rect" id="node17" href="../../d6/db6/indexminipq_8c.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="242,5,345,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74725fb330ede8763d74fe4ac942fb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74725fb330ede8763d74fe4ac942fb81">&#9670;&nbsp;</a></span>iminipq_change_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_change_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>更新索引i的key值(i值已经在优先队列的索引中) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>元素索引 </td></tr>
+    <tr><td class="paramname">key</td><td>新的key值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_cgraph" id="d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="196,5,317,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="231,104,282,129"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="234,55,279,80"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="365,55,428,80"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="372,104,421,129"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_icgraph" id="d6/db6/indexminipq_8c_a74725fb330ede8763d74fe4ac942fb81_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="196,55,308,80"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="356,55,481,80"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="529,5,667,31"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="715,104,824,129"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="546,55,650,80"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="727,55,811,80"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="872,80,1017,105"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1065,73,1203,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aadc67389b606921af423a47b5b23a2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc67389b606921af423a47b5b23a2f6">&#9670;&nbsp;</a></span>iminipq_clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_clean </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>清空优先队列中的数据 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68384b5704c6ae55e5d1565bc2fb4d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68384b5704c6ae55e5d1565bc2fb4d62">&#9670;&nbsp;</a></span>iminipq_contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>优先队列中是否包含索引i </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 包含 0 不包含 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a68384b5704c6ae55e5d1565bc2fb4d62_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a68384b5704c6ae55e5d1565bc2fb4d62_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a68384b5704c6ae55e5d1565bc2fb4d62_icgraph" id="d6/db6/indexminipq_8c_a68384b5704c6ae55e5d1565bc2fb4d62_icgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="180,5,322,31"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="376,93,488,119"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#a9aced42b8ba8bba60628169abe1a42ce" title="iminipq_decrease_key" alt="" coords="174,107,328,132"/>
+<area shape="rect" id="node12" href="../../d6/db6/indexminipq_8c.html#a0d2cc0adde7054ad8e60a194d0039a67" title="iminipq_increase_key" alt="" coords="176,156,326,181"/>
+<area shape="rect" id="node13" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476" title="iminipq_delete" alt="" coords="197,205,305,231"/>
+<area shape="rect" id="node14" href="../../d6/db6/indexminipq_8c.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="199,255,303,280"/>
+<area shape="rect" id="node15" href="../../d6/db6/indexminipq_8c.html#a793aa1289d8b0e35f6ec6b52fb6761ea" title="iminipq_key_of" alt="" coords="196,304,306,329"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="536,156,661,181"/>
+<area shape="rect" id="node5" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="709,107,847,132"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="895,205,1003,231"/>
+<area shape="rect" id="node10" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="726,156,829,181"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="907,156,991,181"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="1051,181,1197,207"/>
+<area shape="rect" id="node8" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1245,175,1383,213"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86a40b12629ab5c5e4ccf3df9332b7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a40b12629ab5c5e4ccf3df9332b7c9">&#9670;&nbsp;</a></span>iminipq_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取有限队列的元素个数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该队列元素个数 </dd></dl>
+
+</div>
+</div>
+<a id="a9aced42b8ba8bba60628169abe1a42ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aced42b8ba8bba60628169abe1a42ce">&#9670;&nbsp;</a></span>iminipq_decrease_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_decrease_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>减小索引优先队列中索引为i的key值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>索引优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>索引值 </td></tr>
+    <tr><td class="paramname">key</td><td>减小后的key值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a9aced42b8ba8bba60628169abe1a42ce_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a9aced42b8ba8bba60628169abe1a42ce_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a9aced42b8ba8bba60628169abe1a42ce_cgraph" id="d6/db6/indexminipq_8c_a9aced42b8ba8bba60628169abe1a42ce_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="207,5,328,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="242,55,294,80"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="376,29,440,55"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="383,79,433,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2dde375c636752368c620a52c019476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2dde375c636752368c620a52c019476">&#9670;&nbsp;</a></span>iminipq_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>删除索引为i的值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>索引优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>索引值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_ab2dde375c636752368c620a52c019476_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_ab2dde375c636752368c620a52c019476_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_ab2dde375c636752368c620a52c019476_cgraph" id="d6/db6/indexminipq_8c_ab2dde375c636752368c620a52c019476_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="161,5,281,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="336,107,386,132"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="195,107,247,132"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="198,156,243,181"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="329,156,393,181"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e6dd461412fdb976398b5c6d23dba17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6dd461412fdb976398b5c6d23dba17">&#9670;&nbsp;</a></span>iminipq_delete_min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_delete_min </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>删除索引优先队列的最小值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>索引优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最小值的索引 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_cgraph" id="d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="290,5,339,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="190,55,235,80"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="283,55,346,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_icgraph" id="d6/db6/indexminipq_8c_a0e6dd461412fdb976398b5c6d23dba17_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="190,55,315,80"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="363,5,500,31"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="548,104,657,129"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="380,55,483,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="561,55,645,80"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="705,80,851,105"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="899,73,1037,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b1b91b6344589ba1f5c73c5b4566198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1b91b6344589ba1f5c73c5b4566198">&#9670;&nbsp;</a></span>iminipq_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> *&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>释放优先队列的资源 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a5b1b91b6344589ba1f5c73c5b4566198_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a5b1b91b6344589ba1f5c73c5b4566198_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a5b1b91b6344589ba1f5c73c5b4566198_icgraph" id="d6/db6/indexminipq_8c_a5b1b91b6344589ba1f5c73c5b4566198_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="147,5,285,31"/>
+<area shape="rect" id="node6" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="333,104,442,129"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="164,55,268,80"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="345,55,430,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="490,80,636,105"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="684,73,821,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d2cc0adde7054ad8e60a194d0039a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d2cc0adde7054ad8e60a194d0039a67">&#9670;&nbsp;</a></span>iminipq_increase_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_increase_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>增加索引优先队列中索引为i的key值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>索引优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>索引值 </td></tr>
+    <tr><td class="paramname">key</td><td>增加后的key值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a0d2cc0adde7054ad8e60a194d0039a67_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a0d2cc0adde7054ad8e60a194d0039a67_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a0d2cc0adde7054ad8e60a194d0039a67_cgraph" id="d6/db6/indexminipq_8c_a0d2cc0adde7054ad8e60a194d0039a67_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="203,5,324,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="241,55,286,80"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="372,29,435,55"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="379,79,428,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abc25e22c14844491aa352f3d6da32973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc25e22c14844491aa352f3d6da32973">&#9670;&nbsp;</a></span>iminipq_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在优先队列中插入数据 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>插入值的索引 </td></tr>
+    <tr><td class="paramname">key</td><td>插入值的key</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>把新值插入到最后，然后上浮进行有序化优先队列 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_cgraph" id="d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="157,5,278,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="191,55,243,80"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="326,29,389,55"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="333,79,382,104"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_icgraph" id="d6/db6/indexminipq_8c_abc25e22c14844491aa352f3d6da32973_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="157,29,269,55"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="317,55,442,80"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="490,5,627,31"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="675,104,784,129"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="507,55,610,80"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="688,55,772,80"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="832,80,978,105"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1026,73,1164,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9110b522969515a6a6142c37eb0801c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9110b522969515a6a6142c37eb0801c3">&#9670;&nbsp;</a></span>iminipq_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_is_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>判断优先队列是否为空 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 为空 0 不为空 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a9110b522969515a6a6142c37eb0801c3_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a9110b522969515a6a6142c37eb0801c3_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a9110b522969515a6a6142c37eb0801c3_icgraph" id="d6/db6/indexminipq_8c_a9110b522969515a6a6142c37eb0801c3_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="178,55,303,80"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="351,5,488,31"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="536,104,645,129"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="368,55,471,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="549,55,633,80"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="693,80,839,105"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="887,73,1025,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a793aa1289d8b0e35f6ec6b52fb6761ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793aa1289d8b0e35f6ec6b52fb6761ea">&#9670;&nbsp;</a></span>iminipq_key_of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double iminipq_key_of </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取索引为i的key值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>索引优先队列 </td></tr>
+    <tr><td class="paramname">i</td><td>索引值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>索引值对应的key值 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a793aa1289d8b0e35f6ec6b52fb6761ea_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a793aa1289d8b0e35f6ec6b52fb6761ea_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a793aa1289d8b0e35f6ec6b52fb6761ea_cgraph" id="d6/db6/indexminipq_8c_a793aa1289d8b0e35f6ec6b52fb6761ea_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="164,5,284,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e6a891cdae55a908c3659545cbbec74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e6a891cdae55a908c3659545cbbec74">&#9670;&nbsp;</a></span>iminipq_min_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_min_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取优先队列中最小值的索引 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最小值的索引 </dd></dl>
+
+</div>
+</div>
+<a id="afbffa35d4b91e68d9de086bc52129bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbffa35d4b91e68d9de086bc52129bcb">&#9670;&nbsp;</a></span>iminipq_min_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double iminipq_min_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取优先队列中最小的key值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>优先队列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最小的key值 </dd></dl>
+
+</div>
+</div>
+<a id="a2702df1ffbf55795864ec75dee9a1c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2702df1ffbf55795864ec75dee9a1c40">&#9670;&nbsp;</a></span>iminipq_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> iminipq_new </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>创建索引优先队列 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>队列的容量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新建的优先队列 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a2702df1ffbf55795864ec75dee9a1c40_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a2702df1ffbf55795864ec75dee9a1c40_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a2702df1ffbf55795864ec75dee9a1c40_icgraph" id="d6/db6/indexminipq_8c_a2702df1ffbf55795864ec75dee9a1c40_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="149,5,287,31"/>
+<area shape="rect" id="node6" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="335,104,443,129"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="166,55,269,80"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="347,55,431,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="491,80,637,105"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="685,73,823,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a62ce7cb571abb0952ee010fa05e160f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ce7cb571abb0952ee010fa05e160f8">&#9670;&nbsp;</a></span>iminipq_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iminipq_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a267e244499cf88c7074843926d35c6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267e244499cf88c7074843926d35c6e5">&#9670;&nbsp;</a></span>iminipq_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iminipq_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取有限队列的容量 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iminipq</td><td>[description] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>优先队列的容量 </dd></dl>
+
+</div>
+</div>
+<a id="af1dccd36e4203ffa3150555594ddad69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dccd36e4203ffa3150555594ddad69">&#9670;&nbsp;</a></span>sink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void sink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_cgraph" id="d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="98,5,162,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="105,55,155,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_icgraph" id="d6/db6/indexminipq_8c_af1dccd36e4203ffa3150555594ddad69_icgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="102,5,245,31"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#a0d2cc0adde7054ad8e60a194d0039a67" title="iminipq_increase_key" alt="" coords="98,55,248,80"/>
+<area shape="rect" id="node12" href="../../d6/db6/indexminipq_8c.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="296,80,432,105"/>
+<area shape="rect" id="node13" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476" title="iminipq_delete" alt="" coords="119,156,227,181"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="308,19,420,44"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="480,56,605,81"/>
+<area shape="rect" id="node5" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="653,7,791,32"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="839,105,948,131"/>
+<area shape="rect" id="node10" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="670,56,774,81"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="851,56,936,81"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="996,81,1142,107"/>
+<area shape="rect" id="node8" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1190,75,1327,113"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5189ab54e5c1af2eedc34bb08073c472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5189ab54e5c1af2eedc34bb08073c472">&#9670;&nbsp;</a></span>swim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void swim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>iminipq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_cgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_cgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_cgraph" id="d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_cgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="105,5,169,31"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="112,55,162,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_icgraph.png" border="0" usemap="#d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_icgraph" alt=""/></div>
+<map name="d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_icgraph" id="d6/db6/indexminipq_8c_a5189ab54e5c1af2eedc34bb08073c472_icgraph">
+<area shape="rect" id="node2" href="../../d6/db6/indexminipq_8c.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="111,5,253,31"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#a9aced42b8ba8bba60628169abe1a42ce" title="iminipq_decrease_key" alt="" coords="105,55,259,80"/>
+<area shape="rect" id="node12" href="../../d6/db6/indexminipq_8c.html#ab2dde375c636752368c620a52c019476" title="iminipq_delete" alt="" coords="128,104,236,129"/>
+<area shape="rect" id="node13" href="../../d6/db6/indexminipq_8c.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="130,153,234,179"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="307,103,419,128"/>
+<area shape="rect" id="node4" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="467,128,592,153"/>
+<area shape="rect" id="node5" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="640,79,778,104"/>
+<area shape="rect" id="node9" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="826,177,934,203"/>
+<area shape="rect" id="node10" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="657,128,761,153"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="838,128,922,153"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="982,153,1128,179"/>
+<area shape="rect" id="node8" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="1176,147,1314,185"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

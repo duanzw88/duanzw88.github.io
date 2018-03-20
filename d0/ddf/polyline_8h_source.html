@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: polyline.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_47e8bd7b1768c3ca68889cedd10c80ed.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_9b154e750cd6c3d176e4ecfc6e04b422.html">module</a></li><li class="navelem"><a class="el" href="../../dir_730e3d2e1bd24dffc9b89d39f823faa6.html">map</a></li><li class="navelem"><a class="el" href="../../dir_790675c9d66a4860868675966dbc78f5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">polyline.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/ddf/polyline_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef POLYLINE_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define POLYLINE_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">point.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d0/ddf/polyline_8h.html#a0acb682b8260ab1c60b918599864e2e5">   10</a></span>&#160;<span class="preprocessor">#define T polyline_p</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d0/ddf/polyline_8h.html#abcc4f8595a370815771eb64ff72670ff">   11</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d7/dbc/structpolyline__t.html">polyline_t</a> *<a class="code" href="../../d0/ddf/polyline_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../dc/ddd/structbeacon__t.html">T</a>    <a class="code" href="../../d0/ddf/polyline_8h.html#a89d434d028018eb4adaffbcef3bdea05">polyline_new</a>(point_p p1, ...);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/ddf/polyline_8h.html#a8faab5613332748e67c95de0092e749f">polyline_free</a>(<a class="code" href="../../dc/ddd/structbeacon__t.html">T</a> polyline);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/ddf/polyline_8h.html#ae82d7079d6d43197c8c25e5a65683759">polyline_add_point</a>(<a class="code" href="../../dc/ddd/structbeacon__t.html">T</a> polyline,point_p p);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>  <a class="code" href="../../d0/ddf/polyline_8h.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline_get_point_count</a>(<a class="code" href="../../dc/ddd/structbeacon__t.html">T</a> polyline);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> point_p <a class="code" href="../../d0/ddf/polyline_8h.html#ac35bc1899f5275f53138088133b491e7">polyline_get_point_by_index</a>(<a class="code" href="../../dc/ddd/structbeacon__t.html">T</a> polyline,<span class="keywordtype">int</span> index);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#undef T</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="polyline_8h_html_a9eae15bcc488ebfe4ef34f8de192aec3"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline_get_point_count</a></div><div class="ttdeci">int polyline_get_point_count(T polyline)</div><div class="ttdef"><b>Definition:</b> polyline.c:74</div></div>
+<div class="ttc" id="polyline_8h_html_ac35bc1899f5275f53138088133b491e7"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#ac35bc1899f5275f53138088133b491e7">polyline_get_point_by_index</a></div><div class="ttdeci">point_p polyline_get_point_by_index(T polyline, int index)</div><div class="ttdef"><b>Definition:</b> polyline.c:85</div></div>
+<div class="ttc" id="point_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div></div>
+<div class="ttc" id="polyline_8h_html_ae82d7079d6d43197c8c25e5a65683759"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#ae82d7079d6d43197c8c25e5a65683759">polyline_add_point</a></div><div class="ttdeci">void polyline_add_point(T polyline, point_p p)</div><div class="ttdef"><b>Definition:</b> polyline.c:63</div></div>
+<div class="ttc" id="structbeacon__t_html"><div class="ttname"><a href="../../dc/ddd/structbeacon__t.html">beacon_t</a></div><div class="ttdef"><b>Definition:</b> beacon.c:27</div></div>
+<div class="ttc" id="polyline_8h_html_a8faab5613332748e67c95de0092e749f"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#a8faab5613332748e67c95de0092e749f">polyline_free</a></div><div class="ttdeci">void polyline_free(T polyline)</div><div class="ttdef"><b>Definition:</b> polyline.c:46</div></div>
+<div class="ttc" id="polyline_8h_html_a89d434d028018eb4adaffbcef3bdea05"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#a89d434d028018eb4adaffbcef3bdea05">polyline_new</a></div><div class="ttdeci">T polyline_new(point_p p1,...)</div><div class="ttdef"><b>Definition:</b> polyline.c:24</div></div>
+<div class="ttc" id="structpolyline__t_html"><div class="ttname"><a href="../../d7/dbc/structpolyline__t.html">polyline_t</a></div><div class="ttdef"><b>Definition:</b> polyline.c:19</div></div>
+<div class="ttc" id="polyline_8h_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../d0/ddf/polyline_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> polyline.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

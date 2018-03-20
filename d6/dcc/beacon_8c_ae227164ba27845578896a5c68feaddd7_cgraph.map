@@ -1,0 +1,5 @@
+<map id="beacon_set_rsa" name="beacon_set_rsa">
+<area shape="rect" id="node2" href="$d6/dcc/beacon_8c.html#a1343d9da752b44882c3f94f0dc787f86" title="set_rssi_by_distance" alt="" coords="170,5,315,31"/>
+<area shape="rect" id="node3" href="$d6/dcc/beacon_8c.html#adc73b368b1aeb48fc971fd76b5dd0a98" title="set_beacon_dn" alt="" coords="186,55,299,80"/>
+<area shape="rect" id="node4" href="$d6/dcc/beacon_8c.html#af75dba95e799d5369650f20ada4d4be4" title="get_dn_by_distance" alt="" coords="172,104,313,129"/>
+</map>

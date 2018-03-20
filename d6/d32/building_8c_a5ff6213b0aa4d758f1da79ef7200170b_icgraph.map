@@ -1,0 +1,4 @@
+<map id="building_add_floor" name="building_add_floor">
+<area shape="rect" id="node2" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="184,5,286,31"/>
+<area shape="rect" id="node3" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="334,5,443,31"/>
+</map>

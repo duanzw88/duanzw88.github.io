@@ -1,0 +1,7 @@
+<map id="point_get_floorindex" name="point_get_floorindex">
+<area shape="rect" id="node2" href="$d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="195,5,356,44"/>
+<area shape="rect" id="node3" href="$d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="404,69,550,95"/>
+<area shape="rect" id="node5" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="223,120,328,145"/>
+<area shape="rect" id="node4" href="$d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="598,88,736,127"/>
+<area shape="rect" id="node6" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="422,119,532,144"/>
+</map>

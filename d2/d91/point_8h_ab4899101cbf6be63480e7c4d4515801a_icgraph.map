@@ -1,0 +1,7 @@
+<map id="point_free" name="point_free">
+<area shape="rect" id="node2" href="$d6/dcc/beacon_8c.html#a140ead22dbce9116debef3b8db565a90" title="beacon_free" alt="" coords="142,5,238,31"/>
+<area shape="rect" id="node3" href="$da/d9d/polygon_8c.html#a0f0d50350b4c211e45dfa79ec0f6e0e6" title="polygon_free" alt="" coords="141,55,239,80"/>
+<area shape="rect" id="node4" href="$d9/dd3/polyline_8c.html#a8faab5613332748e67c95de0092e749f" title="polyline_free" alt="" coords="141,104,238,129"/>
+<area shape="rect" id="node5" href="$dc/d20/routenode_8c.html#a1bd9d126c09e910747293022ad9ad19b" title="routenode_free" alt="" coords="134,153,246,179"/>
+<area shape="rect" id="node6" href="$df/dbf/route_8c.html#a02cbfeb7d7b94dbbb05bdb4c8552ee37" title="route_free" alt="" coords="294,153,376,179"/>
+</map>

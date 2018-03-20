@@ -1,0 +1,1130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: floor.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_47e8bd7b1768c3ca68889cedd10c80ed.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_9b154e750cd6c3d176e4ecfc6e04b422.html">module</a></li><li class="navelem"><a class="el" href="../../dir_730e3d2e1bd24dffc9b89d39f823faa6.html">map</a></li><li class="navelem"><a class="el" href="../../dir_04b53c11008c891bfae371b11c6d589f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">floor.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;float.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;jclog.h&quot;</code><br />
+<code>#include &quot;assert.h&quot;</code><br />
+<code>#include &quot;atom.h&quot;</code><br />
+<code>#include &quot;mem.h&quot;</code><br />
+<code>#include &quot;seq.h&quot;</code><br />
+<code>#include &quot;table.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/dec/floor_8h_source.html">floor.h</a>&quot;</code><br />
+<code>#include &quot;denvelop.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+floor.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d21/floor_8c__incl.png" border="0" usemap="#floor_8c" alt=""/></div>
+<map name="floor_8c" id="floor_8c">
+<area shape="rect" id="node13" href="../../de/dec/floor_8h.html" title="floor.h" alt="" coords="920,79,978,104"/>
+<area shape="rect" id="node14" href="../../d9/d7f/route_8h.html" title="route.h" alt="" coords="900,152,963,177"/>
+<area shape="rect" id="node18" href="../../dc/d99/beacon_8h.html" title="beacon.h" alt="" coords="990,225,1066,251"/>
+<area shape="rect" id="node15" href="../../d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="781,225,874,251"/>
+<area shape="rect" id="node16" href="../../d2/d91/point_8h.html" title="point.h" alt="" coords="897,299,958,324"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/structfloor__t.html">floor_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0acb682b8260ab1c60b918599864e2e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;&#160;&#160;floor_p</td></tr>
+<tr class="separator:a0acb682b8260ab1c60b918599864e2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6631f992c1e4e4795590f203a55cbcf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a6631f992c1e4e4795590f203a55cbcf7">updatebox</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, point_p point)</td></tr>
+<tr class="separator:a6631f992c1e4e4795590f203a55cbcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad720b4dcaf507bea61ace58165066a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ad720b4dcaf507bea61ace58165066a78">floor_new</a> ()</td></tr>
+<tr class="separator:ad720b4dcaf507bea61ace58165066a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61f3765a58b1eaa90e053002a2ee67e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ab61f3765a58b1eaa90e053002a2ee67e">floor_set_id</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, char *id)</td></tr>
+<tr class="separator:ab61f3765a58b1eaa90e053002a2ee67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbe07cc78e2b24f1fd4bfc698c3b42c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a7fbe07cc78e2b24f1fd4bfc698c3b42c">floor_get_id</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a7fbe07cc78e2b24f1fd4bfc698c3b42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad2da22eecd32f4a92ccc402905e422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a8ad2da22eecd32f4a92ccc402905e422">floor_set_label</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, char *label)</td></tr>
+<tr class="separator:a8ad2da22eecd32f4a92ccc402905e422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad923a7f1b6613f61b74c4bbb76e1978d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ad923a7f1b6613f61b74c4bbb76e1978d">floor_get_label</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:ad923a7f1b6613f61b74c4bbb76e1978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846f0c222a9bcefa99828869c890b329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a846f0c222a9bcefa99828869c890b329">floor_set_name</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, char *name)</td></tr>
+<tr class="separator:a846f0c222a9bcefa99828869c890b329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933031b64bf83e89258880a01f0af2a4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a933031b64bf83e89258880a01f0af2a4">floor_get_name</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a933031b64bf83e89258880a01f0af2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9901296da1c4233c95a50311bf77935f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a9901296da1c4233c95a50311bf77935f">floor_set_index</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, int index)</td></tr>
+<tr class="separator:a9901296da1c4233c95a50311bf77935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0989c69430f16f48416ce46f8eafb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#aea0989c69430f16f48416ce46f8eafb4">floor_get_index</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:aea0989c69430f16f48416ce46f8eafb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9207c09a12bd792fe4b070ab4f3da748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a9207c09a12bd792fe4b070ab4f3da748">floor_set_data</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, char *data)</td></tr>
+<tr class="separator:a9207c09a12bd792fe4b070ab4f3da748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96aa5d6a92d6e853d36a0b522ca2ccc9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a96aa5d6a92d6e853d36a0b522ca2ccc9">floor_get_data</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a96aa5d6a92d6e853d36a0b522ca2ccc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fdb5039de10ef835acd3d217123347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a52fdb5039de10ef835acd3d217123347">floor_add_route</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, route_p route)</td></tr>
+<tr class="separator:a52fdb5039de10ef835acd3d217123347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ebabfb358741c8c781041298ead393"><td class="memItemLeft" align="right" valign="top">seq_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#aa5ebabfb358741c8c781041298ead393">floor_get_routes</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:aa5ebabfb358741c8c781041298ead393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e207e6e3cdd995014db6daa4ade325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a00e207e6e3cdd995014db6daa4ade325">floor_get_route_count</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a00e207e6e3cdd995014db6daa4ade325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab288368e3a0c2af8e4fd2e6cee9dad1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ab288368e3a0c2af8e4fd2e6cee9dad1b">floor_get_left</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:ab288368e3a0c2af8e4fd2e6cee9dad1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed41d0c2e9d6e5c6e87f578bdf798434"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#aed41d0c2e9d6e5c6e87f578bdf798434">floor_get_top</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:aed41d0c2e9d6e5c6e87f578bdf798434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c68e84fec44214fc5b0d19c445c62cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a8c68e84fec44214fc5b0d19c445c62cb">floor_get_right</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a8c68e84fec44214fc5b0d19c445c62cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8457361b7b74c07cb4ef7b08c35a8f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#abb8457361b7b74c07cb4ef7b08c35a8f">floor_get_bottom</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:abb8457361b7b74c07cb4ef7b08c35a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee45fc5a74617b76273797890084480"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#adee45fc5a74617b76273797890084480">floor_free</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:adee45fc5a74617b76273797890084480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38f891bb526f683e05aa6a1d5640324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ab38f891bb526f683e05aa6a1d5640324">floor_add_beacon</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, beacon_p beacon)</td></tr>
+<tr class="separator:ab38f891bb526f683e05aa6a1d5640324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbe0f80be81e799a028e2a4e05ff39e"><td class="memItemLeft" align="right" valign="top">beacon_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a2dbe0f80be81e799a028e2a4e05ff39e">floor_get_beacon</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor, char *uuid, unsigned long major_minor)</td></tr>
+<tr class="separator:a2dbe0f80be81e799a028e2a4e05ff39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24aa8e1df3fc954bc57027bcb56e9a0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a24aa8e1df3fc954bc57027bcb56e9a0f">floor_get_beacon_count</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:a24aa8e1df3fc954bc57027bcb56e9a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4901240b6b3bb47896c08895dd7445a"><td class="memItemLeft" align="right" valign="top">seq_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#ac4901240b6b3bb47896c08895dd7445a">floor_get_beacons</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:ac4901240b6b3bb47896c08895dd7445a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0fef311253f792603b7e27aa35b16f"><td class="memItemLeft" align="right" valign="top">seq_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#aff0fef311253f792603b7e27aa35b16f">floor_get_uuids</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor)</td></tr>
+<tr class="separator:aff0fef311253f792603b7e27aa35b16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb28531238e91e79900e07dfd729b02"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de3/floor_8c.html#a2eb28531238e91e79900e07dfd729b02">floor_get_key</a> (int index, double x, double y)</td></tr>
+<tr class="separator:a2eb28531238e91e79900e07dfd729b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>floor相关功能实现 </p><dl class="section author"><dt>作者</dt><dd>duanzw </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018/3/1 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V0.1 </dd></dl>
+<dl class="section user"><dt>Copyright (c):</dt><dd>重庆甲虫网络科技有限公司 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a0acb682b8260ab1c60b918599864e2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0acb682b8260ab1c60b918599864e2e5">&#9670;&nbsp;</a></span>T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;&#160;&#160;floor_p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab38f891bb526f683e05aa6a1d5640324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38f891bb526f683e05aa6a1d5640324">&#9670;&nbsp;</a></span>floor_add_beacon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_add_beacon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">beacon_p&#160;</td>
+          <td class="paramname"><em>beacon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在楼层中添加beacon点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">beacon</td><td>beacon对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_cgraph.png" border="0" usemap="#dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_cgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_cgraph" id="dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_cgraph">
+<area shape="rect" id="node2" href="../../dc/d99/beacon_8h.html#a3a31a5cbd6f589b55718e8eaf2074ac9" title="beacon_get_uuid" alt="" coords="206,5,330,31"/>
+<area shape="rect" id="node3" href="../../dc/d99/beacon_8h.html#a40ebcd6179d43a76dc2c296995e52e5e" title="beacon_get_major_minor" alt="" coords="181,55,354,80"/>
+<area shape="rect" id="node4" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="204,104,331,129"/>
+<area shape="rect" id="node5" href="../../dc/de3/floor_8c.html#a6631f992c1e4e4795590f203a55cbcf7" title="updatebox" alt="" coords="226,153,309,179"/>
+<area shape="rect" id="node6" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="402,128,492,153"/>
+<area shape="rect" id="node7" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="402,177,492,203"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_icgraph.png" border="0" usemap="#dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_icgraph" id="dc/de3/floor_8c_ab38f891bb526f683e05aa6a1d5640324_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="181,5,282,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="330,5,415,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="463,5,565,31"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="613,5,722,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a52fdb5039de10ef835acd3d217123347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fdb5039de10ef835acd3d217123347">&#9670;&nbsp;</a></span>floor_add_route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_add_route </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">route_p&#160;</td>
+          <td class="paramname"><em>route</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加路线 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">route</td><td>路线 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_cgraph.png" border="0" usemap="#dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_cgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_cgraph" id="dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_cgraph">
+<area shape="rect" id="node2" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="184,5,295,31"/>
+<area shape="rect" id="node3" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="186,55,294,80"/>
+<area shape="rect" id="node4" href="../../dc/de3/floor_8c.html#a6631f992c1e4e4795590f203a55cbcf7" title="updatebox" alt="" coords="198,104,282,129"/>
+<area shape="rect" id="node7" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="168,153,312,179"/>
+<area shape="rect" id="node5" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="360,80,450,105"/>
+<area shape="rect" id="node6" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="360,129,450,155"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_icgraph" id="dc/de3/floor_8c_a52fdb5039de10ef835acd3d217123347_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="168,5,269,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="317,5,402,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="450,5,552,31"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="600,5,709,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adee45fc5a74617b76273797890084480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee45fc5a74617b76273797890084480">&#9670;&nbsp;</a></span>floor_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2dbe0f80be81e799a028e2a4e05ff39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbe0f80be81e799a028e2a4e05ff39e">&#9670;&nbsp;</a></span>floor_get_beacon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">beacon_p floor_get_beacon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>major_minor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据beacon的uuid和major_minor值获取对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">uuid</td><td>beacon的uuid </td></tr>
+    <tr><td class="paramname">major_minor</td><td>beacon的major_minor值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL 不存在 beacon对象 存在 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a2dbe0f80be81e799a028e2a4e05ff39e_cgraph.png" border="0" usemap="#dc/de3/floor_8c_a2dbe0f80be81e799a028e2a4e05ff39e_cgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a2dbe0f80be81e799a028e2a4e05ff39e_cgraph" id="dc/de3/floor_8c_a2dbe0f80be81e799a028e2a4e05ff39e_cgraph">
+<area shape="rect" id="node2" href="../../d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="178,5,225,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24aa8e1df3fc954bc57027bcb56e9a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24aa8e1df3fc954bc57027bcb56e9a0f">&#9670;&nbsp;</a></span>floor_get_beacon_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int floor_get_beacon_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取该楼层beacon的总数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该楼层中beacon总数 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a24aa8e1df3fc954bc57027bcb56e9a0f_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a24aa8e1df3fc954bc57027bcb56e9a0f_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a24aa8e1df3fc954bc57027bcb56e9a0f_icgraph" id="dc/de3/floor_8c_a24aa8e1df3fc954bc57027bcb56e9a0f_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="218,5,303,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="351,5,453,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="501,5,610,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4901240b6b3bb47896c08895dd7445a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4901240b6b3bb47896c08895dd7445a">&#9670;&nbsp;</a></span>floor_get_beacons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">seq_p floor_get_beacons </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取该楼层所有beacon列表 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回该楼层所有beacon列表 </dd></dl>
+
+</div>
+</div>
+<a id="abb8457361b7b74c07cb4ef7b08c35a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8457361b7b74c07cb4ef7b08c35a8f">&#9670;&nbsp;</a></span>floor_get_bottom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double floor_get_bottom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层右下角y坐标(以米为单位) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>右下角y坐标 </dd></dl>
+
+</div>
+</div>
+<a id="a96aa5d6a92d6e853d36a0b522ca2ccc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96aa5d6a92d6e853d36a0b522ca2ccc9">&#9670;&nbsp;</a></span>floor_get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* floor_get_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层元素数据 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层原始数据 </dd></dl>
+
+</div>
+</div>
+<a id="a7fbe07cc78e2b24f1fd4bfc698c3b42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbe07cc78e2b24f1fd4bfc698c3b42c">&#9670;&nbsp;</a></span>floor_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* floor_get_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层id </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层id值 </dd></dl>
+
+</div>
+</div>
+<a id="aea0989c69430f16f48416ce46f8eafb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0989c69430f16f48416ce46f8eafb4">&#9670;&nbsp;</a></span>floor_get_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int floor_get_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层索引 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层索引值 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_aea0989c69430f16f48416ce46f8eafb4_icgraph.png" border="0" usemap="#dc/de3/floor_8c_aea0989c69430f16f48416ce46f8eafb4_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_aea0989c69430f16f48416ce46f8eafb4_icgraph" id="dc/de3/floor_8c_aea0989c69430f16f48416ce46f8eafb4_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="166,5,266,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="314,5,400,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="448,5,550,31"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="598,5,706,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2eb28531238e91e79900e07dfd729b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb28531238e91e79900e07dfd729b02">&#9670;&nbsp;</a></span>floor_get_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long floor_get_key </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据floor坐标获取key值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>楼层索引 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>key值 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a2eb28531238e91e79900e07dfd729b02_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a2eb28531238e91e79900e07dfd729b02_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a2eb28531238e91e79900e07dfd729b02_icgraph" id="dc/de3/floor_8c_a2eb28531238e91e79900e07dfd729b02_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="155,5,245,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="293,5,394,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="442,5,527,31"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="575,5,677,31"/>
+<area shape="rect" id="node6" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="725,5,834,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad923a7f1b6613f61b74c4bbb76e1978d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad923a7f1b6613f61b74c4bbb76e1978d">&#9670;&nbsp;</a></span>floor_get_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* floor_get_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层编号 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层编号 </dd></dl>
+
+</div>
+</div>
+<a id="ab288368e3a0c2af8e4fd2e6cee9dad1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab288368e3a0c2af8e4fd2e6cee9dad1b">&#9670;&nbsp;</a></span>floor_get_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double floor_get_left </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层左上角x坐标(以米为单位) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>左上角x坐标 </dd></dl>
+
+</div>
+</div>
+<a id="a933031b64bf83e89258880a01f0af2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933031b64bf83e89258880a01f0af2a4">&#9670;&nbsp;</a></span>floor_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* floor_get_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层名称 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层名称 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a933031b64bf83e89258880a01f0af2a4_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a933031b64bf83e89258880a01f0af2a4_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a933031b64bf83e89258880a01f0af2a4_icgraph" id="dc/de3/floor_8c_a933031b64bf83e89258880a01f0af2a4_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#ae85c588831ab7824db5c43b510ed09b6" title="building_get_floor\l_by_name" alt="" coords="167,5,294,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c68e84fec44214fc5b0d19c445c62cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c68e84fec44214fc5b0d19c445c62cb">&#9670;&nbsp;</a></span>floor_get_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double floor_get_right </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层右下角x坐标(以米为单位) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>右下角x坐标 </dd></dl>
+
+</div>
+</div>
+<a id="a00e207e6e3cdd995014db6daa4ade325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e207e6e3cdd995014db6daa4ade325">&#9670;&nbsp;</a></span>floor_get_route_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int floor_get_route_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取该楼层路线总数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a00e207e6e3cdd995014db6daa4ade325_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a00e207e6e3cdd995014db6daa4ade325_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a00e207e6e3cdd995014db6daa4ade325_icgraph" id="dc/de3/floor_8c_a00e207e6e3cdd995014db6daa4ade325_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="204,5,289,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="337,5,440,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="488,5,596,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa5ebabfb358741c8c781041298ead393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ebabfb358741c8c781041298ead393">&#9670;&nbsp;</a></span>floor_get_routes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">seq_p floor_get_routes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取路线队列 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_aa5ebabfb358741c8c781041298ead393_icgraph.png" border="0" usemap="#dc/de3/floor_8c_aa5ebabfb358741c8c781041298ead393_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_aa5ebabfb358741c8c781041298ead393_icgraph" id="dc/de3/floor_8c_aa5ebabfb358741c8c781041298ead393_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a3290f202931ad330c282408f2204397c" title="add_route" alt="" coords="173,5,254,31"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="171,55,256,80"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="304,5,439,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="487,31,596,56"/>
+<area shape="rect" id="node6" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="320,55,423,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed41d0c2e9d6e5c6e87f578bdf798434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed41d0c2e9d6e5c6e87f578bdf798434">&#9670;&nbsp;</a></span>floor_get_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double floor_get_top </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取楼层左上角y坐标(以米为单位) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>左上角y坐标 </dd></dl>
+
+</div>
+</div>
+<a id="aff0fef311253f792603b7e27aa35b16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff0fef311253f792603b7e27aa35b16f">&#9670;&nbsp;</a></span>floor_get_uuids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">seq_p floor_get_uuids </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取该楼层所有uuid的列表 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回该楼层所有的uuid </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_aff0fef311253f792603b7e27aa35b16f_icgraph.png" border="0" usemap="#dc/de3/floor_8c_aff0fef311253f792603b7e27aa35b16f_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_aff0fef311253f792603b7e27aa35b16f_icgraph" id="dc/de3/floor_8c_aff0fef311253f792603b7e27aa35b16f_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a5473df0b1befbb824bbca1786846d260" title="building_get_beacon\l_uuids" alt="" coords="166,5,310,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad720b4dcaf507bea61ace58165066a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad720b4dcaf507bea61ace58165066a78">&#9670;&nbsp;</a></span>floor_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> floor_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>新建楼层 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>楼层名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>楼层对象 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_ad720b4dcaf507bea61ace58165066a78_icgraph.png" border="0" usemap="#dc/de3/floor_8c_ad720b4dcaf507bea61ace58165066a78_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_ad720b4dcaf507bea61ace58165066a78_icgraph" id="dc/de3/floor_8c_ad720b4dcaf507bea61ace58165066a78_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="132,5,218,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="266,5,368,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="416,5,524,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9207c09a12bd792fe4b070ab4f3da748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9207c09a12bd792fe4b070ab4f3da748">&#9670;&nbsp;</a></span>floor_set_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_set_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置楼层原始数据 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">data</td><td>楼层原始数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a9207c09a12bd792fe4b070ab4f3da748_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a9207c09a12bd792fe4b070ab4f3da748_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a9207c09a12bd792fe4b070ab4f3da748_icgraph" id="dc/de3/floor_8c_a9207c09a12bd792fe4b070ab4f3da748_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="159,5,261,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="309,5,418,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab61f3765a58b1eaa90e053002a2ee67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab61f3765a58b1eaa90e053002a2ee67e">&#9670;&nbsp;</a></span>floor_set_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_set_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置楼层id </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">id</td><td>id值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_ab61f3765a58b1eaa90e053002a2ee67e_icgraph.png" border="0" usemap="#dc/de3/floor_8c_ab61f3765a58b1eaa90e053002a2ee67e_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_ab61f3765a58b1eaa90e053002a2ee67e_icgraph" id="dc/de3/floor_8c_ab61f3765a58b1eaa90e053002a2ee67e_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="144,5,229,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="277,5,379,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="427,5,536,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9901296da1c4233c95a50311bf77935f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9901296da1c4233c95a50311bf77935f">&#9670;&nbsp;</a></span>floor_set_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_set_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置楼层索引值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">index</td><td>索引值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a9901296da1c4233c95a50311bf77935f_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a9901296da1c4233c95a50311bf77935f_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a9901296da1c4233c95a50311bf77935f_icgraph" id="dc/de3/floor_8c_a9901296da1c4233c95a50311bf77935f_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="165,5,250,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="298,5,400,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="448,5,557,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ad2da22eecd32f4a92ccc402905e422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad2da22eecd32f4a92ccc402905e422">&#9670;&nbsp;</a></span>floor_set_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_set_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置楼层编号 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">label</td><td>楼层编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a8ad2da22eecd32f4a92ccc402905e422_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a8ad2da22eecd32f4a92ccc402905e422_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a8ad2da22eecd32f4a92ccc402905e422_icgraph" id="dc/de3/floor_8c_a8ad2da22eecd32f4a92ccc402905e422_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="161,5,246,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="294,5,397,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="445,5,553,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a846f0c222a9bcefa99828869c890b329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846f0c222a9bcefa99828869c890b329">&#9670;&nbsp;</a></span>floor_set_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floor_set_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置楼层名称 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层对象 </td></tr>
+    <tr><td class="paramname">name</td><td>楼层名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a846f0c222a9bcefa99828869c890b329_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a846f0c222a9bcefa99828869c890b329_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a846f0c222a9bcefa99828869c890b329_icgraph" id="dc/de3/floor_8c_a846f0c222a9bcefa99828869c890b329_icgraph">
+<area shape="rect" id="node2" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="167,5,252,31"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="300,5,402,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="450,5,559,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6631f992c1e4e4795590f203a55cbcf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6631f992c1e4e4795590f203a55cbcf7">&#9670;&nbsp;</a></span>updatebox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updatebox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">point_p&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_cgraph.png" border="0" usemap="#dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_cgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_cgraph" id="dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_cgraph">
+<area shape="rect" id="node2" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="137,5,227,31"/>
+<area shape="rect" id="node3" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="137,55,227,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_icgraph.png" border="0" usemap="#dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_icgraph" alt=""/></div>
+<map name="dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_icgraph" id="dc/de3/floor_8c_a6631f992c1e4e4795590f203a55cbcf7_icgraph">
+<area shape="rect" id="node2" href="../../dc/de3/floor_8c.html#a52fdb5039de10ef835acd3d217123347" title="floor_add_route" alt="" coords="144,5,258,31"/>
+<area shape="rect" id="node7" href="../../dc/de3/floor_8c.html#ab38f891bb526f683e05aa6a1d5640324" title="floor_add_beacon" alt="" coords="137,55,265,80"/>
+<area shape="rect" id="node3" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="313,31,414,56"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="462,31,547,56"/>
+<area shape="rect" id="node5" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="595,31,697,56"/>
+<area shape="rect" id="node6" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="745,31,854,56"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

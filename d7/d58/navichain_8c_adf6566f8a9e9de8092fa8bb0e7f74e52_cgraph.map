@@ -1,0 +1,6 @@
+<map id="_make_angle" name="_make_angle">
+<area shape="rect" id="node2" href="$d3/dbe/vec2_8h.html#a9864b17ea32fff08d929cfaffc473896" title="vec2_new" alt="" coords="179,5,260,31"/>
+<area shape="rect" id="node3" href="$d3/dbe/vec2_8h.html#a9e54ae6238be1617ba37088ab2099554" title="vec2_norm_sq" alt="" coords="165,55,274,80"/>
+<area shape="rect" id="node4" href="$d3/dbe/vec2_8h.html#a9c339cff1b9646f5269e024ed239205a" title="vec2_dot_prod" alt="" coords="165,104,274,129"/>
+<area shape="rect" id="node5" href="$d7/d58/navichain_8c.html#af8b8f7079b8ff4864fbc3b28cf2db122" title="_radian_2_degree" alt="" coords="155,153,284,179"/>
+</map>

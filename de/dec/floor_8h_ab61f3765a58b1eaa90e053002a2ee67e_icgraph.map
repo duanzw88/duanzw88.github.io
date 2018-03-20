@@ -1,0 +1,5 @@
+<map id="floor_set_id" name="floor_set_id">
+<area shape="rect" id="node2" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="144,5,229,31"/>
+<area shape="rect" id="node3" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="277,5,379,31"/>
+<area shape="rect" id="node4" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="427,5,536,31"/>
+</map>

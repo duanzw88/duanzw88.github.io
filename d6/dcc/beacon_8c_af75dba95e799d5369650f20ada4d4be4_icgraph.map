@@ -1,0 +1,9 @@
+<map id="get_dn_by_distance" name="get_dn_by_distance">
+<area shape="rect" id="node2" href="$d6/dcc/beacon_8c.html#ae227164ba27845578896a5c68feaddd7" title="beacon_set_rsa" alt="" coords="210,5,326,31"/>
+<area shape="rect" id="node8" href="$d6/dcc/beacon_8c.html#a0b6eec2aeb0f99d72263a2dd64c84c95" title="beacon_get_distance\l_by_rssi" alt="" coords="194,55,342,93"/>
+<area shape="rect" id="node3" href="$db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="390,5,490,31"/>
+<area shape="rect" id="node4" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="538,5,639,31"/>
+<area shape="rect" id="node5" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="687,5,772,31"/>
+<area shape="rect" id="node6" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="820,5,922,31"/>
+<area shape="rect" id="node7" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="970,5,1079,31"/>
+</map>

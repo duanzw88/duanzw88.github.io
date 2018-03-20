@@ -1,0 +1,12 @@
+<map id="building_get_near_road_point" name="building_get_near_road_point">
+<area shape="rect" id="node2" href="$d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="263,5,310,31"/>
+<area shape="rect" id="node3" href="$d8/d4d/jclog_8c.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="251,55,322,80"/>
+<area shape="rect" id="node4" href="$d8/d4d/jclog_8c.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="253,104,321,129"/>
+<area shape="rect" id="node5" href="$d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="231,153,342,179"/>
+<area shape="rect" id="node6" href="$d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="233,203,340,228"/>
+<area shape="rect" id="node7" href="$d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="215,252,358,277"/>
+<area shape="rect" id="node8" href="$d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="216,301,357,327"/>
+<area shape="rect" id="node9" href="$d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="241,351,332,376"/>
+<area shape="rect" id="node10" href="$d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="241,400,332,425"/>
+<area shape="rect" id="node11" href="$d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="238,449,335,475"/>
+</map>

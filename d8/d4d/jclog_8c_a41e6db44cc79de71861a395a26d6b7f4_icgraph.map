@@ -1,0 +1,12 @@
+<map id="lon2x_m" name="lon2x_m">
+<area shape="rect" id="node2" href="$d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="125,5,287,44"/>
+<area shape="rect" id="node5" href="$d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="135,68,276,93"/>
+<area shape="rect" id="node6" href="$db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="161,117,251,143"/>
+<area shape="rect" id="node11" href="$db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="156,167,256,192"/>
+<area shape="rect" id="node3" href="$d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="335,12,480,37"/>
+<area shape="rect" id="node4" href="$d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="528,5,666,44"/>
+<area shape="rect" id="node7" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="357,141,458,167"/>
+<area shape="rect" id="node8" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="555,141,640,167"/>
+<area shape="rect" id="node9" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="714,141,816,167"/>
+<area shape="rect" id="node10" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="864,141,973,167"/>
+</map>

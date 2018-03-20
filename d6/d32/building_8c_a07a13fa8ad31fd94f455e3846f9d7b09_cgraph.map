@@ -1,0 +1,36 @@
+<map id="get_navi_routenodes" name="get_navi_routenodes">
+<area shape="rect" id="node2" href="$d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="211,418,373,457"/>
+<area shape="rect" id="node3" href="$d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="481,241,529,266"/>
+<area shape="rect" id="node6" href="$d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="449,290,560,315"/>
+<area shape="rect" id="node7" href="$d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="451,339,559,365"/>
+<area shape="rect" id="node8" href="$d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="433,487,577,513"/>
+<area shape="rect" id="node9" href="$d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="434,537,576,562"/>
+<area shape="rect" id="node10" href="$d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="460,586,550,611"/>
+<area shape="rect" id="node11" href="$d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="460,635,550,661"/>
+<area shape="rect" id="node12" href="$d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="456,685,553,710"/>
+<area shape="rect" id="node13" href="$d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="250,89,334,114"/>
+<area shape="rect" id="node30" href="$d3/d59/routenode_8h.html#ab3c6508ce3d694b8a6c484847e5887ef" title="routenode_get_key" alt="" coords="437,761,573,786"/>
+<area shape="rect" id="node31" href="$dc/de1/wdigraph_8h.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="238,190,347,215"/>
+<area shape="rect" id="node32" href="$d6/d32/building_8c.html#a5adb8ac02bcfcb13a0992fdff6ff911a" title="get_routenode_by_pointkey" alt="" coords="199,786,385,811"/>
+<area shape="rect" id="node33" href="$d2/d91/point_8h.html#a4e1e4e515e15913aa01386473543d99b" title="point_new" alt="" coords="251,835,333,861"/>
+<area shape="rect" id="node34" href="$d3/d59/routenode_8h.html#a6da54bd7db2a1f5fe92795a6576f6ff2" title="routenode_new" alt="" coords="236,885,349,910"/>
+<area shape="rect" id="node35" href="$d3/d59/routenode_8h.html#a14fb7ed8dd6447bfa4608cd775f93c01" title="routenode_set_key" alt="" coords="225,934,360,959"/>
+<area shape="rect" id="node4" href="$d8/d4d/jclog_8c.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="469,389,541,414"/>
+<area shape="rect" id="node5" href="$d8/d4d/jclog_8c.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="471,438,539,463"/>
+<area shape="rect" id="node14" href="$dc/de1/wdigraph_8h.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="436,39,574,65"/>
+<area shape="rect" id="node29" href="$dc/de1/wdigraph_8h.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="453,89,557,114"/>
+<area shape="rect" id="node15" href="$d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="640,39,735,65"/>
+<area shape="rect" id="node16" href="$d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="625,89,750,114"/>
+<area shape="rect" id="node28" href="$d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="640,138,734,163"/>
+<area shape="rect" id="node17" href="$d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="990,13,1093,38"/>
+<area shape="rect" id="node22" href="$d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="798,165,922,190"/>
+<area shape="rect" id="node23" href="$d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="974,161,1110,186"/>
+<area shape="rect" id="node25" href="$d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="804,63,916,89"/>
+<area shape="rect" id="node18" href="$d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="1161,62,1282,87"/>
+<area shape="rect" id="node19" href="$d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="1196,13,1247,38"/>
+<area shape="rect" id="node20" href="$d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="1330,38,1393,63"/>
+<area shape="rect" id="node21" href="$d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="1337,111,1386,137"/>
+<area shape="rect" id="node24" href="$d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="1199,111,1244,137"/>
+<area shape="rect" id="node26" href="$d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="981,111,1102,137"/>
+<area shape="rect" id="node27" href="$d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="970,62,1113,87"/>
+</map>

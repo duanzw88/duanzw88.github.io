@@ -1,0 +1,7 @@
+<map id="vec2_normal_projection" name="vec2_normal_projection">
+<area shape="rect" id="node2" href="$db/de6/vec2_8c.html#a6f78526f289101d4e5b6659a0390c891" title="vec2_sub" alt="" coords="232,5,310,31"/>
+<area shape="rect" id="node3" href="$db/de6/vec2_8c.html#a9c339cff1b9646f5269e024ed239205a" title="vec2_dot_prod" alt="" coords="216,55,326,80"/>
+<area shape="rect" id="node4" href="$db/de6/vec2_8c.html#a9e54ae6238be1617ba37088ab2099554" title="vec2_norm_sq" alt="" coords="217,104,325,129"/>
+<area shape="rect" id="node5" href="$db/de6/vec2_8c.html#a7a57afac76ea617b9a27005d04030e48" title="vec2_add" alt="" coords="231,153,311,179"/>
+<area shape="rect" id="node6" href="$db/de6/vec2_8c.html#a6cd92ac4eca29b189702db0a4cdad3ec" title="vec2_mul" alt="" coords="232,203,310,228"/>
+</map>

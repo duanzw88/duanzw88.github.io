@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: wdigraph.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_47e8bd7b1768c3ca68889cedd10c80ed.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_9b154e750cd6c3d176e4ecfc6e04b422.html">module</a></li><li class="navelem"><a class="el" href="../../dir_730e3d2e1bd24dffc9b89d39f823faa6.html">map</a></li><li class="navelem"><a class="el" href="../../dir_04b53c11008c891bfae371b11c6d589f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">wdigraph.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;float.h&gt;</code><br />
+<code>#include &quot;jclog.h&quot;</code><br />
+<code>#include &quot;assert.h&quot;</code><br />
+<code>#include &quot;mem.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d78/indexminipq_8h_source.html">indexminipq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/de1/wdigraph_8h_source.html">wdigraph.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+wdigraph.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d5c/wdigraph_8c__incl.png" border="0" usemap="#wdigraph_8c" alt=""/></div>
+<map name="wdigraph_8c" id="wdigraph_8c">
+<area shape="rect" id="node8" href="../../d6/d78/indexminipq_8h.html" title="indexminipq.h" alt="" coords="521,79,625,104"/>
+<area shape="rect" id="node9" href="../../dc/de1/wdigraph_8h.html" title="wdigraph.h" alt="" coords="649,79,735,104"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0acb682b8260ab1c60b918599864e2e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;&#160;&#160;wdigraph_p</td></tr>
+<tr class="separator:a0acb682b8260ab1c60b918599864e2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:abf92af78aad5c8d3b3f1b4e34775def6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6">wdigraph_dijkstra</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v, double *distTo, struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> **edgeTo, iminipq_p pq)</td></tr>
+<tr class="separator:abf92af78aad5c8d3b3f1b4e34775def6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4802c79ad356531785f701d09c5f132"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132">wdigraph_relax</a> (struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> *edge, double *distTo, struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> **edgeTo, iminipq_p pq)</td></tr>
+<tr class="separator:ae4802c79ad356531785f701d09c5f132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9a78fc84e04102ac0493ae1f521736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#adb9a78fc84e04102ac0493ae1f521736">wdigraph_new</a> (int vertexs)</td></tr>
+<tr class="separator:adb9a78fc84e04102ac0493ae1f521736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804fe01ba09261c2acdb0f346b93308c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#a804fe01ba09261c2acdb0f346b93308c">wdigraph_free</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph)</td></tr>
+<tr class="separator:a804fe01ba09261c2acdb0f346b93308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0655ede318d668cca51634e4192c5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#a0e0655ede318d668cca51634e4192c5c">wdigraph_vertexs</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph)</td></tr>
+<tr class="separator:a0e0655ede318d668cca51634e4192c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccd2e755027580d64fb5a4e6ee62754"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#a6ccd2e755027580d64fb5a4e6ee62754">wdigraph_edges</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph)</td></tr>
+<tr class="separator:a6ccd2e755027580d64fb5a4e6ee62754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f4d07431e7a6d83ece3958ed42d379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#aa8f4d07431e7a6d83ece3958ed42d379">wdigraph_add_edge</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v, int w, double weight)</td></tr>
+<tr class="separator:aa8f4d07431e7a6d83ece3958ed42d379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3757119dde649036320cf5d713d3d42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de1/wdigraph_8h.html#ac6238a5795c5e8537c704c55c0a85af1">adj_p</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#ae3757119dde649036320cf5d713d3d42">wdigraph_get_adj</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v)</td></tr>
+<tr class="separator:ae3757119dde649036320cf5d713d3d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6862ef321babe25ac47cec27b8e95f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3">wdigraph_has_path</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v, int w)</td></tr>
+<tr class="separator:aa6862ef321babe25ac47cec27b8e95f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad791eb181af5146a417b03301a3b9288"><td class="memItemLeft" align="right" valign="top">seq_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288">wdigraph_path</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v, int w)</td></tr>
+<tr class="separator:ad791eb181af5146a417b03301a3b9288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca93fbd61242a0584ccd6cef74e91fb6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6">wdigraph_dist</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph, int v, int w)</td></tr>
+<tr class="separator:aca93fbd61242a0584ccd6cef74e91fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29881b823a3809fc513dd2a89ab131d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/wdigraph_8c.html#a29881b823a3809fc513dd2a89ab131d9">wdigraph_print_adj</a> (<a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph)</td></tr>
+<tr class="separator:a29881b823a3809fc513dd2a89ab131d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a0acb682b8260ab1c60b918599864e2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0acb682b8260ab1c60b918599864e2e5">&#9670;&nbsp;</a></span>T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;&#160;&#160;wdigraph_p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aa8f4d07431e7a6d83ece3958ed42d379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f4d07431e7a6d83ece3958ed42d379">&#9670;&nbsp;</a></span>wdigraph_add_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wdigraph_add_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加一条边 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>加权有向图 </td></tr>
+    <tr><td class="paramname">v</td><td>边的起点 </td></tr>
+    <tr><td class="paramname">w</td><td>边的终点 </td></tr>
+    <tr><td class="paramname">weight</td><td>边的权重 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_aa8f4d07431e7a6d83ece3958ed42d379_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_aa8f4d07431e7a6d83ece3958ed42d379_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_aa8f4d07431e7a6d83ece3958ed42d379_icgraph" id="d3/db2/wdigraph_8c_aa8f4d07431e7a6d83ece3958ed42d379_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a22dc4dd92a63ce943cefce41a1ee84b0" title="add_graph" alt="" coords="196,5,281,31"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="329,5,463,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="511,5,620,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf92af78aad5c8d3b3f1b4e34775def6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf92af78aad5c8d3b3f1b4e34775def6">&#9670;&nbsp;</a></span>wdigraph_dijkstra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void wdigraph_dijkstra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>distTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> **&#160;</td>
+          <td class="paramname"><em>edgeTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">iminipq_p&#160;</td>
+          <td class="paramname"><em>pq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_cgraph" id="d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_cgraph">
+<area shape="rect" id="node2" href="../../d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="370,5,474,31"/>
+<area shape="rect" id="node7" href="../../d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="178,157,303,183"/>
+<area shape="rect" id="node8" href="../../d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="354,153,490,179"/>
+<area shape="rect" id="node10" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="185,56,296,81"/>
+<area shape="rect" id="node3" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="542,5,662,31"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="576,55,628,80"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="710,55,774,80"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="717,104,767,129"/>
+<area shape="rect" id="node9" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="579,104,625,129"/>
+<area shape="rect" id="node11" href="../../d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="362,104,483,129"/>
+<area shape="rect" id="node12" href="../../d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="351,55,494,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_icgraph" id="d3/db2/wdigraph_8c_abf92af78aad5c8d3b3f1b4e34775def6_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="178,5,316,31"/>
+<area shape="rect" id="node6" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="364,104,473,129"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="195,55,299,80"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="376,55,461,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="521,80,667,105"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="715,73,853,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca93fbd61242a0584ccd6cef74e91fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca93fbd61242a0584ccd6cef74e91fb6">&#9670;&nbsp;</a></span>wdigraph_dist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double wdigraph_dist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从顶点v到顶点w的路径权重之和 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>图 </td></tr>
+    <tr><td class="paramname">v</td><td>起点 </td></tr>
+    <tr><td class="paramname">w</td><td>终点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>起点到终点的权重之和 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_cgraph" id="d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_cgraph">
+<area shape="rect" id="node2" href="../../d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="172,32,267,57"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="157,81,282,107"/>
+<area shape="rect" id="node15" href="../../d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="173,131,266,156"/>
+<area shape="rect" id="node4" href="../../d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="522,5,626,31"/>
+<area shape="rect" id="node9" href="../../d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="330,157,454,183"/>
+<area shape="rect" id="node10" href="../../d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="506,153,642,179"/>
+<area shape="rect" id="node12" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="336,56,448,81"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="693,5,814,31"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="728,55,779,80"/>
+<area shape="rect" id="node7" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="862,55,925,80"/>
+<area shape="rect" id="node8" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="869,104,918,129"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="731,104,776,129"/>
+<area shape="rect" id="node13" href="../../d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="513,104,634,129"/>
+<area shape="rect" id="node14" href="../../d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="502,55,645,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_icgraph" id="d3/db2/wdigraph_8c_aca93fbd61242a0584ccd6cef74e91fb6_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="157,12,241,37"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="289,12,435,37"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="483,5,621,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6ccd2e755027580d64fb5a4e6ee62754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ccd2e755027580d64fb5a4e6ee62754">&#9670;&nbsp;</a></span>wdigraph_edges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wdigraph_edges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取加权有向图边的条数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>加权有向图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>图的边的条数 </dd></dl>
+
+</div>
+</div>
+<a id="a804fe01ba09261c2acdb0f346b93308c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804fe01ba09261c2acdb0f346b93308c">&#9670;&nbsp;</a></span>wdigraph_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wdigraph_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>释放加权有向图资源 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>加权有向图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+<a id="ae3757119dde649036320cf5d713d3d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3757119dde649036320cf5d713d3d42">&#9670;&nbsp;</a></span>wdigraph_get_adj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/de1/wdigraph_8h.html#ac6238a5795c5e8537c704c55c0a85af1">adj_p</a> wdigraph_get_adj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在加权有向图中获取顶点v的邻接表 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>加权有向图 </td></tr>
+    <tr><td class="paramname">v</td><td>顶点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>顶点v的邻接表(链表组成) </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_ae3757119dde649036320cf5d713d3d42_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_ae3757119dde649036320cf5d713d3d42_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_ae3757119dde649036320cf5d713d3d42_icgraph" id="d3/db2/wdigraph_8c_ae3757119dde649036320cf5d713d3d42_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a158406af9876f5da9312dcec0b9bd425" title="building_get_adj_count" alt="" coords="180,12,338,37"/>
+<area shape="rect" id="node3" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="386,12,491,37"/>
+<area shape="rect" id="node4" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="539,12,648,37"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="696,5,834,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa6862ef321babe25ac47cec27b8e95f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6862ef321babe25ac47cec27b8e95f3">&#9670;&nbsp;</a></span>wdigraph_has_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wdigraph_has_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>判断从顶点v到顶点w是否存在路径 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>图 </td></tr>
+    <tr><td class="paramname">v</td><td>起点 </td></tr>
+    <tr><td class="paramname">w</td><td>终点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 存在路径 0 不可达 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_cgraph" id="d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_cgraph">
+<area shape="rect" id="node2" href="../../d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="206,32,301,57"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="191,81,316,107"/>
+<area shape="rect" id="node15" href="../../d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="207,131,301,156"/>
+<area shape="rect" id="node4" href="../../d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="556,5,660,31"/>
+<area shape="rect" id="node9" href="../../d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="364,157,488,183"/>
+<area shape="rect" id="node10" href="../../d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="540,153,676,179"/>
+<area shape="rect" id="node12" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="370,56,482,81"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="727,5,848,31"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="762,55,814,80"/>
+<area shape="rect" id="node7" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="896,55,960,80"/>
+<area shape="rect" id="node8" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="903,104,953,129"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="765,104,810,129"/>
+<area shape="rect" id="node13" href="../../d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="548,104,668,129"/>
+<area shape="rect" id="node14" href="../../d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="536,55,679,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_icgraph" id="d3/db2/wdigraph_8c_aa6862ef321babe25ac47cec27b8e95f3_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="191,12,275,37"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="323,12,469,37"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="517,5,655,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb9a78fc84e04102ac0493ae1f521736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9a78fc84e04102ac0493ae1f521736">&#9670;&nbsp;</a></span>wdigraph_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a> wdigraph_new </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertexs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>新建加权有向图 w&ndash;加权 di&ndash;有方向 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexs</td><td>顶点个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新建的加权有向图 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_adb9a78fc84e04102ac0493ae1f521736_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_adb9a78fc84e04102ac0493ae1f521736_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_adb9a78fc84e04102ac0493ae1f521736_icgraph" id="d3/db2/wdigraph_8c_adb9a78fc84e04102ac0493ae1f521736_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a22dc4dd92a63ce943cefce41a1ee84b0" title="add_graph" alt="" coords="161,5,246,31"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="294,5,429,31"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="477,5,585,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad791eb181af5146a417b03301a3b9288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad791eb181af5146a417b03301a3b9288">&#9670;&nbsp;</a></span>wdigraph_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">seq_p wdigraph_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从顶点v到顶点w的路径 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>图 </td></tr>
+    <tr><td class="paramname">v</td><td>起点 </td></tr>
+    <tr><td class="paramname">w</td><td>终点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>adj_t 路径的链表 NULL 不存在路径 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_cgraph" id="d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_cgraph">
+<area shape="rect" id="node2" href="../../d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="177,32,272,57"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="162,81,287,107"/>
+<area shape="rect" id="node15" href="../../d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="201,131,248,156"/>
+<area shape="rect" id="node16" href="../../d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="178,180,272,205"/>
+<area shape="rect" id="node4" href="../../d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="527,5,631,31"/>
+<area shape="rect" id="node9" href="../../d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="335,157,460,183"/>
+<area shape="rect" id="node10" href="../../d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="511,153,647,179"/>
+<area shape="rect" id="node12" href="../../d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="342,56,453,81"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="698,5,819,31"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="733,55,785,80"/>
+<area shape="rect" id="node7" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="867,55,931,80"/>
+<area shape="rect" id="node8" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="874,104,924,129"/>
+<area shape="rect" id="node11" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="736,104,781,129"/>
+<area shape="rect" id="node13" href="../../d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="519,104,639,129"/>
+<area shape="rect" id="node14" href="../../d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="508,55,650,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_icgraph" id="d3/db2/wdigraph_8c_ad791eb181af5146a417b03301a3b9288_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="162,12,308,37"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="356,5,494,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29881b823a3809fc513dd2a89ab131d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29881b823a3809fc513dd2a89ab131d9">&#9670;&nbsp;</a></span>wdigraph_print_adj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wdigraph_print_adj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_a29881b823a3809fc513dd2a89ab131d9_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_a29881b823a3809fc513dd2a89ab131d9_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_a29881b823a3809fc513dd2a89ab131d9_cgraph" id="d3/db2/wdigraph_8c_a29881b823a3809fc513dd2a89ab131d9_cgraph">
+<area shape="rect" id="node2" href="../../d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="187,5,235,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae4802c79ad356531785f701d09c5f132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4802c79ad356531785f701d09c5f132">&#9670;&nbsp;</a></span>wdigraph_relax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void wdigraph_relax </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> *&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>distTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../d1/d2c/structadj.html">adj</a> **&#160;</td>
+          <td class="paramname"><em>edgeTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">iminipq_p&#160;</td>
+          <td class="paramname"><em>pq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_cgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_cgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_cgraph" id="d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_cgraph">
+<area shape="rect" id="node2" href="../../d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="176,5,297,31"/>
+<area shape="rect" id="node3" href="../../d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="165,55,308,80"/>
+<area shape="rect" id="node9" href="../../d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="185,104,288,129"/>
+<area shape="rect" id="node4" href="../../d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="356,55,477,80"/>
+<area shape="rect" id="node5" href="../../d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="390,104,442,129"/>
+<area shape="rect" id="node8" href="../../d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="394,5,439,31"/>
+<area shape="rect" id="node6" href="../../d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="525,19,588,44"/>
+<area shape="rect" id="node7" href="../../d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="532,80,581,105"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_icgraph" id="d3/db2/wdigraph_8c_ae4802c79ad356531785f701d09c5f132_icgraph">
+<area shape="rect" id="node2" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="165,55,290,80"/>
+<area shape="rect" id="node3" href="../../d3/db2/wdigraph_8c.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="338,5,476,31"/>
+<area shape="rect" id="node7" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="524,104,633,129"/>
+<area shape="rect" id="node8" href="../../d3/db2/wdigraph_8c.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="355,55,459,80"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="536,55,620,80"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="681,80,827,105"/>
+<area shape="rect" id="node6" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="875,73,1012,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e0655ede318d668cca51634e4192c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0655ede318d668cca51634e4192c5c">&#9670;&nbsp;</a></span>wdigraph_vertexs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wdigraph_vertexs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d99/beacon_8h.html#afd154b28157cf09ef4b0e793e5875c72">T</a>&#160;</td>
+          <td class="paramname"><em>wdigraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取加权有向图的顶点个数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wdigraph</td><td>加权有向图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>图的顶点个数 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db2/wdigraph_8c_a0e0655ede318d668cca51634e4192c5c_icgraph.png" border="0" usemap="#d3/db2/wdigraph_8c_a0e0655ede318d668cca51634e4192c5c_icgraph" alt=""/></div>
+<map name="d3/db2/wdigraph_8c_a0e0655ede318d668cca51634e4192c5c_icgraph" id="d3/db2/wdigraph_8c_a0e0655ede318d668cca51634e4192c5c_icgraph">
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a158406af9876f5da9312dcec0b9bd425" title="building_get_adj_count" alt="" coords="179,12,338,37"/>
+<area shape="rect" id="node3" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="386,12,490,37"/>
+<area shape="rect" id="node4" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="538,12,648,37"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="696,5,833,44"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="floor_add_beacon" name="floor_add_beacon">
+<area shape="rect" id="node2" href="$dc/d99/beacon_8h.html#a3a31a5cbd6f589b55718e8eaf2074ac9" title="beacon_get_uuid" alt="" coords="206,5,330,31"/>
+<area shape="rect" id="node3" href="$dc/d99/beacon_8h.html#a40ebcd6179d43a76dc2c296995e52e5e" title="beacon_get_major_minor" alt="" coords="181,55,354,80"/>
+<area shape="rect" id="node4" href="$dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="204,104,331,129"/>
+<area shape="rect" id="node5" href="$dc/de3/floor_8c.html#a6631f992c1e4e4795590f203a55cbcf7" title="updatebox" alt="" coords="226,153,309,179"/>
+<area shape="rect" id="node6" href="$d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="402,128,492,153"/>
+<area shape="rect" id="node7" href="$d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="402,177,492,203"/>
+</map>
