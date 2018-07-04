@@ -1,0 +1,5 @@
+<map id="set_distance" name="set_distance">
+<area shape="rect" id="node2" href="$de/d24/location__bak_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="150,19,330,44"/>
+<area shape="rect" id="node3" href="$de/d24/location__bak_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="378,19,536,44"/>
+<area shape="rect" id="node4" href="$d2/d0a/proxy__location_8c.html#a3ac8158eef8fd44327c4861e41019e40" title="Java_com_jcble_map3d\l_location_JCLocationManager\l_requestLocation" alt="" coords="584,5,785,57"/>
+</map>

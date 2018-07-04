@@ -1,0 +1,5 @@
+<map id="point_set_floorindex" name="point_set_floorindex">
+<area shape="rect" id="node2" href="$d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="194,5,304,31"/>
+<area shape="rect" id="node3" href="$d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="352,5,533,31"/>
+<area shape="rect" id="node4" href="$d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="581,5,739,31"/>
+</map>

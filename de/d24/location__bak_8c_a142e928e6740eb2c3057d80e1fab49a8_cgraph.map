@@ -1,0 +1,6 @@
+<map id="get_beacon" name="get_beacon">
+<area shape="rect" id="node2" href="$dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="152,5,228,31"/>
+<area shape="rect" id="node3" href="$d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="144,55,235,80"/>
+<area shape="rect" id="node5" href="$d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="154,104,226,129"/>
+<area shape="rect" id="node4" href="$da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="283,80,366,105"/>
+</map>

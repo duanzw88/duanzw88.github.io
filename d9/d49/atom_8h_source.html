@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: atom.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_b2bc4b562bfe8ca8e82cb79d5264aa53.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">atom.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/d49/atom_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __ATOM_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __ATOM_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span>       <span class="keywordtype">int</span>    <a class="code" href="../../d9/d49/atom_8h.html#a26016f2e937e6d3b1b7820b76dae0c7c">atom_length</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="../../da/d81/structatom.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span>       <span class="keywordtype">void</span>   <a class="code" href="../../d9/d49/atom_8h.html#a6dbcf05c3146a2ed159c2c53567b6ac9">atom_link_length</a>();</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>   *<a class="code" href="../../d9/d49/atom_8h.html#a7e01ac964485d07f0c47606dbbf28e37">atom_new</a>   (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="../../da/d81/structatom.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>,<span class="keywordtype">int</span> <a class="code" href="../../da/d81/structatom.html#afed088663f8704004425cdae2120b9b3">len</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>   *<a class="code" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226">atom_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="../../da/d81/structatom.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>   *<a class="code" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d">atom_int</a>   (<span class="keywordtype">long</span> n);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structatom_html_ab50d783982593ef993ea0b68f7ad8b80"><div class="ttname"><a href="../../da/d81/structatom.html#ab50d783982593ef993ea0b68f7ad8b80">atom::str</a></div><div class="ttdeci">char * str</div><div class="ttdef"><b>Definition:</b> atom.c:14</div></div>
+<div class="ttc" id="atom_8h_html_aa6a92d80750408375e0c980ae6298a7d"><div class="ttname"><a href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d">atom_int</a></div><div class="ttdeci">const char * atom_int(long n)</div><div class="ttdef"><b>Definition:</b> atom.c:188</div></div>
+<div class="ttc" id="atom_8h_html_a6dbcf05c3146a2ed159c2c53567b6ac9"><div class="ttname"><a href="../../d9/d49/atom_8h.html#a6dbcf05c3146a2ed159c2c53567b6ac9">atom_link_length</a></div><div class="ttdeci">void atom_link_length()</div></div>
+<div class="ttc" id="atom_8h_html_a7e01ac964485d07f0c47606dbbf28e37"><div class="ttname"><a href="../../d9/d49/atom_8h.html#a7e01ac964485d07f0c47606dbbf28e37">atom_new</a></div><div class="ttdeci">const char * atom_new(const char *str, int len)</div><div class="ttdef"><b>Definition:</b> atom.c:136</div></div>
+<div class="ttc" id="structatom_html_afed088663f8704004425cdae2120b9b3"><div class="ttname"><a href="../../da/d81/structatom.html#afed088663f8704004425cdae2120b9b3">atom::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> atom.c:13</div></div>
+<div class="ttc" id="atom_8h_html_a30b5689adb3a3097a0b61cf848e28226"><div class="ttname"><a href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226">atom_string</a></div><div class="ttdeci">const char * atom_string(const char *str)</div><div class="ttdef"><b>Definition:</b> atom.c:183</div></div>
+<div class="ttc" id="atom_8h_html_a26016f2e937e6d3b1b7820b76dae0c7c"><div class="ttname"><a href="../../d9/d49/atom_8h.html#a26016f2e937e6d3b1b7820b76dae0c7c">atom_length</a></div><div class="ttdeci">int atom_length(const char *str)</div><div class="ttdef"><b>Definition:</b> atom.c:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

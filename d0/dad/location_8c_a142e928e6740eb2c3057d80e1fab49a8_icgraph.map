@@ -1,0 +1,8 @@
+<map id="get_beacon" name="get_beacon">
+<area shape="rect" id="node2" href="$d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="326,5,458,31"/>
+<area shape="rect" id="node4" href="$d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="345,55,439,80"/>
+<area shape="rect" id="node5" href="$d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="144,105,254,131"/>
+<area shape="rect" id="node7" href="$d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="151,155,247,180"/>
+<area shape="rect" id="node3" href="$d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="531,55,688,80"/>
+<area shape="rect" id="node6" href="$d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="302,105,483,131"/>
+</map>

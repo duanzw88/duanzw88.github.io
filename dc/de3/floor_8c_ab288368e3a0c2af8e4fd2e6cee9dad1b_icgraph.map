@@ -1,0 +1,16 @@
+<map id="floor_get_left" name="floor_get_left">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="717,134,807,160"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#a519633830f0ae2cb50bfeae5c0b55210" title="floor_box_changed" alt="" coords="534,108,669,133"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a62db8b41e74830e9dc3233340aa63953" title="draw_route_box" alt="" coords="369,158,486,184"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe" title="draw_quadnode" alt="" coords="178,109,295,134"/>
+<area shape="rect" id="node8" href="$d0/d29/main_8c.html#a6cf9e271cda5d35ae44ed54e4ffd5aac" title="draw_navigate" alt="" coords="374,306,482,332"/>
+<area shape="rect" id="node10" href="$d0/d29/main_8c.html#aa47bcdbc23e150eed4b9444434b88bba" title="to_screen_x" alt="" coords="190,210,284,236"/>
+<area shape="rect" id="node13" href="$d0/d29/main_8c.html#ac18100803e09565ea89299bfcb8f71a9" title="to_map_lon" alt="" coords="191,312,282,337"/>
+<area shape="rect" id="node15" href="$d3/d8e/proxy__floor_8c.html#a975889f67667c0b851d4e45c5a560609" title="Java_com_jcble_map3d\l_map_Floor_floorGetLeft" alt="" coords="152,361,321,400"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="855,134,906,160"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#aaaa51701a7e98cb0b19a622ad7a75759" title="draw_quadtree" alt="" coords="373,109,483,134"/>
+<area shape="rect" id="node9" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="566,233,637,258"/>
+<area shape="rect" id="node11" href="$d0/d29/main_8c.html#a0b1a78f6213b925bf79ce1fc87e7b915" title="draw_road" alt="" coords="386,208,470,233"/>
+<area shape="rect" id="node12" href="$d0/d29/main_8c.html#ae3e06580c3191de733eb618a5d015dac" title="draw_beacon" alt="" coords="377,257,478,282"/>
+<area shape="rect" id="node14" href="$d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="571,308,633,333"/>
+</map>

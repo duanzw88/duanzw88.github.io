@@ -1,3 +1,10 @@
 <map id="building_get_beacon_uuids" name="building_get_beacon_uuids">
-<area shape="rect" id="node2" href="$de/dec/floor_8h.html#aff0fef311253f792603b7e27aa35b16f" title="floor_get_uuids" alt="" coords="198,12,310,37"/>
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="217,5,291,31"/>
+<area shape="rect" id="node4" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="211,55,297,80"/>
+<area shape="rect" id="node5" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="220,104,288,129"/>
+<area shape="rect" id="node6" href="$de/dec/floor_8h.html#aff0fef311253f792603b7e27aa35b16f" title="floor_get_uuids" alt="" coords="198,153,310,179"/>
+<area shape="rect" id="node7" href="$d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="207,203,301,228"/>
+<area shape="rect" id="node3" href="$d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="358,5,454,31"/>
+<area shape="rect" id="node8" href="$d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="373,203,439,228"/>
+<area shape="rect" id="node9" href="$db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="502,203,596,228"/>
 </map>

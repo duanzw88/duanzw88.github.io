@@ -1,3 +1,7 @@
 <map id="floor_get_name" name="floor_get_name">
-<area shape="rect" id="node2" href="$d6/d32/building_8c.html#ae85c588831ab7824db5c43b510ed09b6" title="building_get_floor\l_by_name" alt="" coords="167,5,294,44"/>
+<area shape="rect" id="node2" href="$d6/d32/building_8c.html#ae85c588831ab7824db5c43b510ed09b6" title="building_get_floor\l_by_name" alt="" coords="195,15,322,53"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="214,79,304,104"/>
+<area shape="rect" id="node6" href="$d3/d8e/proxy__floor_8c.html#ad3adfe45ce48e0da1f35abadaa995304" title="Java_com_jcble_map3d\l_map_Floor_floorGetName" alt="" coords="167,128,350,167"/>
+<area shape="rect" id="node3" href="$da/d41/proxy__building_8c.html#a20f80c5cf20fb1a696bc9c242c4673f4" title="Java_com_jcble_map3d\l_map_Building_buildingGetFloor\lByName" alt="" coords="398,5,613,57"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="480,81,531,107"/>
 </map>

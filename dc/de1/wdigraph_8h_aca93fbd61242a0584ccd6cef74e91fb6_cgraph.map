@@ -1,16 +1,17 @@
 <map id="wdigraph_dist" name="wdigraph_dist">
-<area shape="rect" id="node2" href="$d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="172,32,267,57"/>
-<area shape="rect" id="node3" href="$d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="157,81,282,107"/>
-<area shape="rect" id="node15" href="$d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="173,131,266,156"/>
+<area shape="rect" id="node2" href="$d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="172,57,267,83"/>
+<area shape="rect" id="node3" href="$d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="157,107,282,132"/>
+<area shape="rect" id="node16" href="$d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="173,156,266,181"/>
 <area shape="rect" id="node4" href="$d6/d78/indexminipq_8h.html#abc25e22c14844491aa352f3d6da32973" title="iminipq_insert" alt="" coords="522,5,626,31"/>
 <area shape="rect" id="node9" href="$d6/d78/indexminipq_8h.html#a9110b522969515a6a6142c37eb0801c3" title="iminipq_is_empty" alt="" coords="330,157,454,183"/>
 <area shape="rect" id="node10" href="$d6/d78/indexminipq_8h.html#a0e6dd461412fdb976398b5c6d23dba17" title="iminipq_delete_min" alt="" coords="506,153,642,179"/>
-<area shape="rect" id="node12" href="$d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="336,56,448,81"/>
+<area shape="rect" id="node12" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="358,207,427,232"/>
+<area shape="rect" id="node13" href="$d3/db2/wdigraph_8c.html#ae4802c79ad356531785f701d09c5f132" title="wdigraph_relax" alt="" coords="336,56,448,81"/>
 <area shape="rect" id="node5" href="$d6/db6/indexminipq_8c.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="693,5,814,31"/>
 <area shape="rect" id="node6" href="$d6/db6/indexminipq_8c.html#a5189ab54e5c1af2eedc34bb08073c472" title="swim" alt="" coords="728,55,779,80"/>
 <area shape="rect" id="node7" href="$d6/db6/indexminipq_8c.html#ad57afb279bfcb81e977e6d03e042e4a2" title="greater" alt="" coords="862,55,925,80"/>
 <area shape="rect" id="node8" href="$d6/db6/indexminipq_8c.html#ae7e11d9afb180d923f9d2f9ffa23d361" title="exch" alt="" coords="869,104,918,129"/>
 <area shape="rect" id="node11" href="$d6/db6/indexminipq_8c.html#af1dccd36e4203ffa3150555594ddad69" title="sink" alt="" coords="731,104,776,129"/>
-<area shape="rect" id="node13" href="$d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="513,104,634,129"/>
-<area shape="rect" id="node14" href="$d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="502,55,645,80"/>
+<area shape="rect" id="node14" href="$d6/d78/indexminipq_8h.html#a68384b5704c6ae55e5d1565bc2fb4d62" title="iminipq_contains" alt="" coords="513,104,634,129"/>
+<area shape="rect" id="node15" href="$d6/d78/indexminipq_8h.html#a74725fb330ede8763d74fe4ac942fb81" title="iminipq_change_key" alt="" coords="502,55,645,80"/>
 </map>

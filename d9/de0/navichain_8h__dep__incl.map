@@ -1,4 +1,9 @@
 <map id="navichain.h" name="navichain.h">
-<area shape="rect" id="node2" href="$d6/d32/building_8c.html" title="building.c" alt="" coords="5,79,83,104"/>
-<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html" title="navichain.c" alt="" coords="107,79,195,104"/>
+<area shape="rect" id="node2" href="$da/d41/proxy__building_8c.html" title="proxy_building.c" alt="" coords="5,79,123,104"/>
+<area shape="rect" id="node3" href="$de/dea/proxy__navichain_8c.html" title="proxy_navichain.c" alt="" coords="147,79,275,104"/>
+<area shape="rect" id="node4" href="$d9/d43/proxy__naviseg_8c.html" title="proxy_naviseg.c" alt="" coords="299,79,416,104"/>
+<area shape="rect" id="node5" href="$da/d9b/proxy__navistatus_8c.html" title="proxy_navistatus.c" alt="" coords="441,79,573,104"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html" title="main.c" alt="" coords="597,79,657,104"/>
+<area shape="rect" id="node7" href="$d9/dfa/mem__chk_8c.html" title="mem_chk.c" alt="" coords="681,79,770,104"/>
+<area shape="rect" id="node8" href="$d7/d58/navichain_8c.html" title="navichain.c" alt="" coords="795,79,883,104"/>
 </map>

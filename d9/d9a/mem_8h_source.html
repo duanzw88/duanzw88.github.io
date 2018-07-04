@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: mem.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_b2bc4b562bfe8ca8e82cb79d5264aa53.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/d9a/mem_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __MEM_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __MEM_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d65/except_8h.html">except.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> Except_T <a class="code" href="../../d9/d9a/mem_8h.html#a4bc14a9be0eec9d47e4ffce4e014f66a">Mem_Failed</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> *<a class="code" href="../../d9/d9a/mem_8h.html#a958eb5712100fccc1c79a028994a64f7">mem_alloc</a>(<span class="keywordtype">long</span> nbytes,<span class="keyword">const</span> <span class="keywordtype">char</span> *file,<span class="keywordtype">int</span> line);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> *<a class="code" href="../../d9/d9a/mem_8h.html#a416889a84c062a24c5b65dd00d862f1a">mem_calloc</a>(<span class="keywordtype">long</span> <a class="code" href="../../d6/d81/structiminipq__t.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>,<span class="keywordtype">long</span> nbytes,<span class="keyword">const</span> <span class="keywordtype">char</span> *file,<span class="keywordtype">int</span> line);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d9a/mem_8h.html#a783959b899b6d70901a5a73fe4bf0b01">mem_free</a>(<span class="keywordtype">void</span> *ptr,<span class="keyword">const</span> <span class="keywordtype">char</span> *file,<span class="keywordtype">int</span> line);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> *<a class="code" href="../../d9/d9a/mem_8h.html#a45f643eba6d02a3e32a7285df36f4a5e">mem_resize</a>(<span class="keywordtype">void</span> *ptr,<span class="keywordtype">long</span> nbytes,<span class="keyword">const</span> <span class="keywordtype">char</span> *file,<span class="keywordtype">int</span> line);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d9a/mem_8h.html#a1e2670adca12bc28243341b43b067ea2">mem_leak</a>(<span class="keywordtype">void</span> (*<a class="code" href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784">apply</a>)(<span class="keyword">const</span> <span class="keywordtype">void</span> *ptr,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                            <span class="keywordtype">long</span> <a class="code" href="../../d6/d81/structiminipq__t.html#a439227feff9d7f55384e8780cfc2eb82">size</a>,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">char</span> *file,</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                            <span class="keywordtype">int</span> line,</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                            <span class="keywordtype">void</span> *cl),</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordtype">void</span> *cl);</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#a971e5b15c6462f812503e1a1ad66ab20">   18</a></span>&#160;<span class="preprocessor">#define ALLOC(nbytes) mem_alloc((nbytes),__FILE__,__LINE__)</span></div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#a2ddbf668111d4c93b943c15cc1306dc6">   19</a></span>&#160;<span class="preprocessor">#define CALLOC(count,nbytes) mem_calloc((count),(nbytes),__FILE__,__LINE__)</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//NEW接口仅适用于要分配的字节数在编译时已知</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#a6dcbdd586f47a62900804da2a6102a2e">   22</a></span>&#160;<span class="preprocessor">#define NEW(p)      ((p) = ALLOC((long)sizeof *(p)))</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#aa1ee572e1a56579657d6568ddbc8cab5">   23</a></span>&#160;<span class="preprocessor">#define NEW0(p)     ((p) = CALLOC(1,(long)sizeof *(p)))</span></div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#a105949c59c998e38aad80266afac92bf">   24</a></span>&#160;<span class="preprocessor">#define FREE(ptr)   ((void)(mem_free((ptr),__FILE__,__LINE__),(ptr) = 0))</span></div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d9a/mem_8h.html#a2dd9e1ed5a4d80d0a7c08ba2df512172">   25</a></span>&#160;<span class="preprocessor">#define RESIZE(ptr,nbytes) ((ptr) = mem_resize((ptr),(nbytes),__FILE__,__LINE__))</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="except_8h_html"><div class="ttname"><a href="../../dc/d65/except_8h.html">except.h</a></div></div>
+<div class="ttc" id="mem_8h_html_a783959b899b6d70901a5a73fe4bf0b01"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a783959b899b6d70901a5a73fe4bf0b01">mem_free</a></div><div class="ttdeci">void mem_free(void *ptr, const char *file, int line)</div><div class="ttdef"><b>Definition:</b> mem.c:53</div></div>
+<div class="ttc" id="mem_8h_html_a958eb5712100fccc1c79a028994a64f7"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a958eb5712100fccc1c79a028994a64f7">mem_alloc</a></div><div class="ttdeci">void * mem_alloc(long nbytes, const char *file, int line)</div><div class="ttdef"><b>Definition:</b> mem.c:10</div></div>
+<div class="ttc" id="mem_8h_html_a416889a84c062a24c5b65dd00d862f1a"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a416889a84c062a24c5b65dd00d862f1a">mem_calloc</a></div><div class="ttdeci">void * mem_calloc(long count, long nbytes, const char *file, int line)</div><div class="ttdef"><b>Definition:</b> mem.c:30</div></div>
+<div class="ttc" id="mem_8h_html_a4bc14a9be0eec9d47e4ffce4e014f66a"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a4bc14a9be0eec9d47e4ffce4e014f66a">Mem_Failed</a></div><div class="ttdeci">const Except_T Mem_Failed</div><div class="ttdef"><b>Definition:</b> memchk.c:9</div></div>
+<div class="ttc" id="mem_8h_html_a45f643eba6d02a3e32a7285df36f4a5e"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a45f643eba6d02a3e32a7285df36f4a5e">mem_resize</a></div><div class="ttdeci">void * mem_resize(void *ptr, long nbytes, const char *file, int line)</div><div class="ttdef"><b>Definition:</b> mem.c:61</div></div>
+<div class="ttc" id="structiminipq__t_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="../../d6/d81/structiminipq__t.html#a439227feff9d7f55384e8780cfc2eb82">iminipq_t::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> indexminipq.c:21</div></div>
+<div class="ttc" id="structiminipq__t_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="../../d6/d81/structiminipq__t.html#ad43c3812e6d13e0518d9f8b8f463ffcf">iminipq_t::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> indexminipq.c:22</div></div>
+<div class="ttc" id="location_8c_html_ad0102446dc70f81265a7a321ffd7b784"><div class="ttname"><a href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784">apply</a></div><div class="ttdeci">void apply(const void *key, void **value, void *cl)</div><div class="ttdef"><b>Definition:</b> location.c:291</div></div>
+<div class="ttc" id="mem_8h_html_a1e2670adca12bc28243341b43b067ea2"><div class="ttname"><a href="../../d9/d9a/mem_8h.html#a1e2670adca12bc28243341b43b067ea2">mem_leak</a></div><div class="ttdeci">void mem_leak(void(*apply)(const void *ptr, long size, const char *file, int line, void *cl), void *cl)</div><div class="ttdef"><b>Definition:</b> memchk.c:225</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

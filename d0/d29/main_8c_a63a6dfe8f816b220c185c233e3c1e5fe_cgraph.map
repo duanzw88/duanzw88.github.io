@@ -1,0 +1,8 @@
+<map id="draw_quadnode" name="draw_quadnode">
+<area shape="rect" id="node2" href="$de/dec/floor_8h.html#ab288368e3a0c2af8e4fd2e6cee9dad1b" title="floor_get_left" alt="" coords="188,5,287,31"/>
+<area shape="rect" id="node3" href="$d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="365,31,491,56"/>
+<area shape="rect" id="node4" href="$de/dec/floor_8h.html#abb8457361b7b74c07cb4ef7b08c35a8f" title="floor_get_bottom" alt="" coords="177,107,298,132"/>
+<area shape="rect" id="node5" href="$d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="353,132,503,157"/>
+<area shape="rect" id="node6" href="$d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="174,208,301,233"/>
+<area shape="rect" id="node7" href="$d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="170,257,305,283"/>
+</map>

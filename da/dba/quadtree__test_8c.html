@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: quadtree_test.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_271be7fcb51c325d35237ca913517158.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">quadtree_test.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d54/denvelop_8h_source.html">denvelop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d3c/seq_8h_source.html">seq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/da4/dquadtree_8h_source.html">dquadtree.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d49/dquadnode_8h_source.html">dquadnode.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+quadtree_test.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d9f/quadtree__test_8c__incl.png" border="0" usemap="#quadtree__test_8c" alt=""/></div>
+<map name="quadtree__test_8c" id="quadtree__test_8c">
+<area shape="rect" id="node7" href="../../d6/d54/denvelop_8h.html" title="denvelop.h" alt="" coords="466,225,552,251"/>
+<area shape="rect" id="node8" href="../../d6/d3c/seq_8h.html" title="seq.h" alt="" coords="615,225,669,251"/>
+<area shape="rect" id="node9" href="../../d3/da4/dquadtree_8h.html" title="dquadtree.h" alt="" coords="496,79,589,104"/>
+<area shape="rect" id="node10" href="../../d8/d49/dquadnode_8h.html" title="dquadnode.h" alt="" coords="546,152,645,177"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a93493eb8fae5549bd5be67f3449245e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a93493eb8fae5549bd5be67f3449245e0">DEFAULT_WIDTH</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a93493eb8fae5549bd5be67f3449245e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed72c2ffa61543779b6472d074519b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a5ed72c2ffa61543779b6472d074519b1">ENVELOP_SIZE</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a5ed72c2ffa61543779b6472d074519b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a04848af6cf5029fee4831b592bd215ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce">init_window</a> ()</td></tr>
+<tr class="separator:a04848af6cf5029fee4831b592bd215ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa02d935e2114a031aff07780a52776e"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#aaa02d935e2114a031aff07780a52776e">draw_all</a> (GtkWidget *widget, cairo_t *cr, gpointer data)</td></tr>
+<tr class="separator:aaa02d935e2114a031aff07780a52776e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d24d109716b06f6054d6d7e9565369"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a68d24d109716b06f6054d6d7e9565369">key_press</a> (GtkWidget *widget, GdkEventKey *event, gpointer data)</td></tr>
+<tr class="separator:a68d24d109716b06f6054d6d7e9565369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f5153778a65769712a1adf28e9ca03"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a11f5153778a65769712a1adf28e9ca03">clicked</a> (GtkWidget *widget, GdkEventButton *event, gpointer data)</td></tr>
+<tr class="separator:a11f5153778a65769712a1adf28e9ca03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984b6e675214244ffd4ad9d0b9c38c98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a984b6e675214244ffd4ad9d0b9c38c98">draw_quadtree</a> (cairo_t *cr)</td></tr>
+<tr class="separator:a984b6e675214244ffd4ad9d0b9c38c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a6dfe8f816b220c185c233e3c1e5fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe">draw_quadnode</a> (cairo_t *cr, <a class="el" href="../../d8/d49/dquadnode_8h.html#aff3d47a3c4f50572b53a04092116c94c">dquadnode_p</a> <a class="el" href="../../d6/da4/structdquadnode.html">dquadnode</a>)</td></tr>
+<tr class="separator:a63a6dfe8f816b220c185c233e3c1e5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a3d346c08cf2d67c388caabffb412b293"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a3d346c08cf2d67c388caabffb412b293">window</a></td></tr>
+<tr class="separator:a3d346c08cf2d67c388caabffb412b293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6dffbaae1036374ae614ea8050ae5d6"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#aa6dffbaae1036374ae614ea8050ae5d6">darea</a></td></tr>
+<tr class="separator:aa6dffbaae1036374ae614ea8050ae5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd4f3b8c7e8f52db96f9b389b65345b"><td class="memItemLeft" align="right" valign="top">denvelop_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#aecd4f3b8c7e8f52db96f9b389b65345b">denvelops</a> [<a class="el" href="../../da/dba/quadtree__test_8c.html#a5ed72c2ffa61543779b6472d074519b1">ENVELOP_SIZE</a>]</td></tr>
+<tr class="separator:aecd4f3b8c7e8f52db96f9b389b65345b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d2e7eaa840f59bc965117851b19774"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a48d2e7eaa840f59bc965117851b19774">currentCount</a> = 0</td></tr>
+<tr class="separator:a48d2e7eaa840f59bc965117851b19774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483d6a2a23936be75b3abb906994871d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#a483d6a2a23936be75b3abb906994871d">nextEnvelopIndex</a> = 0</td></tr>
+<tr class="separator:a483d6a2a23936be75b3abb906994871d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b7751b9d7e28894abdb77427f58e4b"><td class="memItemLeft" align="right" valign="top">dquadtree_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dba/quadtree__test_8c.html#ab3b7751b9d7e28894abdb77427f58e4b">dquadtree</a></td></tr>
+<tr class="separator:ab3b7751b9d7e28894abdb77427f58e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a93493eb8fae5549bd5be67f3449245e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93493eb8fae5549bd5be67f3449245e0">&#9670;&nbsp;</a></span>DEFAULT_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_WIDTH&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ed72c2ffa61543779b6472d074519b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed72c2ffa61543779b6472d074519b1">&#9670;&nbsp;</a></span>ENVELOP_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENVELOP_SIZE&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a11f5153778a65769712a1adf28e9ca03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f5153778a65769712a1adf28e9ca03">&#9670;&nbsp;</a></span>clicked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean clicked </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkEventButton *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_cgraph" id="da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_cgraph">
+<area shape="rect" id="node2" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="119,5,257,31"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="151,55,225,80"/>
+<area shape="rect" id="node5" href="../../d8/d49/dquadnode_8h.html#afa61b008bd3c766702f8a5e305e77309" title="dquadnode_contains\l_point" alt="" coords="115,104,261,143"/>
+<area shape="rect" id="node10" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="145,167,231,192"/>
+<area shape="rect" id="node11" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="154,216,222,241"/>
+<area shape="rect" id="node12" href="../../d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="124,265,252,291"/>
+<area shape="rect" id="node4" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="345,55,441,80"/>
+<area shape="rect" id="node6" href="../../d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="309,107,477,132"/>
+<area shape="rect" id="node7" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="346,156,440,181"/>
+<area shape="rect" id="node8" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="525,156,591,181"/>
+<area shape="rect" id="node9" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="639,156,733,181"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_icgraph" id="da/dba/quadtree__test_8c_a11f5153778a65769712a1adf28e9ca03_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="115,5,206,31"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="254,5,304,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa02d935e2114a031aff07780a52776e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa02d935e2114a031aff07780a52776e">&#9670;&nbsp;</a></span>draw_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean draw_all </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_cgraph" id="da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_cgraph">
+<area shape="rect" id="node2" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="480,5,606,31"/>
+<area shape="rect" id="node3" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="479,105,607,131"/>
+<area shape="rect" id="node4" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="476,168,611,193"/>
+<area shape="rect" id="node5" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="468,217,618,243"/>
+<area shape="rect" id="node6" href="../../da/dba/quadtree__test_8c.html#a984b6e675214244ffd4ad9d0b9c38c98" title="draw_quadtree" alt="" coords="124,107,235,132"/>
+<area shape="rect" id="node7" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="283,81,420,107"/>
+<area shape="rect" id="node8" href="../../da/dba/quadtree__test_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe" title="draw_quadnode" alt="" coords="293,131,410,156"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_icgraph" id="da/dba/quadtree__test_8c_aaa02d935e2114a031aff07780a52776e_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="124,5,215,31"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="263,5,313,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63a6dfe8f816b220c185c233e3c1e5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a6dfe8f816b220c185c233e3c1e5fe">&#9670;&nbsp;</a></span>draw_quadnode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void draw_quadnode </td>
+          <td>(</td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d49/dquadnode_8h.html#aff3d47a3c4f50572b53a04092116c94c">dquadnode_p</a>&#160;</td>
+          <td class="paramname"><em>dquadnode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_cgraph" id="da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_cgraph">
+<area shape="rect" id="node2" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="182,5,308,31"/>
+<area shape="rect" id="node3" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="181,55,309,80"/>
+<area shape="rect" id="node4" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="178,104,312,129"/>
+<area shape="rect" id="node5" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="170,153,320,179"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_icgraph" id="da/dba/quadtree__test_8c_a63a6dfe8f816b220c185c233e3c1e5fe_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#a984b6e675214244ffd4ad9d0b9c38c98" title="draw_quadtree" alt="" coords="170,5,281,31"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="329,5,400,31"/>
+<area shape="rect" id="node4" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="448,5,538,31"/>
+<area shape="rect" id="node5" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="586,5,636,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a984b6e675214244ffd4ad9d0b9c38c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984b6e675214244ffd4ad9d0b9c38c98">&#9670;&nbsp;</a></span>draw_quadtree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void draw_quadtree </td>
+          <td>(</td>
+          <td class="paramtype">cairo_t *&#160;</td>
+          <td class="paramname"><em>cr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_cgraph" id="da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_cgraph">
+<area shape="rect" id="node2" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="164,31,301,56"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe" title="draw_quadnode" alt="" coords="174,80,291,105"/>
+<area shape="rect" id="node4" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="361,5,487,31"/>
+<area shape="rect" id="node5" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="360,55,488,80"/>
+<area shape="rect" id="node6" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="357,104,492,129"/>
+<area shape="rect" id="node7" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="349,153,499,179"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_icgraph" id="da/dba/quadtree__test_8c_a984b6e675214244ffd4ad9d0b9c38c98_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="164,5,235,31"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="283,5,373,31"/>
+<area shape="rect" id="node4" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="421,5,471,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a04848af6cf5029fee4831b592bd215ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04848af6cf5029fee4831b592bd215ce">&#9670;&nbsp;</a></span>init_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void init_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_cgraph" id="da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_cgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="154,550,216,575"/>
+<area shape="rect" id="node14" href="../../da/dba/quadtree__test_8c.html#a68d24d109716b06f6054d6d7e9565369" title="key_press" alt="" coords="144,279,226,305"/>
+<area shape="rect" id="node30" href="../../da/dba/quadtree__test_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="684,58,755,83"/>
+<area shape="rect" id="node3" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="961,159,1099,185"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="309,698,384,723"/>
+<area shape="rect" id="node6" href="../../d8/d49/dquadnode_8h.html#afa61b008bd3c766702f8a5e305e77309" title="dquadnode_contains\l_point" alt="" coords="274,487,419,526"/>
+<area shape="rect" id="node11" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="303,550,390,575"/>
+<area shape="rect" id="node12" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="312,599,381,625"/>
+<area shape="rect" id="node13" href="../../d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="283,649,410,674"/>
+<area shape="rect" id="node5" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="504,698,599,723"/>
+<area shape="rect" id="node7" href="../../d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="467,539,636,565"/>
+<area shape="rect" id="node8" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="504,490,599,515"/>
+<area shape="rect" id="node9" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="687,490,752,515"/>
+<area shape="rect" id="node10" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="810,490,905,515"/>
+<area shape="rect" id="node15" href="../../d6/d54/denvelop_8h.html#a2afbba0c9d87601086a8f6400bf7f6e8" title="denvelop_new" alt="" coords="1345,354,1452,379"/>
+<area shape="rect" id="node16" href="../../d6/d54/denvelop_8h.html#a961b7e9f4c97b882cb08600b9d72c10a" title="denvelop_set_tag" alt="" coords="283,109,410,134"/>
+<area shape="rect" id="node17" href="../../d3/da4/dquadtree_8h.html#a87b453ab3496e2404c4e625822a1aa75" title="dquadtree_insert" alt="" coords="286,279,407,305"/>
+<area shape="rect" id="node18" href="../../d8/d49/dquadnode_8h.html#aa11e53d8f169e499bc5e8827ddaea8ba" title="dquadnode_insert" alt="" coords="487,279,615,305"/>
+<area shape="rect" id="node19" href="../../d8/d02/dquadnode_8c.html#a0612e657b780db42ff6b01c2c6a08b85" title="insert" alt="" coords="692,279,746,305"/>
+<area shape="rect" id="node20" href="../../d8/d02/dquadnode_8c.html#ac515101595a8ce2ea9162c07e5ab99bf" title="split_space" alt="" coords="814,335,902,361"/>
+<area shape="rect" id="node21" href="../../d8/d02/dquadnode_8c.html#af9a72a5d8a40da4eb4c2a60f0e49353f" title="check_space_index" alt="" coords="961,361,1099,386"/>
+<area shape="rect" id="node23" href="../../d8/d02/dquadnode_8c.html#adad303db569e399b0224a73255d28707" title="insert_to_subspace" alt="" coords="962,222,1099,247"/>
+<area shape="rect" id="node22" href="../../d6/d54/denvelop_8h.html#a04b253dd6f022a644dfdeb057fa94f19" title="denvelop_contains" alt="" coords="1156,361,1288,386"/>
+<area shape="rect" id="node24" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="1159,59,1286,85"/>
+<area shape="rect" id="node25" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="1159,109,1286,134"/>
+<area shape="rect" id="node26" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="1155,179,1290,205"/>
+<area shape="rect" id="node27" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="1147,10,1297,35"/>
+<area shape="rect" id="node28" href="../../d8/d02/dquadnode_8c.html#a188d7bcbd349e72601c720263982e689" title="dquadnode_new" alt="" coords="1162,282,1282,307"/>
+<area shape="rect" id="node29" href="../../d8/d02/dquadnode_8c.html#abc287c54c74788855284efc076428e04" title="update_depth" alt="" coords="1171,229,1274,254"/>
+<area shape="rect" id="node31" href="../../da/dba/quadtree__test_8c.html#a984b6e675214244ffd4ad9d0b9c38c98" title="draw_quadtree" alt="" coords="803,109,913,134"/>
+<area shape="rect" id="node32" href="../../da/dba/quadtree__test_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe" title="draw_quadnode" alt="" coords="972,58,1089,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_icgraph" id="da/dba/quadtree__test_8c_a04848af6cf5029fee4831b592bd215ce_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="144,5,194,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68d24d109716b06f6054d6d7e9565369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d24d109716b06f6054d6d7e9565369">&#9670;&nbsp;</a></span>key_press()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean key_press </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkEventKey *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_cgraph" id="da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_cgraph">
+<area shape="rect" id="node2" href="../../d6/d54/denvelop_8h.html#a2afbba0c9d87601086a8f6400bf7f6e8" title="denvelop_new" alt="" coords="1108,150,1215,176"/>
+<area shape="rect" id="node3" href="../../d6/d54/denvelop_8h.html#a961b7e9f4c97b882cb08600b9d72c10a" title="denvelop_set_tag" alt="" coords="135,52,262,77"/>
+<area shape="rect" id="node4" href="../../d3/da4/dquadtree_8h.html#a87b453ab3496e2404c4e625822a1aa75" title="dquadtree_insert" alt="" coords="138,101,259,126"/>
+<area shape="rect" id="node5" href="../../d8/d49/dquadnode_8h.html#aa11e53d8f169e499bc5e8827ddaea8ba" title="dquadnode_insert" alt="" coords="310,120,438,145"/>
+<area shape="rect" id="node6" href="../../d8/d02/dquadnode_8c.html#a0612e657b780db42ff6b01c2c6a08b85" title="insert" alt="" coords="486,120,540,145"/>
+<area shape="rect" id="node7" href="../../d8/d02/dquadnode_8c.html#ac515101595a8ce2ea9162c07e5ab99bf" title="split_space" alt="" coords="588,120,676,145"/>
+<area shape="rect" id="node8" href="../../d8/d02/dquadnode_8c.html#af9a72a5d8a40da4eb4c2a60f0e49353f" title="check_space_index" alt="" coords="724,69,863,94"/>
+<area shape="rect" id="node10" href="../../d8/d02/dquadnode_8c.html#adad303db569e399b0224a73255d28707" title="insert_to_subspace" alt="" coords="725,182,862,208"/>
+<area shape="rect" id="node9" href="../../d6/d54/denvelop_8h.html#a04b253dd6f022a644dfdeb057fa94f19" title="denvelop_contains" alt="" coords="919,52,1052,77"/>
+<area shape="rect" id="node11" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="922,101,1049,126"/>
+<area shape="rect" id="node12" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="922,150,1049,176"/>
+<area shape="rect" id="node13" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="918,200,1053,225"/>
+<area shape="rect" id="node14" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="911,249,1060,274"/>
+<area shape="rect" id="node15" href="../../d8/d02/dquadnode_8c.html#a188d7bcbd349e72601c720263982e689" title="dquadnode_new" alt="" coords="925,298,1045,324"/>
+<area shape="rect" id="node16" href="../../d8/d02/dquadnode_8c.html#abc287c54c74788855284efc076428e04" title="update_depth" alt="" coords="934,348,1037,373"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_icgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_icgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_icgraph" id="da/dba/quadtree__test_8c_a68d24d109716b06f6054d6d7e9565369_icgraph">
+<area shape="rect" id="node2" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="135,5,226,31"/>
+<area shape="rect" id="node3" href="../../da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="274,5,324,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dba/quadtree__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#da/dba/quadtree__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="da/dba/quadtree__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="da/dba/quadtree__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" id="node2" href="../../d3/da4/dquadtree_8h.html#ad7490ac4325986c7011ba5e7dd86e2e8" title="dquadtree_new" alt="" coords="104,99,217,125"/>
+<area shape="rect" id="node5" href="../../da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="115,218,205,243"/>
+<area shape="rect" id="node3" href="../../d8/d49/dquadnode_8h.html#a188d7bcbd349e72601c720263982e689" title="dquadnode_new" alt="" coords="265,30,385,55"/>
+<area shape="rect" id="node4" href="../../d6/d54/denvelop_8h.html#a2afbba0c9d87601086a8f6400bf7f6e8" title="denvelop_new" alt="" coords="1504,43,1611,69"/>
+<area shape="rect" id="node6" href="../../da/dba/quadtree__test_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="294,686,356,711"/>
+<area shape="rect" id="node18" href="../../da/dba/quadtree__test_8c.html#a68d24d109716b06f6054d6d7e9565369" title="key_press" alt="" coords="284,162,366,187"/>
+<area shape="rect" id="node33" href="../../da/dba/quadtree__test_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="843,346,914,371"/>
+<area shape="rect" id="node7" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="1120,471,1258,497"/>
+<area shape="rect" id="node8" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="468,686,543,711"/>
+<area shape="rect" id="node10" href="../../d8/d49/dquadnode_8h.html#afa61b008bd3c766702f8a5e305e77309" title="dquadnode_contains\l_point" alt="" coords="433,623,578,662"/>
+<area shape="rect" id="node15" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="462,735,549,761"/>
+<area shape="rect" id="node16" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="471,785,540,810"/>
+<area shape="rect" id="node17" href="../../d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="442,834,569,859"/>
+<area shape="rect" id="node9" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="663,722,758,747"/>
+<area shape="rect" id="node11" href="../../d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="626,623,795,649"/>
+<area shape="rect" id="node12" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="663,673,758,698"/>
+<area shape="rect" id="node13" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="846,673,911,698"/>
+<area shape="rect" id="node14" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="970,673,1064,698"/>
+<area shape="rect" id="node19" href="../../d6/d54/denvelop_8h.html#a961b7e9f4c97b882cb08600b9d72c10a" title="denvelop_set_tag" alt="" coords="442,127,569,153"/>
+<area shape="rect" id="node20" href="../../d3/da4/dquadtree_8h.html#a87b453ab3496e2404c4e625822a1aa75" title="dquadtree_insert" alt="" coords="445,177,566,202"/>
+<area shape="rect" id="node21" href="../../d8/d49/dquadnode_8h.html#aa11e53d8f169e499bc5e8827ddaea8ba" title="dquadnode_insert" alt="" coords="646,177,774,202"/>
+<area shape="rect" id="node22" href="../../d8/d02/dquadnode_8c.html#a0612e657b780db42ff6b01c2c6a08b85" title="insert" alt="" coords="851,177,905,202"/>
+<area shape="rect" id="node23" href="../../d8/d02/dquadnode_8c.html#ac515101595a8ce2ea9162c07e5ab99bf" title="split_space" alt="" coords="973,145,1061,170"/>
+<area shape="rect" id="node24" href="../../d8/d02/dquadnode_8c.html#af9a72a5d8a40da4eb4c2a60f0e49353f" title="check_space_index" alt="" coords="1120,105,1259,130"/>
+<area shape="rect" id="node26" href="../../d8/d02/dquadnode_8c.html#adad303db569e399b0224a73255d28707" title="insert_to_subspace" alt="" coords="1121,213,1258,238"/>
+<area shape="rect" id="node25" href="../../d6/d54/denvelop_8h.html#a04b253dd6f022a644dfdeb057fa94f19" title="denvelop_contains" alt="" coords="1315,105,1448,130"/>
+<area shape="rect" id="node27" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="1318,422,1445,447"/>
+<area shape="rect" id="node28" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="1318,270,1445,295"/>
+<area shape="rect" id="node29" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="1314,321,1449,346"/>
+<area shape="rect" id="node30" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="1307,371,1456,397"/>
+<area shape="rect" id="node31" href="../../d8/d02/dquadnode_8c.html#a188d7bcbd349e72601c720263982e689" title="dquadnode_new" alt="" coords="1321,213,1441,238"/>
+<area shape="rect" id="node32" href="../../d8/d02/dquadnode_8c.html#abc287c54c74788855284efc076428e04" title="update_depth" alt="" coords="1330,163,1433,189"/>
+<area shape="rect" id="node34" href="../../da/dba/quadtree__test_8c.html#a984b6e675214244ffd4ad9d0b9c38c98" title="draw_quadtree" alt="" coords="962,422,1072,447"/>
+<area shape="rect" id="node35" href="../../da/dba/quadtree__test_8c.html#a63a6dfe8f816b220c185c233e3c1e5fe" title="draw_quadnode" alt="" coords="1131,422,1248,447"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a48d2e7eaa840f59bc965117851b19774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d2e7eaa840f59bc965117851b19774">&#9670;&nbsp;</a></span>currentCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int currentCount = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6dffbaae1036374ae614ea8050ae5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6dffbaae1036374ae614ea8050ae5d6">&#9670;&nbsp;</a></span>darea</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* darea</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecd4f3b8c7e8f52db96f9b389b65345b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd4f3b8c7e8f52db96f9b389b65345b">&#9670;&nbsp;</a></span>denvelops</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">denvelop_p denvelops[<a class="el" href="../../da/dba/quadtree__test_8c.html#a5ed72c2ffa61543779b6472d074519b1">ENVELOP_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3b7751b9d7e28894abdb77427f58e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b7751b9d7e28894abdb77427f58e4b">&#9670;&nbsp;</a></span>dquadtree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dquadtree_p dquadtree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a483d6a2a23936be75b3abb906994871d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483d6a2a23936be75b3abb906994871d">&#9670;&nbsp;</a></span>nextEnvelopIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nextEnvelopIndex = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d346c08cf2d67c388caabffb412b293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d346c08cf2d67c388caabffb412b293">&#9670;&nbsp;</a></span>window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<map id="Java_com_jcble_map3d_navigate_NavigateChain_navigateGetProjectSegIndex" name="Java_com_jcble_map3d_navigate_NavigateChain_navigateGetProjectSegIndex">
+<area shape="rect" id="node2" href="$d2/d23/navichain_8h.html#ad093f5323b74b10c431476381b07d2f4" title="navigate_get_projection\l_segindex" alt="" coords="252,48,415,87"/>
+<area shape="rect" id="node3" href="$d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="492,5,564,31"/>
+<area shape="rect" id="node4" href="$d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="494,55,562,80"/>
+<area shape="rect" id="node5" href="$d7/d58/navichain_8c.html#aeb289ca8b5b4de6ea0d5f10154eab9b2" title="_projection_2_seg" alt="" coords="463,104,593,129"/>
+<area shape="rect" id="node6" href="$d3/dbe/vec2_8h.html#a9864b17ea32fff08d929cfaffc473896" title="vec2_new" alt="" coords="682,5,763,31"/>
+<area shape="rect" id="node7" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="679,55,766,80"/>
+<area shape="rect" id="node8" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="688,104,757,129"/>
+<area shape="rect" id="node9" href="$d3/dbe/vec2_8h.html#aef74935c0b4006564fd26985121dd50d" title="vec2_normal_projection" alt="" coords="641,153,804,179"/>
+<area shape="rect" id="node15" href="$d3/dbe/vec2_8h.html#a502ef739816b680b95417effb3285902" title="vec2_dist_sq" alt="" coords="673,203,772,228"/>
+<area shape="rect" id="node10" href="$db/de6/vec2_8c.html#a6f78526f289101d4e5b6659a0390c891" title="vec2_sub" alt="" coords="868,55,946,80"/>
+<area shape="rect" id="node11" href="$db/de6/vec2_8c.html#a9c339cff1b9646f5269e024ed239205a" title="vec2_dot_prod" alt="" coords="852,104,961,129"/>
+<area shape="rect" id="node12" href="$db/de6/vec2_8c.html#a9e54ae6238be1617ba37088ab2099554" title="vec2_norm_sq" alt="" coords="852,153,961,179"/>
+<area shape="rect" id="node13" href="$db/de6/vec2_8c.html#a7a57afac76ea617b9a27005d04030e48" title="vec2_add" alt="" coords="867,203,946,228"/>
+<area shape="rect" id="node14" href="$db/de6/vec2_8c.html#a6cd92ac4eca29b189702db0a4cdad3ec" title="vec2_mul" alt="" coords="868,252,946,277"/>
+</map>

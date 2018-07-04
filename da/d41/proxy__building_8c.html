@@ -1,0 +1,976 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: proxy_building.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_94cf820174b2735be23c47a851adf4bc.html">android</a></li><li class="navelem"><a class="el" href="../../dir_de8fe7ecf534f23ddea04e3cedb49cf0.html">api</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">proxy_building.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;jni.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/df5/jclog_8h_source.html">jclog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d91/point_8h_source.html">point.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d23/navichain_8h_source.html">navichain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d95/building_8h_source.html">building.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+proxy_building.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d02/proxy__building_8c__incl.png" border="0" usemap="#proxy__building_8c" alt=""/></div>
+<map name="proxy__building_8c" id="proxy__building_8c">
+<area shape="rect" id="node3" href="../../d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="186,79,246,104"/>
+<area shape="rect" id="node7" href="../../d2/d91/point_8h.html" title="point.h" alt="" coords="305,445,366,471"/>
+<area shape="rect" id="node8" href="../../d2/d23/navichain_8h.html" title="navichain.h" alt="" coords="422,79,511,104"/>
+<area shape="rect" id="node10" href="../../d5/d95/building_8h.html" title="building.h" alt="" coords="427,152,506,177"/>
+<area shape="rect" id="node9" href="../../d6/d3c/seq_8h.html" title="seq.h" alt="" coords="741,445,795,471"/>
+<area shape="rect" id="node11" href="../../de/dec/floor_8h.html" title="floor.h" alt="" coords="455,225,512,251"/>
+<area shape="rect" id="node12" href="../../d9/d7f/route_8h.html" title="route.h" alt="" coords="452,299,515,324"/>
+<area shape="rect" id="node17" href="../../dc/d99/beacon_8h.html" title="beacon.h" alt="" coords="334,299,410,324"/>
+<area shape="rect" id="node18" href="../../d3/da4/dquadtree_8h.html" title="dquadtree.h" alt="" coords="548,299,641,324"/>
+<area shape="rect" id="node13" href="../../d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="373,372,466,397"/>
+<area shape="rect" id="node14" href="../../da/d0c/arena_8h.html" title="arena.h" alt="" coords="490,372,557,397"/>
+<area shape="rect" id="node15" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="488,445,560,471"/>
+<area shape="rect" id="node19" href="../../d8/d49/dquadnode_8h.html" title="dquadnode.h" alt="" coords="631,372,731,397"/>
+<area shape="rect" id="node20" href="../../d6/d54/denvelop_8h.html" title="denvelop.h" alt="" coords="607,445,694,471"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5c5c412997a8ad57345575af2bc4ba1b"><td class="memItemLeft" align="right" valign="top">jstring JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a5c5c412997a8ad57345575af2bc4ba1b">Java_com_jcble_map3d_map_Building_buildingGetName</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a5c5c412997a8ad57345575af2bc4ba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fb9c2e6b8172a071abc564c1eb5c59"><td class="memItemLeft" align="right" valign="top">jstring JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#ac9fb9c2e6b8172a071abc564c1eb5c59">Java_com_jcble_map3d_map_Building_buildingGetVersion</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:ac9fb9c2e6b8172a071abc564c1eb5c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad853691679ddf3ca71dbad0c130cde81"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#ad853691679ddf3ca71dbad0c130cde81">Java_com_jcble_map3d_map_Building_buildingGetLastmodified</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:ad853691679ddf3ca71dbad0c130cde81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c40298d04770836bfc0206a03e72d4"><td class="memItemLeft" align="right" valign="top">jstring JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a71c40298d04770836bfc0206a03e72d4">Java_com_jcble_map3d_map_Building_buildingGetId</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a71c40298d04770836bfc0206a03e72d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa587e93e497c0414307199efa1318fd0"><td class="memItemLeft" align="right" valign="top">jint JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#aa587e93e497c0414307199efa1318fd0">Java_com_jcble_map3d_map_Building_buildingGetFloorCount</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:aa587e93e497c0414307199efa1318fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419a972eac13322c08a419d788196bf5"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a419a972eac13322c08a419d788196bf5">Java_com_jcble_map3d_map_Building_buildingGetFloorByIndex</a> (JNIEnv *env, jobject thiz, jlong handle, jint index)</td></tr>
+<tr class="separator:a419a972eac13322c08a419d788196bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f80c5cf20fb1a696bc9c242c4673f4"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a20f80c5cf20fb1a696bc9c242c4673f4">Java_com_jcble_map3d_map_Building_buildingGetFloorByName</a> (JNIEnv *env, jobject thiz, jlong handle, jstring jname)</td></tr>
+<tr class="separator:a20f80c5cf20fb1a696bc9c242c4673f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfe417f7316e6255b0af0de7f7b88ee"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee">Java_com_jcble_map3d_map_Building_buildingRoutePlanByWalk</a> (JNIEnv *env, jobject thiz, jlong handle, jint start_floorindex, jdouble slon, jdouble slat, jint end_floorindex, jdouble elon, jdouble elat)</td></tr>
+<tr class="separator:a5dfe417f7316e6255b0af0de7f7b88ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5e54078d21093acc9057021e4ea333"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333">Java_com_jcble_map3d_map_Building_buildingRoutePlanByCar</a> (JNIEnv *env, jobject thiz, jlong handle, jint start_floorindex, jdouble slon, jdouble slat, jint end_floorindex, jdouble elon, jdouble elat)</td></tr>
+<tr class="separator:afc5e54078d21093acc9057021e4ea333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6364d03ed203a739526875c8d3c777"><td class="memItemLeft" align="right" valign="top">jlong JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a7b6364d03ed203a739526875c8d3c777">Java_com_jcble_map3d_map_Building_buildingGetProjection</a> (JNIEnv *env, jobject thiz, jlong handle, jint index, jdouble lon, jdouble lat)</td></tr>
+<tr class="separator:a7b6364d03ed203a739526875c8d3c777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5d6d34ea347f3017e2629550644497"><td class="memItemLeft" align="right" valign="top">void JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a5b5d6d34ea347f3017e2629550644497">Java_com_jcble_map3d_map_Building_buildingRecycle</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a5b5d6d34ea347f3017e2629550644497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d1803347e8bd8bc4868305658b40ad"><td class="memItemLeft" align="right" valign="top">void JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/proxy__building_8c.html#a97d1803347e8bd8bc4868305658b40ad">Java_com_jcble_map3d_map_Building_buildingAddRoute</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a97d1803347e8bd8bc4868305658b40ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a97d1803347e8bd8bc4868305658b40ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d1803347e8bd8bc4868305658b40ad">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingAddRoute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JNICALL Java_com_jcble_map3d_map_Building_buildingAddRoute </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a97d1803347e8bd8bc4868305658b40ad_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a97d1803347e8bd8bc4868305658b40ad_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a97d1803347e8bd8bc4868305658b40ad_cgraph" id="da/d41/proxy__building_8c_a97d1803347e8bd8bc4868305658b40ad_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="276,455,410,480"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="643,355,729,380"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="828,81,896,107"/>
+<area shape="rect" id="node5" href="../../d6/d32/building_8c.html#a3290f202931ad330c282408f2204397c" title="add_route" alt="" coords="470,752,551,777"/>
+<area shape="rect" id="node7" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="630,207,741,232"/>
+<area shape="rect" id="node8" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="632,256,740,281"/>
+<area shape="rect" id="node9" href="../../d3/d59/routenode_8h.html#ab3c6508ce3d694b8a6c484847e5887ef" title="routenode_get_key" alt="" coords="618,157,754,183"/>
+<area shape="rect" id="node10" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="614,404,758,429"/>
+<area shape="rect" id="node13" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="662,1248,709,1273"/>
+<area shape="rect" id="node14" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="615,1297,757,1323"/>
+<area shape="rect" id="node15" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="635,1347,737,1372"/>
+<area shape="rect" id="node16" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="637,1396,735,1421"/>
+<area shape="rect" id="node36" href="../../d6/d32/building_8c.html#af229c8a63f20aec423e344a347aa5a50" title="connect_conn" alt="" coords="458,1005,563,1031"/>
+<area shape="rect" id="node37" href="../../d6/d32/building_8c.html#a22dc4dd92a63ce943cefce41a1ee84b0" title="add_graph" alt="" coords="468,404,553,429"/>
+<area shape="rect" id="node6" href="../../de/dec/floor_8h.html#aa5ebabfb358741c8c781041298ead393" title="floor_get_routes" alt="" coords="627,903,745,928"/>
+<area shape="rect" id="node11" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="641,952,731,977"/>
+<area shape="rect" id="node12" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="641,1051,731,1076"/>
+<area shape="rect" id="node17" href="../../d3/d61/sparsearray_8h.html#aee6f4160d0fd077f6345aa3908d48c05" title="sparsearray_get" alt="" coords="627,1001,745,1027"/>
+<area shape="rect" id="node19" href="../../d3/d59/routenode_8h.html#a6da54bd7db2a1f5fe92795a6576f6ff2" title="routenode_new" alt="" coords="629,1100,742,1125"/>
+<area shape="rect" id="node20" href="../../d3/d61/sparsearray_8h.html#aa7853e762468e279c96e2297898d9ba0" title="sparsearray_length" alt="" coords="618,703,754,728"/>
+<area shape="rect" id="node22" href="../../d3/d59/routenode_8h.html#a14fb7ed8dd6447bfa4608cd775f93c01" title="routenode_set_key" alt="" coords="618,1149,753,1175"/>
+<area shape="rect" id="node23" href="../../d3/d61/sparsearray_8h.html#ad7b51d2e2cc340fc639dff6b5917c593" title="sparsearray_put" alt="" coords="627,1199,745,1224"/>
+<area shape="rect" id="node27" href="../../d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="637,752,734,777"/>
+<area shape="rect" id="node28" href="../../d9/d7f/route_8h.html#ad2cb7aab17f1b0295c3a23dba2bef0e6" title="route_new" alt="" coords="644,801,728,827"/>
+<area shape="rect" id="node29" href="../../d9/d7f/route_8h.html#a813de80309f6958a2bedc4aa7065a026" title="route_get_weight" alt="" coords="624,552,748,577"/>
+<area shape="rect" id="node30" href="../../d9/d7f/route_8h.html#a8941d44841f4b3a330efdd83e646c976" title="route_get_style" alt="" coords="630,601,742,627"/>
+<area shape="rect" id="node31" href="../../d9/d7f/route_8h.html#af66ab652ac09b21711310219c83da3a0" title="route_is_enable_car" alt="" coords="615,453,757,479"/>
+<area shape="rect" id="node32" href="../../d9/d7f/route_8h.html#a947474cd8cd3f9242abf2d82381887d6" title="route_is_enable_walk" alt="" coords="611,503,761,528"/>
+<area shape="rect" id="node33" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="815,803,909,828"/>
+<area shape="rect" id="node18" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="824,1001,900,1027"/>
+<area shape="rect" id="node21" href="../../dd/d98/table_8h.html#a3c844f0bfc6f4e9ced4fdbbdf2ea9014" title="table_length" alt="" coords="815,703,909,728"/>
+<area shape="rect" id="node24" href="../../dd/d98/table_8h.html#ab63213b8190793fb93d9908488f7b913" title="table_put" alt="" coords="824,1173,900,1199"/>
+<area shape="rect" id="node25" href="../../d0/d6d/ring_8h.html#a5ff2afafc8dff4d75f6da88fd3739db1" title="ring_add_high" alt="" coords="809,1223,915,1248"/>
+<area shape="rect" id="node26" href="../../d9/de9/ring_8c.html#a5573b04af622576e785a6ef514181696" title="_reset_lastget" alt="" coords="963,1223,1068,1248"/>
+<area shape="rect" id="node34" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="983,803,1048,828"/>
+<area shape="rect" id="node35" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="1116,803,1211,828"/>
+<area shape="rect" id="node38" href="../../dc/de1/wdigraph_8h.html#adb9a78fc84e04102ac0493ae1f521736" title="wdigraph_new" alt="" coords="632,305,739,331"/>
+<area shape="rect" id="node41" href="../../dc/de1/wdigraph_8h.html#aa8f4d07431e7a6d83ece3958ed42d379" title="wdigraph_add_edge" alt="" coords="615,5,757,31"/>
+<area shape="rect" id="node39" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="825,305,899,331"/>
+<area shape="rect" id="node40" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="968,305,1063,331"/>
+<area shape="rect" id="node42" href="../../d6/d3c/seq_8h.html#a88557ca8830b000341d577d41982e489" title="seq_put" alt="" coords="828,5,896,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a419a972eac13322c08a419d788196bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419a972eac13322c08a419d788196bf5">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetFloorByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingGetFloorByIndex </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据楼层索引获取楼层对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+    <tr><td class="paramname">index</td><td>索引值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该索引值对应的楼层对象 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a419a972eac13322c08a419d788196bf5_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a419a972eac13322c08a419d788196bf5_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a419a972eac13322c08a419d788196bf5_cgraph" id="da/d41/proxy__building_8c_a419a972eac13322c08a419d788196bf5_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="268,24,395,63"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="443,5,529,31"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="452,55,520,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20f80c5cf20fb1a696bc9c242c4673f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f80c5cf20fb1a696bc9c242c4673f4">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetFloorByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingGetFloorByName </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jstring&#160;</td>
+          <td class="paramname"><em>jname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据楼层名称获取楼层对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+    <tr><td class="paramname">jname</td><td>名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该名称对应的楼层对象 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a20f80c5cf20fb1a696bc9c242c4673f4_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a20f80c5cf20fb1a696bc9c242c4673f4_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a20f80c5cf20fb1a696bc9c242c4673f4_cgraph" id="da/d41/proxy__building_8c_a20f80c5cf20fb1a696bc9c242c4673f4_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#ae85c588831ab7824db5c43b510ed09b6" title="building_get_floor\l_by_name" alt="" coords="268,48,395,87"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="456,5,543,31"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="465,55,534,80"/>
+<area shape="rect" id="node5" href="../../de/dec/floor_8h.html#a933031b64bf83e89258880a01f0af2a4" title="floor_get_name" alt="" coords="443,104,557,129"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa587e93e497c0414307199efa1318fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa587e93e497c0414307199efa1318fd0">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetFloorCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jint JNICALL Java_com_jcble_map3d_map_Building_buildingGetFloorCount </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取建筑总层数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该building的层数 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_aa587e93e497c0414307199efa1318fd0_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_aa587e93e497c0414307199efa1318fd0_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_aa587e93e497c0414307199efa1318fd0_cgraph" id="da/d41/proxy__building_8c_aa587e93e497c0414307199efa1318fd0_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#affbd52736d11f18ff3bf40814502313f" title="building_get_floor\l_count" alt="" coords="268,12,395,51"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="443,19,529,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71c40298d04770836bfc0206a03e72d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c40298d04770836bfc0206a03e72d4">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jstring JNICALL Java_com_jcble_map3d_map_Building_buildingGetId </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取建筑id </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>building对应的id </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a71c40298d04770836bfc0206a03e72d4_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a71c40298d04770836bfc0206a03e72d4_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a71c40298d04770836bfc0206a03e72d4_cgraph" id="da/d41/proxy__building_8c_a71c40298d04770836bfc0206a03e72d4_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#adc258cf1100863b50762800e43e10c25" title="building_get_id" alt="" coords="249,12,360,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad853691679ddf3ca71dbad0c130cde81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad853691679ddf3ca71dbad0c130cde81">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetLastmodified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingGetLastmodified </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取数据最后修改时间 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数据最后修改时间 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_ad853691679ddf3ca71dbad0c130cde81_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_ad853691679ddf3ca71dbad0c130cde81_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_ad853691679ddf3ca71dbad0c130cde81_cgraph" id="da/d41/proxy__building_8c_ad853691679ddf3ca71dbad0c130cde81_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#af122625e99294e28fccd5d1f86a704ff" title="building_get_last_modified" alt="" coords="313,12,493,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c5c412997a8ad57345575af2bc4ba1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5c412997a8ad57345575af2bc4ba1b">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jstring JNICALL Java_com_jcble_map3d_map_Building_buildingGetName </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取建筑名称 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>building对应的名称 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a5c5c412997a8ad57345575af2bc4ba1b_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a5c5c412997a8ad57345575af2bc4ba1b_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a5c5c412997a8ad57345575af2bc4ba1b_cgraph" id="da/d41/proxy__building_8c_a5c5c412997a8ad57345575af2bc4ba1b_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a22d31d2b53c8a48ca6c98ec2eb4730ee" title="building_get_name" alt="" coords="273,12,407,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b6364d03ed203a739526875c8d3c777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6364d03ed203a739526875c8d3c777">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingGetProjection </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>lon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>lat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a7b6364d03ed203a739526875c8d3c777_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a7b6364d03ed203a739526875c8d3c777_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a7b6364d03ed203a739526875c8d3c777_cgraph" id="da/d41/proxy__building_8c_a7b6364d03ed203a739526875c8d3c777_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a3854d64b45d4f3bba26b002650210546" title="building_get_near_road\l_point" alt="" coords="297,308,458,347"/>
+<area shape="rect" id="node21" href="../../d2/d91/point_8h.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="303,55,453,80"/>
+<area shape="rect" id="node3" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="542,5,614,31"/>
+<area shape="rect" id="node4" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="544,55,612,80"/>
+<area shape="rect" id="node5" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="535,413,622,439"/>
+<area shape="rect" id="node6" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="544,463,613,488"/>
+<area shape="rect" id="node7" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="523,512,634,537"/>
+<area shape="rect" id="node8" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="525,561,632,587"/>
+<area shape="rect" id="node9" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="506,611,650,636"/>
+<area shape="rect" id="node10" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="508,660,649,685"/>
+<area shape="rect" id="node11" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="533,104,623,129"/>
+<area shape="rect" id="node12" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="533,153,623,179"/>
+<area shape="rect" id="node13" href="../../d1/dab/vector2d_8h.html#a89066e2a408428f23946686e96931f06" title="vector2d_projection\l_by_point" alt="" coords="509,203,647,241"/>
+<area shape="rect" id="node18" href="../../d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="530,265,627,291"/>
+<area shape="rect" id="node19" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="542,315,614,340"/>
+<area shape="rect" id="node20" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="544,364,612,389"/>
+<area shape="rect" id="node14" href="../../d7/dba/vector2d_8c.html#a88fcf82470f05b3ac8c11876257fc134" title="vector2d_new" alt="" coords="706,136,810,161"/>
+<area shape="rect" id="node15" href="../../d7/dba/vector2d_8c.html#a7ba6838badda83e24da9cd16eba7c52c" title="vector2d_length" alt="" coords="700,185,816,211"/>
+<area shape="rect" id="node16" href="../../d7/dba/vector2d_8c.html#a6dd0e864dfd4b2379b4a9d63cccf2f69" title="vector2d_dotmul" alt="" coords="698,235,818,260"/>
+<area shape="rect" id="node17" href="../../d7/dba/vector2d_8c.html#a1bd941e180562485f083ddc86a5ce2db" title="vector2d_free" alt="" coords="707,284,810,309"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9fb9c2e6b8172a071abc564c1eb5c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fb9c2e6b8172a071abc564c1eb5c59">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingGetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jstring JNICALL Java_com_jcble_map3d_map_Building_buildingGetVersion </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取数据版本 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数据的版本 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_ac9fb9c2e6b8172a071abc564c1eb5c59_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_ac9fb9c2e6b8172a071abc564c1eb5c59_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_ac9fb9c2e6b8172a071abc564c1eb5c59_cgraph" id="da/d41/proxy__building_8c_ac9fb9c2e6b8172a071abc564c1eb5c59_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#ac798b9e265a911ffafbe8de831bff2e0" title="building_get_version" alt="" coords="282,12,426,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b5d6d34ea347f3017e2629550644497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5d6d34ea347f3017e2629550644497">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingRecycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JNICALL Java_com_jcble_map3d_map_Building_buildingRecycle </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a5b5d6d34ea347f3017e2629550644497_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a5b5d6d34ea347f3017e2629550644497_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a5b5d6d34ea347f3017e2629550644497_cgraph" id="da/d41/proxy__building_8c_a5b5d6d34ea347f3017e2629550644497_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#ab7719bbf36cdd575152c84d4631798c0" title="building_free" alt="" coords="264,12,361,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc5e54078d21093acc9057021e4ea333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5e54078d21093acc9057021e4ea333">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingRoutePlanByCar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingRoutePlanByCar </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>start_floorindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>slon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>slat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>end_floorindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>elon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>elat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>车行路径规划 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+    <tr><td class="paramname">start_floorindex</td><td>起点楼层索引 </td></tr>
+    <tr><td class="paramname">sx</td><td>起点x坐标(经度值) </td></tr>
+    <tr><td class="paramname">sy</td><td>起点y坐标(纬度值) </td></tr>
+    <tr><td class="paramname">end_floorindex</td><td>终点楼层索引 </td></tr>
+    <tr><td class="paramname">ex</td><td>终点x坐标(经度值) </td></tr>
+    <tr><td class="paramname">ey</td><td>终点y坐标(纬度值) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>导航链地址 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_afc5e54078d21093acc9057021e4ea333_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_afc5e54078d21093acc9057021e4ea333_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_afc5e54078d21093acc9057021e4ea333_cgraph" id="da/d41/proxy__building_8c_afc5e54078d21093acc9057021e4ea333_cgraph">
+<area shape="rect" id="node2" href="../../d2/d91/point_8h.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="650,1330,799,1355"/>
+<area shape="rect" id="node5" href="../../d5/d95/building_8h.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="252,1119,390,1158"/>
+<area shape="rect" id="node42" href="../../d2/d23/navichain_8h.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="456,406,565,431"/>
+<area shape="rect" id="node48" href="../../d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="284,1331,357,1357"/>
+<area shape="rect" id="node50" href="../../d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="280,1381,361,1406"/>
+<area shape="rect" id="node3" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="909,1230,980,1255"/>
+<area shape="rect" id="node4" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="911,1279,979,1305"/>
+<area shape="rect" id="node6" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="921,1631,968,1657"/>
+<area shape="rect" id="node7" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="874,522,1015,547"/>
+<area shape="rect" id="node8" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="674,1633,775,1658"/>
+<area shape="rect" id="node9" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="676,22,773,47"/>
+<area shape="rect" id="node10" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="438,1026,583,1051"/>
+<area shape="rect" id="node11" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="644,911,805,950"/>
+<area shape="rect" id="node12" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="1091,222,1178,247"/>
+<area shape="rect" id="node13" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="1245,919,1314,945"/>
+<area shape="rect" id="node14" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="889,818,1000,843"/>
+<area shape="rect" id="node15" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="891,1131,998,1157"/>
+<area shape="rect" id="node16" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="873,970,1016,995"/>
+<area shape="rect" id="node17" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="899,571,990,597"/>
+<area shape="rect" id="node18" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="899,670,990,695"/>
+<area shape="rect" id="node20" href="../../d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="896,1181,993,1206"/>
+<area shape="rect" id="node23" href="../../d9/d7f/route_8h.html#a8941d44841f4b3a330efdd83e646c976" title="route_get_style" alt="" coords="668,1127,781,1153"/>
+<area shape="rect" id="node24" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="682,1481,767,1506"/>
+<area shape="rect" id="node30" href="../../d3/d59/routenode_8h.html#ab3c6508ce3d694b8a6c484847e5887ef" title="routenode_get_key" alt="" coords="877,171,1012,197"/>
+<area shape="rect" id="node31" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="907,769,982,794"/>
+<area shape="rect" id="node33" href="../../dc/de1/wdigraph_8h.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="670,1431,779,1457"/>
+<area shape="rect" id="node34" href="../../d6/d3c/seq_8h.html#a659a8c1eba96d664bc35684ac28c2f23" title="seq_addstart" alt="" coords="895,1329,994,1354"/>
+<area shape="rect" id="node36" href="../../d6/d32/building_8c.html#a5adb8ac02bcfcb13a0992fdff6ff911a" title="get_routenode_by_pointkey" alt="" coords="631,147,817,173"/>
+<area shape="rect" id="node39" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="897,1082,992,1107"/>
+<area shape="rect" id="node40" href="../../d3/d59/routenode_8h.html#a6da54bd7db2a1f5fe92795a6576f6ff2" title="routenode_new" alt="" coords="668,609,781,634"/>
+<area shape="rect" id="node41" href="../../d3/d59/routenode_8h.html#a14fb7ed8dd6447bfa4608cd775f93c01" title="routenode_set_key" alt="" coords="657,658,792,683"/>
+<area shape="rect" id="node19" href="../../d1/dab/vector2d_8h.html#a89066e2a408428f23946686e96931f06" title="vector2d_projection\l_by_point" alt="" coords="876,1019,1013,1058"/>
+<area shape="rect" id="node21" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="909,719,980,745"/>
+<area shape="rect" id="node22" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="911,621,979,646"/>
+<area shape="rect" id="node25" href="../../dc/de1/wdigraph_8h.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="876,1481,1013,1506"/>
+<area shape="rect" id="node29" href="../../dc/de1/wdigraph_8h.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="893,1530,996,1555"/>
+<area shape="rect" id="node26" href="../../d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="1087,1530,1182,1555"/>
+<area shape="rect" id="node27" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="1072,1481,1197,1506"/>
+<area shape="rect" id="node28" href="../../d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="1087,1431,1181,1457"/>
+<area shape="rect" id="node32" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="1087,769,1182,794"/>
+<area shape="rect" id="node35" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="1102,1206,1167,1231"/>
+<area shape="rect" id="node37" href="../../d3/d61/sparsearray_8h.html#aa7853e762468e279c96e2297898d9ba0" title="sparsearray_length" alt="" coords="877,122,1012,147"/>
+<area shape="rect" id="node38" href="../../d3/d61/sparsearray_8h.html#a615247275825befe4105c552dcb8d415" title="sparsearray_get_at" alt="" coords="876,73,1013,98"/>
+<area shape="rect" id="node43" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="672,406,777,431"/>
+<area shape="rect" id="node44" href="../../d5/d95/building_8h.html#a158406af9876f5da9312dcec0b9bd425" title="building_get_adj_count" alt="" coords="865,322,1024,347"/>
+<area shape="rect" id="node45" href="../../d7/d58/navichain_8c.html#adf6566f8a9e9de8092fa8bb0e7f74e52" title="_make_angle" alt="" coords="894,371,995,397"/>
+<area shape="rect" id="node46" href="../../d7/d58/navichain_8c.html#ae09ce82b815a38c167261793e13c2453" title="_dist" alt="" coords="920,421,969,446"/>
+<area shape="rect" id="node47" href="../../d7/d58/navichain_8c.html#a144fa34b80299b9e1be1272454616eac" title="_make_next_direction" alt="" coords="869,273,1020,298"/>
+<area shape="rect" id="node49" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="469,1734,552,1759"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5dfe417f7316e6255b0af0de7f7b88ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfe417f7316e6255b0af0de7f7b88ee">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_map_Building_buildingRoutePlanByWalk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlong JNICALL Java_com_jcble_map3d_map_Building_buildingRoutePlanByWalk </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>start_floorindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>slon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>slat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jint&#160;</td>
+          <td class="paramname"><em>end_floorindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>elon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jdouble&#160;</td>
+          <td class="paramname"><em>elat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>步行路径规划 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>jni环境变量 </td></tr>
+    <tr><td class="paramname">thiz</td><td></td></tr>
+    <tr><td class="paramname">handle</td><td>building对象地址 </td></tr>
+    <tr><td class="paramname">start_floorindex</td><td>起点楼层索引 </td></tr>
+    <tr><td class="paramname">sx</td><td>起点x坐标(经度值) </td></tr>
+    <tr><td class="paramname">sy</td><td>起点y坐标(纬度值) </td></tr>
+    <tr><td class="paramname">end_floorindex</td><td>终点楼层索引 </td></tr>
+    <tr><td class="paramname">ex</td><td>终点x坐标(经度值) </td></tr>
+    <tr><td class="paramname">ey</td><td>终点y坐标(纬度值) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>导航链地址 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d41/proxy__building_8c_a5dfe417f7316e6255b0af0de7f7b88ee_cgraph.png" border="0" usemap="#da/d41/proxy__building_8c_a5dfe417f7316e6255b0af0de7f7b88ee_cgraph" alt=""/></div>
+<map name="da/d41/proxy__building_8c_a5dfe417f7316e6255b0af0de7f7b88ee_cgraph" id="da/d41/proxy__building_8c_a5dfe417f7316e6255b0af0de7f7b88ee_cgraph">
+<area shape="rect" id="node2" href="../../d2/d91/point_8h.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="650,1330,799,1355"/>
+<area shape="rect" id="node5" href="../../d5/d95/building_8h.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="252,1119,390,1158"/>
+<area shape="rect" id="node42" href="../../d2/d23/navichain_8h.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="456,406,565,431"/>
+<area shape="rect" id="node48" href="../../d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="284,1331,357,1357"/>
+<area shape="rect" id="node50" href="../../d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="280,1381,361,1406"/>
+<area shape="rect" id="node3" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="909,1230,980,1255"/>
+<area shape="rect" id="node4" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="911,1279,979,1305"/>
+<area shape="rect" id="node6" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="921,1631,968,1657"/>
+<area shape="rect" id="node7" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="874,522,1015,547"/>
+<area shape="rect" id="node8" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="674,1633,775,1658"/>
+<area shape="rect" id="node9" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="676,22,773,47"/>
+<area shape="rect" id="node10" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="438,1026,583,1051"/>
+<area shape="rect" id="node11" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="644,911,805,950"/>
+<area shape="rect" id="node12" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="1091,222,1178,247"/>
+<area shape="rect" id="node13" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="1245,919,1314,945"/>
+<area shape="rect" id="node14" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="889,818,1000,843"/>
+<area shape="rect" id="node15" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="891,1131,998,1157"/>
+<area shape="rect" id="node16" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="873,970,1016,995"/>
+<area shape="rect" id="node17" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="899,571,990,597"/>
+<area shape="rect" id="node18" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="899,670,990,695"/>
+<area shape="rect" id="node20" href="../../d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="896,1181,993,1206"/>
+<area shape="rect" id="node23" href="../../d9/d7f/route_8h.html#a8941d44841f4b3a330efdd83e646c976" title="route_get_style" alt="" coords="668,1127,781,1153"/>
+<area shape="rect" id="node24" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="682,1481,767,1506"/>
+<area shape="rect" id="node30" href="../../d3/d59/routenode_8h.html#ab3c6508ce3d694b8a6c484847e5887ef" title="routenode_get_key" alt="" coords="877,171,1012,197"/>
+<area shape="rect" id="node31" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="907,769,982,794"/>
+<area shape="rect" id="node33" href="../../dc/de1/wdigraph_8h.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="670,1431,779,1457"/>
+<area shape="rect" id="node34" href="../../d6/d3c/seq_8h.html#a659a8c1eba96d664bc35684ac28c2f23" title="seq_addstart" alt="" coords="895,1329,994,1354"/>
+<area shape="rect" id="node36" href="../../d6/d32/building_8c.html#a5adb8ac02bcfcb13a0992fdff6ff911a" title="get_routenode_by_pointkey" alt="" coords="631,147,817,173"/>
+<area shape="rect" id="node39" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="897,1082,992,1107"/>
+<area shape="rect" id="node40" href="../../d3/d59/routenode_8h.html#a6da54bd7db2a1f5fe92795a6576f6ff2" title="routenode_new" alt="" coords="668,609,781,634"/>
+<area shape="rect" id="node41" href="../../d3/d59/routenode_8h.html#a14fb7ed8dd6447bfa4608cd775f93c01" title="routenode_set_key" alt="" coords="657,658,792,683"/>
+<area shape="rect" id="node19" href="../../d1/dab/vector2d_8h.html#a89066e2a408428f23946686e96931f06" title="vector2d_projection\l_by_point" alt="" coords="876,1019,1013,1058"/>
+<area shape="rect" id="node21" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="909,719,980,745"/>
+<area shape="rect" id="node22" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="911,621,979,646"/>
+<area shape="rect" id="node25" href="../../dc/de1/wdigraph_8h.html#aa6862ef321babe25ac47cec27b8e95f3" title="wdigraph_has_path" alt="" coords="876,1481,1013,1506"/>
+<area shape="rect" id="node29" href="../../dc/de1/wdigraph_8h.html#aca93fbd61242a0584ccd6cef74e91fb6" title="wdigraph_dist" alt="" coords="893,1530,996,1555"/>
+<area shape="rect" id="node26" href="../../d6/d78/indexminipq_8h.html#a2702df1ffbf55795864ec75dee9a1c40" title="iminipq_new" alt="" coords="1087,1530,1182,1555"/>
+<area shape="rect" id="node27" href="../../d3/db2/wdigraph_8c.html#abf92af78aad5c8d3b3f1b4e34775def6" title="wdigraph_dijkstra" alt="" coords="1072,1481,1197,1506"/>
+<area shape="rect" id="node28" href="../../d6/d78/indexminipq_8h.html#a5b1b91b6344589ba1f5c73c5b4566198" title="iminipq_free" alt="" coords="1087,1431,1181,1457"/>
+<area shape="rect" id="node32" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="1087,769,1182,794"/>
+<area shape="rect" id="node35" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="1102,1206,1167,1231"/>
+<area shape="rect" id="node37" href="../../d3/d61/sparsearray_8h.html#aa7853e762468e279c96e2297898d9ba0" title="sparsearray_length" alt="" coords="877,122,1012,147"/>
+<area shape="rect" id="node38" href="../../d3/d61/sparsearray_8h.html#a615247275825befe4105c552dcb8d415" title="sparsearray_get_at" alt="" coords="876,73,1013,98"/>
+<area shape="rect" id="node43" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="672,406,777,431"/>
+<area shape="rect" id="node44" href="../../d5/d95/building_8h.html#a158406af9876f5da9312dcec0b9bd425" title="building_get_adj_count" alt="" coords="865,322,1024,347"/>
+<area shape="rect" id="node45" href="../../d7/d58/navichain_8c.html#adf6566f8a9e9de8092fa8bb0e7f74e52" title="_make_angle" alt="" coords="894,371,995,397"/>
+<area shape="rect" id="node46" href="../../d7/d58/navichain_8c.html#ae09ce82b815a38c167261793e13c2453" title="_dist" alt="" coords="920,421,969,446"/>
+<area shape="rect" id="node47" href="../../d7/d58/navichain_8c.html#a144fa34b80299b9e1be1272454616eac" title="_make_next_direction" alt="" coords="869,273,1020,298"/>
+<area shape="rect" id="node49" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="469,1734,552,1759"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

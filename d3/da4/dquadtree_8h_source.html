@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: dquadtree.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_b2bc4b562bfe8ca8e82cb79d5264aa53.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dquadtree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/da4/dquadtree_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _DQUADTREE_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _DQUADTREE_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d49/dquadnode_8h.html">dquadnode.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d54/denvelop_8h.html">denvelop.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d3/da4/dquadtree_8h.html#a0acb682b8260ab1c60b918599864e2e5">   12</a></span>&#160;<span class="preprocessor">#define T dquadtree_p</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d3/da4/dquadtree_8h.html#a3fe9c682a8fa57bdd9e7b0daf69a518a">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../de/dde/structdquadtree__t.html">dquadtree_t</a> *<a class="code" href="../../d3/da4/dquadtree_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d5/d7e/struct_t.html">T</a>    <a class="code" href="../../d3/da4/dquadtree_8h.html#ad7490ac4325986c7011ba5e7dd86e2e8">dquadtree_new</a>(<span class="keywordtype">double</span> left,<span class="keywordtype">double</span> top,<span class="keywordtype">double</span> right,<span class="keywordtype">double</span> bottom);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/da4/dquadtree_8h.html#a82a799f2dde572c90a304b0a09ca5bc4">dquadtree_free</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> qt);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="../../d6/da4/structdquadnode.html">dquadnode_p</a> <a class="code" href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861">dquadtree_get_root</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> qt);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>  <a class="code" href="../../d3/da4/dquadtree_8h.html#ab9754b7d05f3445f21e15fd509bf05f7">dquadtree_get_count</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> qt);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>  <a class="code" href="../../d3/da4/dquadtree_8h.html#a6ce8c591d82b0034435186dc2a7e0cab">dquadtree_get_depth</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> qt);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/da4/dquadtree_8h.html#a87b453ab3496e2404c4e625822a1aa75">dquadtree_insert</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> qt,denvelop_p e);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#undef T</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="dquadtree_8h_html_a100c182e7c9c6b3fd7ad698e05278861"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861">dquadtree_get_root</a></div><div class="ttdeci">dquadnode_p dquadtree_get_root(T qt)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:27</div></div>
+<div class="ttc" id="dquadnode_8h_html"><div class="ttname"><a href="../../d8/d49/dquadnode_8h.html">dquadnode.h</a></div></div>
+<div class="ttc" id="dquadtree_8h_html_ad7490ac4325986c7011ba5e7dd86e2e8"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#ad7490ac4325986c7011ba5e7dd86e2e8">dquadtree_new</a></div><div class="ttdeci">T dquadtree_new(double left, double top, double right, double bottom)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:14</div></div>
+<div class="ttc" id="struct_t_html"><div class="ttname"><a href="../../d5/d7e/struct_t.html">T</a></div><div class="ttdef"><b>Definition:</b> except.h:6</div></div>
+<div class="ttc" id="dquadtree_8h_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> dquadtree.h:12</div></div>
+<div class="ttc" id="dquadtree_8h_html_ab9754b7d05f3445f21e15fd509bf05f7"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#ab9754b7d05f3445f21e15fd509bf05f7">dquadtree_get_count</a></div><div class="ttdeci">int dquadtree_get_count(T qt)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:32</div></div>
+<div class="ttc" id="dquadtree_8h_html_a6ce8c591d82b0034435186dc2a7e0cab"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#a6ce8c591d82b0034435186dc2a7e0cab">dquadtree_get_depth</a></div><div class="ttdeci">int dquadtree_get_depth(T qt)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:38</div></div>
+<div class="ttc" id="structdquadnode_html"><div class="ttname"><a href="../../d6/da4/structdquadnode.html">dquadnode</a></div><div class="ttdef"><b>Definition:</b> dquadnode.h:33</div></div>
+<div class="ttc" id="dquadtree_8h_html_a82a799f2dde572c90a304b0a09ca5bc4"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#a82a799f2dde572c90a304b0a09ca5bc4">dquadtree_free</a></div><div class="ttdeci">void dquadtree_free(T qt)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:23</div></div>
+<div class="ttc" id="dquadtree_8h_html_a87b453ab3496e2404c4e625822a1aa75"><div class="ttname"><a href="../../d3/da4/dquadtree_8h.html#a87b453ab3496e2404c4e625822a1aa75">dquadtree_insert</a></div><div class="ttdeci">void dquadtree_insert(T qt, denvelop_p e)</div><div class="ttdef"><b>Definition:</b> dquadtree.c:42</div></div>
+<div class="ttc" id="denvelop_8h_html"><div class="ttname"><a href="../../d6/d54/denvelop_8h.html">denvelop.h</a></div></div>
+<div class="ttc" id="structdquadtree__t_html"><div class="ttname"><a href="../../de/dde/structdquadtree__t.html">dquadtree_t</a></div><div class="ttdef"><b>Definition:</b> dquadtree.c:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

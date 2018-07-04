@@ -1,0 +1,8 @@
+<map id="floor_get_beacons" name="floor_get_beacons">
+<area shape="rect" id="node2" href="$d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="184,5,297,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae3e06580c3191de733eb618a5d015dac" title="draw_beacon" alt="" coords="190,55,291,80"/>
+<area shape="rect" id="node3" href="$d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="345,5,434,31"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="354,55,425,80"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="482,55,572,80"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="620,55,670,80"/>
+</map>

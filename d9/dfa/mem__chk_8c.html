@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: mem_chk.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_271be7fcb51c325d35237ca913517158.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">mem_chk.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d9a/mem_8h_source.html">mem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d2b/parse_8h_source.html">parse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/df5/jclog_8h_source.html">jclog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d95/building_8h_source.html">building.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d23/navichain_8h_source.html">navichain.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+mem_chk.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc4/mem__chk_8c__incl.png" border="0" usemap="#mem__chk_8c" alt=""/></div>
+<map name="mem__chk_8c" id="mem__chk_8c">
+<area shape="rect" id="node7" href="../../d9/d9a/mem_8h.html" title="mem.h" alt="" coords="287,225,349,251"/>
+<area shape="rect" id="node10" href="../../d4/d2b/parse_8h.html" title="parse.h" alt="" coords="470,79,535,104"/>
+<area shape="rect" id="node13" href="../../d5/d95/building_8h.html" title="building.h" alt="" coords="614,152,692,177"/>
+<area shape="rect" id="node24" href="../../d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="331,79,391,104"/>
+<area shape="rect" id="node26" href="../../d2/d23/navichain_8h.html" title="navichain.h" alt="" coords="610,79,699,104"/>
+<area shape="rect" id="node8" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="283,445,354,471"/>
+<area shape="rect" id="node11" href="../../dc/d18/c_j_s_o_n_8h.html" title="cJSON.h" alt="" coords="465,152,540,177"/>
+<area shape="rect" id="node14" href="../../de/dec/floor_8h.html" title="floor.h" alt="" coords="592,225,650,251"/>
+<area shape="rect" id="node15" href="../../d6/d3c/seq_8h.html" title="seq.h" alt="" coords="738,445,792,471"/>
+<area shape="rect" id="node16" href="../../d9/d7f/route_8h.html" title="route.h" alt="" coords="420,299,483,324"/>
+<area shape="rect" id="node20" href="../../dc/d99/beacon_8h.html" title="beacon.h" alt="" coords="507,299,583,324"/>
+<area shape="rect" id="node21" href="../../d3/da4/dquadtree_8h.html" title="dquadtree.h" alt="" coords="607,299,699,324"/>
+<area shape="rect" id="node17" href="../../d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="411,372,503,397"/>
+<area shape="rect" id="node19" href="../../da/d0c/arena_8h.html" title="arena.h" alt="" coords="320,372,386,397"/>
+<area shape="rect" id="node18" href="../../d2/d91/point_8h.html" title="point.h" alt="" coords="445,445,506,471"/>
+<area shape="rect" id="node22" href="../../d8/d49/dquadnode_8h.html" title="dquadnode.h" alt="" coords="629,372,728,397"/>
+<area shape="rect" id="node23" href="../../d6/d54/denvelop_8h.html" title="denvelop.h" alt="" coords="587,445,674,471"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a93493eb8fae5549bd5be67f3449245e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a93493eb8fae5549bd5be67f3449245e0">DEFAULT_WIDTH</a>&#160;&#160;&#160;800</td></tr>
+<tr class="separator:a93493eb8fae5549bd5be67f3449245e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afb142b4e4bfc9bf0682646acb7cc13c8"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#afb142b4e4bfc9bf0682646acb7cc13c8">cn2char</a> (char *c)</td></tr>
+<tr class="separator:afb142b4e4bfc9bf0682646acb7cc13c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa15bb0a8afd219894f79d3ecec2bfc50"><td class="memItemLeft" align="right" valign="top">building_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#aa15bb0a8afd219894f79d3ecec2bfc50">building</a></td></tr>
+<tr class="separator:aa15bb0a8afd219894f79d3ecec2bfc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8cc5f0fccbcb50757fe2062c6b2eaf"><td class="memItemLeft" align="right" valign="top">floor_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#abe8cc5f0fccbcb50757fe2062c6b2eaf">cur_floor</a> = NULL</td></tr>
+<tr class="separator:abe8cc5f0fccbcb50757fe2062c6b2eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810a1df950e48d55dd4514279db0950"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a5810a1df950e48d55dd4514279db0950">start</a></td></tr>
+<tr class="separator:a5810a1df950e48d55dd4514279db0950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b505fc4838252b000771db76739a0c"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#ac3b505fc4838252b000771db76739a0c">end</a></td></tr>
+<tr class="separator:ac3b505fc4838252b000771db76739a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0b76f5478ae8e239849a8d715fabff"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#acf0b76f5478ae8e239849a8d715fabff">status_point</a></td></tr>
+<tr class="separator:acf0b76f5478ae8e239849a8d715fabff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102541547542ad177449b4ea2ca13b42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a102541547542ad177449b4ea2ca13b42">point_set</a> = 0</td></tr>
+<tr class="separator:a102541547542ad177449b4ea2ca13b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fbfe1e059a6bf80d6f1e01400591ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a77fbfe1e059a6bf80d6f1e01400591ee">navigate_flag</a> = 0</td></tr>
+<tr class="separator:a77fbfe1e059a6bf80d6f1e01400591ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c3f2d0e6bf04ebc64b8eeb52712db6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a83c3f2d0e6bf04ebc64b8eeb52712db6">click_flag</a> = 0</td></tr>
+<tr class="separator:a83c3f2d0e6bf04ebc64b8eeb52712db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f10ddc369b19a0a81b5b4682e786724"><td class="memItemLeft" align="right" valign="top">navichain_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a9f10ddc369b19a0a81b5b4682e786724">nc</a> = NULL</td></tr>
+<tr class="separator:a9f10ddc369b19a0a81b5b4682e786724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68928671fa12c9901ee519d403e074b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfa/mem__chk_8c.html#a68928671fa12c9901ee519d403e074b7">navigate_mode</a> = 1</td></tr>
+<tr class="separator:a68928671fa12c9901ee519d403e074b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a93493eb8fae5549bd5be67f3449245e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93493eb8fae5549bd5be67f3449245e0">&#9670;&nbsp;</a></span>DEFAULT_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_WIDTH&#160;&#160;&#160;800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="afb142b4e4bfc9bf0682646acb7cc13c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb142b4e4bfc9bf0682646acb7cc13c8">&#9670;&nbsp;</a></span>cn2char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* cn2char </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dfa/mem__chk_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#d9/dfa/mem__chk_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="d9/dfa/mem__chk_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="d9/dfa/mem__chk_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+<area shape="rect" id="node2" href="../../d4/d2b/parse_8h.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="104,864,212,889"/>
+<area shape="rect" id="node18" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="708,1232,794,1257"/>
+<area shape="rect" id="node19" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="717,1479,785,1504"/>
+<area shape="rect" id="node30" href="../../d5/d95/building_8h.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="262,913,397,939"/>
+<area shape="rect" id="node37" href="../../d5/d95/building_8h.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="260,1220,398,1259"/>
+<area shape="rect" id="node41" href="../../d2/d23/navichain_8h.html#afbcebf2e2b6ad364f1e2b7bbcc045740" title="navichain_free" alt="" coords="104,1585,212,1611"/>
+<area shape="rect" id="node42" href="../../d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="293,1736,366,1761"/>
+<area shape="rect" id="node44" href="../../d5/d95/building_8h.html#a3854d64b45d4f3bba26b002650210546" title="building_get_near_road\l_point" alt="" coords="455,1571,616,1609"/>
+<area shape="rect" id="node48" href="../../d5/d95/building_8h.html#a5473df0b1befbb824bbca1786846d260" title="building_get_beacon\l_uuids" alt="" coords="463,1887,608,1925"/>
+<area shape="rect" id="node50" href="../../d5/d95/building_8h.html#ab7719bbf36cdd575152c84d4631798c0" title="building_free" alt="" coords="109,1937,207,1963"/>
+<area shape="rect" id="node3" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="727,584,775,609"/>
+<area shape="rect" id="node4" href="../../dc/d18/c_j_s_o_n_8h.html#ad3df5f943457d4befebe4109d48e4a50" title="cJSON_Parse" alt="" coords="276,131,382,156"/>
+<area shape="rect" id="node6" href="../../d5/d95/building_8h.html#a22ef0d000a9398afac04671cc58797bc" title="building_new" alt="" coords="486,1736,585,1761"/>
+<area shape="rect" id="node9" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="278,305,380,331"/>
+<area shape="rect" id="node36" href="../../dc/d18/c_j_s_o_n_8h.html#ab18060251de70a2b55a18dec694f8f8a" title="cJSON_Delete" alt="" coords="274,864,384,889"/>
+<area shape="rect" id="node5" href="../../dc/d7f/c_j_s_o_n_8c.html#a9c63df4d9350bee4bd1726f8f23ad536" title="cJSON_ParseWithOpts" alt="" coords="455,5,616,31"/>
+<area shape="rect" id="node7" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="714,1739,788,1764"/>
+<area shape="rect" id="node8" href="../../d3/d61/sparsearray_8h.html#aceb31ad9b44adf423066ad38109f44d9" title="sparsearray_new" alt="" coords="689,1788,813,1813"/>
+<area shape="rect" id="node10" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="673,433,829,459"/>
+<area shape="rect" id="node11" href="../../d5/d95/building_8h.html#add788953a464e571d1035b3d9b94356a" title="building_set_version" alt="" coords="464,107,607,132"/>
+<area shape="rect" id="node12" href="../../d5/d95/building_8h.html#ab6532c6fa20ce9f345abd12d6c3e3bf6" title="building_set_last_modified" alt="" coords="446,156,625,181"/>
+<area shape="rect" id="node13" href="../../d5/d95/building_8h.html#acfc3a89125329b1c2504e47bc16d3902" title="building_set_id" alt="" coords="480,205,590,231"/>
+<area shape="rect" id="node14" href="../../d5/d95/building_8h.html#a38c5cffe006cd77e605eda37168037b7" title="building_set_name" alt="" coords="469,255,602,280"/>
+<area shape="rect" id="node15" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="676,157,826,183"/>
+<area shape="rect" id="node16" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="676,332,826,357"/>
+<area shape="rect" id="node17" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="493,609,578,635"/>
+<area shape="rect" id="node23" href="../../de/dec/floor_8h.html#afbed2f5b0ba5bf22c1d1f4e3502476eb" title="floor_split_grid" alt="" coords="481,1015,589,1040"/>
+<area shape="rect" id="node20" href="../../d9/d7f/route_8h.html#a02abe74913cc6a31058fde81657e2367" title="route_get_start" alt="" coords="696,936,807,961"/>
+<area shape="rect" id="node21" href="../../d9/d7f/route_8h.html#ac9451e6bcb4d9a4ea26b3a55c0b4a515" title="route_get_end" alt="" coords="697,837,805,863"/>
+<area shape="rect" id="node22" href="../../d3/d59/routenode_8h.html#a6beac1554154c718d0caa9468e173c9e" title="routenode_get_point" alt="" coords="679,887,823,912"/>
+<area shape="rect" id="node24" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="680,1331,822,1356"/>
+<area shape="rect" id="node25" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="706,1133,796,1159"/>
+<area shape="rect" id="node26" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="706,1183,796,1208"/>
+<area shape="rect" id="node27" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="700,1035,802,1060"/>
+<area shape="rect" id="node28" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="702,1084,800,1109"/>
+<area shape="rect" id="node29" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="704,1281,798,1307"/>
+<area shape="rect" id="node31" href="../../d6/d32/building_8c.html#a3290f202931ad330c282408f2204397c" title="add_route" alt="" coords="495,1165,576,1191"/>
+<area shape="rect" id="node32" href="../../d3/d59/routenode_8h.html#ab3c6508ce3d694b8a6c484847e5887ef" title="routenode_get_key" alt="" coords="683,985,819,1011"/>
+<area shape="rect" id="node34" href="../../d6/d32/building_8c.html#af229c8a63f20aec423e344a347aa5a50" title="connect_conn" alt="" coords="483,1116,587,1141"/>
+<area shape="rect" id="node35" href="../../d6/d32/building_8c.html#a22dc4dd92a63ce943cefce41a1ee84b0" title="add_graph" alt="" coords="493,812,578,837"/>
+<area shape="rect" id="node33" href="../../d6/d32/building_8c.html#a456d6f568a4eac0196760f64cce255fe" title="get_distance" alt="" coords="703,1380,799,1405"/>
+<area shape="rect" id="node38" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="462,1267,608,1292"/>
+<area shape="rect" id="node39" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="715,1429,787,1455"/>
+<area shape="rect" id="node40" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="717,1528,785,1553"/>
+<area shape="rect" id="node43" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="494,1785,576,1811"/>
+<area shape="rect" id="node45" href="../../d1/dab/vector2d_8h.html#a89066e2a408428f23946686e96931f06" title="vector2d_projection\l_by_point" alt="" coords="682,1627,820,1665"/>
+<area shape="rect" id="node46" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="715,1689,787,1715"/>
+<area shape="rect" id="node47" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="717,1577,785,1603"/>
+<area shape="rect" id="node49" href="../../de/dec/floor_8h.html#aff0fef311253f792603b7e27aa35b16f" title="floor_get_uuids" alt="" coords="695,1893,807,1919"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="aa15bb0a8afd219894f79d3ecec2bfc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15bb0a8afd219894f79d3ecec2bfc50">&#9670;&nbsp;</a></span>building</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">building_p building</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83c3f2d0e6bf04ebc64b8eeb52712db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c3f2d0e6bf04ebc64b8eeb52712db6">&#9670;&nbsp;</a></span>click_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int click_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe8cc5f0fccbcb50757fe2062c6b2eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8cc5f0fccbcb50757fe2062c6b2eaf">&#9670;&nbsp;</a></span>cur_floor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">floor_p cur_floor = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3b505fc4838252b000771db76739a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b505fc4838252b000771db76739a0c">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77fbfe1e059a6bf80d6f1e01400591ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fbfe1e059a6bf80d6f1e01400591ee">&#9670;&nbsp;</a></span>navigate_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int navigate_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68928671fa12c9901ee519d403e074b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68928671fa12c9901ee519d403e074b7">&#9670;&nbsp;</a></span>navigate_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int navigate_mode = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f10ddc369b19a0a81b5b4682e786724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f10ddc369b19a0a81b5b4682e786724">&#9670;&nbsp;</a></span>nc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">navichain_p nc = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a102541547542ad177449b4ea2ca13b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102541547542ad177449b4ea2ca13b42">&#9670;&nbsp;</a></span>point_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int point_set = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5810a1df950e48d55dd4514279db0950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810a1df950e48d55dd4514279db0950">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf0b76f5478ae8e239849a8d715fabff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0b76f5478ae8e239849a8d715fabff">&#9670;&nbsp;</a></span>status_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p status_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

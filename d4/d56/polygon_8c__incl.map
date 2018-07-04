@@ -1,4 +1,9 @@
 <map id="polygon.c" name="polygon.c">
-<area shape="rect" id="node8" href="$dc/db6/polygon_8h.html" title="polygon.h" alt="" coords="527,79,606,104"/>
-<area shape="rect" id="node9" href="$d2/d91/point_8h.html" title="point.h" alt="" coords="536,152,597,177"/>
+<area shape="rect" id="node4" href="$d9/d9a/mem_8h.html" title="mem.h" alt="" coords="93,79,155,104"/>
+<area shape="rect" id="node7" href="$dc/da7/assert_8h.html" title="assert.h" alt="" coords="179,79,248,104"/>
+<area shape="rect" id="node8" href="$d6/d3c/seq_8h.html" title="seq.h" alt="" coords="322,79,376,104"/>
+<area shape="rect" id="node9" href="$d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="401,79,460,104"/>
+<area shape="rect" id="node12" href="$dc/db6/polygon_8h.html" title="polygon.h" alt="" coords="496,79,575,104"/>
+<area shape="rect" id="node5" href="$dc/d65/except_8h.html" title="except.h" alt="" coords="121,152,193,177"/>
+<area shape="rect" id="node13" href="$d2/d91/point_8h.html" title="point.h" alt="" coords="517,152,578,177"/>
 </map>

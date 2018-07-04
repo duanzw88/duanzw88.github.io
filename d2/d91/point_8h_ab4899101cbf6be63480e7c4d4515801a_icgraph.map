@@ -1,7 +1,11 @@
 <map id="point_free" name="point_free">
-<area shape="rect" id="node2" href="$d6/dcc/beacon_8c.html#a140ead22dbce9116debef3b8db565a90" title="beacon_free" alt="" coords="142,5,238,31"/>
-<area shape="rect" id="node3" href="$da/d9d/polygon_8c.html#a0f0d50350b4c211e45dfa79ec0f6e0e6" title="polygon_free" alt="" coords="141,55,239,80"/>
-<area shape="rect" id="node4" href="$d9/dd3/polyline_8c.html#a8faab5613332748e67c95de0092e749f" title="polyline_free" alt="" coords="141,104,238,129"/>
-<area shape="rect" id="node5" href="$dc/d20/routenode_8c.html#a1bd9d126c09e910747293022ad9ad19b" title="routenode_free" alt="" coords="134,153,246,179"/>
-<area shape="rect" id="node6" href="$df/dbf/route_8c.html#a02cbfeb7d7b94dbbb05bdb4c8552ee37" title="route_free" alt="" coords="294,153,376,179"/>
+<area shape="rect" id="node2" href="$d6/dcc/beacon_8c.html#a140ead22dbce9116debef3b8db565a90" title="beacon_free" alt="" coords="380,71,476,97"/>
+<area shape="rect" id="node4" href="$da/d9d/polygon_8c.html#a0f0d50350b4c211e45dfa79ec0f6e0e6" title="polygon_free" alt="" coords="184,43,282,69"/>
+<area shape="rect" id="node5" href="$d9/dd3/polyline_8c.html#a8faab5613332748e67c95de0092e749f" title="polyline_free" alt="" coords="185,93,282,118"/>
+<area shape="rect" id="node6" href="$da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="134,142,332,194"/>
+<area shape="rect" id="node7" href="$da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="134,218,332,270"/>
+<area shape="rect" id="node8" href="$df/de1/proxy__point_8c.html#a6d3d94b0be2e07e8e9ea60e38f4c4a4e" title="Java_com_jcble_map3d\l_map_Point_pointFree" alt="" coords="151,294,316,333"/>
+<area shape="rect" id="node9" href="$dc/d20/routenode_8c.html#a1bd9d126c09e910747293022ad9ad19b" title="routenode_free" alt="" coords="177,357,289,382"/>
+<area shape="rect" id="node3" href="$dc/de3/floor_8c.html#adee45fc5a74617b76273797890084480" title="floor_free" alt="" coords="524,175,602,201"/>
+<area shape="rect" id="node10" href="$df/dbf/route_8c.html#a02cbfeb7d7b94dbbb05bdb4c8552ee37" title="route_free" alt="" coords="387,199,469,225"/>
 </map>

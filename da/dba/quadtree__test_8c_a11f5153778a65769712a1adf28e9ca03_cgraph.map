@@ -1,0 +1,13 @@
+<map id="clicked" name="clicked">
+<area shape="rect" id="node2" href="$d3/da4/dquadtree_8h.html#a100c182e7c9c6b3fd7ad698e05278861" title="dquadtree_get_root" alt="" coords="119,5,257,31"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="151,55,225,80"/>
+<area shape="rect" id="node5" href="$d8/d49/dquadnode_8h.html#afa61b008bd3c766702f8a5e305e77309" title="dquadnode_contains\l_point" alt="" coords="115,104,261,143"/>
+<area shape="rect" id="node10" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="145,167,231,192"/>
+<area shape="rect" id="node11" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="154,216,222,241"/>
+<area shape="rect" id="node12" href="$d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="124,265,252,291"/>
+<area shape="rect" id="node4" href="$d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="345,55,441,80"/>
+<area shape="rect" id="node6" href="$d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="309,107,477,132"/>
+<area shape="rect" id="node7" href="$d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="346,156,440,181"/>
+<area shape="rect" id="node8" href="$d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="525,156,591,181"/>
+<area shape="rect" id="node9" href="$db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="639,156,733,181"/>
+</map>

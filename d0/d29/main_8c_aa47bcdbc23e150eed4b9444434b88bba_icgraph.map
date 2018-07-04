@@ -1,0 +1,9 @@
+<map id="to_screen_x" name="to_screen_x">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#a0b1a78f6213b925bf79ce1fc87e7b915" title="draw_road" alt="" coords="164,5,248,31"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#a62db8b41e74830e9dc3233340aa63953" title="draw_route_box" alt="" coords="147,55,264,80"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#a6cf9e271cda5d35ae44ed54e4ffd5aac" title="draw_navigate" alt="" coords="152,104,260,129"/>
+<area shape="rect" id="node8" href="$d0/d29/main_8c.html#ae3e06580c3191de733eb618a5d015dac" title="draw_beacon" alt="" coords="155,153,256,179"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="312,104,383,129"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="431,104,522,129"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="570,104,620,129"/>
+</map>

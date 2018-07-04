@@ -1,3 +1,7 @@
 <map id="polyline_free" name="polyline_free">
-<area shape="rect" id="node2" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="150,5,231,31"/>
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="150,5,237,31"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="159,55,228,80"/>
+<area shape="rect" id="node4" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="153,104,234,129"/>
+<area shape="rect" id="node5" href="$d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="157,153,230,179"/>
+<area shape="rect" id="node6" href="$db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="285,153,367,179"/>
 </map>

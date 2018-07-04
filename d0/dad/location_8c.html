@@ -1,0 +1,1160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: location.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_ac286324843e942850b0bca418d812f8.html">location</a></li><li class="navelem"><a class="el" href="../../dir_d2ac4fd3c69b2c3b2ad8efdb7e5a2955.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">location.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/df5/jclog_8h_source.html">jclog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/da7/assert_8h_source.html">assert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d49/atom_8h_source.html">atom.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d98/table_8h_source.html">table.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d95/building_8h_source.html">building.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d99/beacon_8h_source.html">beacon.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d92/_c_algorithm_8h_source.html">CAlgorithm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dcf/location_8h_source.html">location.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d54/denvelop_8h_source.html">denvelop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d18/c_j_s_o_n_8h_source.html">cJSON.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+location.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/db8/location_8c__incl.png" border="0" usemap="#location_8c" alt=""/></div>
+<map name="location_8c" id="location_8c">
+<area shape="rect" id="node7" href="../../d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="127,79,187,104"/>
+<area shape="rect" id="node9" href="../../dc/da7/assert_8h.html" title="assert.h" alt="" coords="768,225,837,251"/>
+<area shape="rect" id="node12" href="../../d9/d49/atom_8h.html" title="atom.h" alt="" coords="486,79,548,104"/>
+<area shape="rect" id="node13" href="../../dd/d98/table_8h.html" title="table.h" alt="" coords="572,79,633,104"/>
+<area shape="rect" id="node14" href="../../d5/d95/building_8h.html" title="building.h" alt="" coords="666,152,744,177"/>
+<area shape="rect" id="node21" href="../../dc/d99/beacon_8h.html" title="beacon.h" alt="" coords="436,299,512,324"/>
+<area shape="rect" id="node24" href="../../d6/d54/denvelop_8h.html" title="denvelop.h" alt="" coords="902,445,988,471"/>
+<area shape="rect" id="node25" href="../../d3/d92/_c_algorithm_8h.html" title="CAlgorithm.h" alt="" coords="860,79,958,104"/>
+<area shape="rect" id="node27" href="../../dd/dcf/location_8h.html" title="location.h" alt="" coords="656,79,735,104"/>
+<area shape="rect" id="node28" href="../../dc/d18/c_j_s_o_n_8h.html" title="cJSON.h" alt="" coords="1033,79,1108,104"/>
+<area shape="rect" id="node10" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="632,445,704,471"/>
+<area shape="rect" id="node15" href="../../de/dec/floor_8h.html" title="floor.h" alt="" coords="676,225,734,251"/>
+<area shape="rect" id="node16" href="../../d6/d3c/seq_8h.html" title="seq.h" alt="" coords="783,445,837,471"/>
+<area shape="rect" id="node17" href="../../d9/d7f/route_8h.html" title="route.h" alt="" coords="619,299,682,324"/>
+<area shape="rect" id="node22" href="../../d3/da4/dquadtree_8h.html" title="dquadtree.h" alt="" coords="812,299,905,324"/>
+<area shape="rect" id="node18" href="../../d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="500,372,593,397"/>
+<area shape="rect" id="node20" href="../../da/d0c/arena_8h.html" title="arena.h" alt="" coords="617,372,684,397"/>
+<area shape="rect" id="node19" href="../../d2/d91/point_8h.html" title="point.h" alt="" coords="432,445,493,471"/>
+<area shape="rect" id="node23" href="../../d8/d49/dquadnode_8h.html" title="dquadnode.h" alt="" coords="809,372,908,397"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab7201679abe1c828b053fb8f1904106c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#ab7201679abe1c828b053fb8f1904106c">USE_BEACON_NUM</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ab7201679abe1c828b053fb8f1904106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59009a8e6441510ac95e93b4e246ede9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a59009a8e6441510ac95e93b4e246ede9">ADJUST_DISTANCE</a>&#160;&#160;&#160;7.5</td></tr>
+<tr class="separator:a59009a8e6441510ac95e93b4e246ede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a,  b)&#160;&#160;&#160;(a) &lt; (b) ? (a) : (b)</td></tr>
+<tr class="separator:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a17a9c3492fc1012a331c176e76c46332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332">calc_location_map</a> (<a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *beacons)</td></tr>
+<tr class="separator:a17a9c3492fc1012a331c176e76c46332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142e928e6740eb2c3057d80e1fab49a8"><td class="memItemLeft" align="right" valign="top">beacon_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8">get_beacon</a> (floor_p floor, char *uuid, unsigned int major_minor)</td></tr>
+<tr class="separator:a142e928e6740eb2c3057d80e1fab49a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac45780fb840ca619c56f1954bb569d1f"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f">filter_beacon_and_location</a> (unsigned int index, denvelop_p target_box, <a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *beacons)</td></tr>
+<tr class="separator:ac45780fb840ca619c56f1954bb569d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ee251a3a1c163563e329d8077903a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7">parse_beacons</a> (building_p <a class="el" href="../../d9/dfa/mem__chk_8c.html#aa15bb0a8afd219894f79d3ecec2bfc50">building</a>)</td></tr>
+<tr class="separator:a81ee251a3a1c163563e329d8077903a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38689d3e38f62044514511c601d0491"><td class="memItemLeft" align="right" valign="top">denvelop_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491">get_envelop</a> (<a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *beacons, int floor_index)</td></tr>
+<tr class="separator:aa38689d3e38f62044514511c601d0491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1920ed8501ef97fb012fe7355332481b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b">get_rssi_range</a> (floor_p floor, <a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *beacons, int *max)</td></tr>
+<tr class="separator:a1920ed8501ef97fb012fe7355332481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d563cdd1fdc14877e11d12a0ba705e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1">set_distance</a> (double distance[][3], <a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *beacons, unsigned int index, denvelop_p target_box, int firstLevel, int secondLevel, int thirdLevel)</td></tr>
+<tr class="separator:a9d563cdd1fdc14877e11d12a0ba705e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8af8427060f6729dde05e443f7b3223"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223">adjust_location</a> (int index, double x, double y)</td></tr>
+<tr class="separator:aa8af8427060f6729dde05e443f7b3223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66b34e37247f90bbdb1e310f4a65e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65">initLocation</a> (building_p b)</td></tr>
+<tr class="separator:ab66b34e37247f90bbdb1e310f4a65e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27bc7173502b7070a2c41918586f1387"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387">location_by_scan_data</a> (const char *beacons)</td></tr>
+<tr class="separator:a27bc7173502b7070a2c41918586f1387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc3df93f3885672340a3ee4ec133fad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#afbc3df93f3885672340a3ee4ec133fad">print_map</a> ()</td></tr>
+<tr class="separator:afbc3df93f3885672340a3ee4ec133fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796fff31e782df135dc72b6902ffc895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a796fff31e782df135dc72b6902ffc895">apply2</a> (const void *key, void **value, void *cl)</td></tr>
+<tr class="separator:a796fff31e782df135dc72b6902ffc895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0102446dc70f81265a7a321ffd7b784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784">apply</a> (const void *key, void **value, void *cl)</td></tr>
+<tr class="separator:ad0102446dc70f81265a7a321ffd7b784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:abf87ba31906df405569688a2a3c80b3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#abf87ba31906df405569688a2a3c80b3c">first_R</a> = 4</td></tr>
+<tr class="separator:abf87ba31906df405569688a2a3c80b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465e4693f3cc0e0120b3be13a59a4933"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a465e4693f3cc0e0120b3be13a59a4933">second_R</a> = 2</td></tr>
+<tr class="separator:a465e4693f3cc0e0120b3be13a59a4933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee58cc5ac14d7bc1d74a0c50ead6fd6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#aee58cc5ac14d7bc1d74a0c50ead6fd6b">three_R</a> = 1</td></tr>
+<tr class="separator:aee58cc5ac14d7bc1d74a0c50ead6fd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2b8b02f0b9a862681be240fb6d76b8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a4a2b8b02f0b9a862681be240fb6d76b8">beacon_box_distance</a> = 20.0</td></tr>
+<tr class="separator:a4a2b8b02f0b9a862681be240fb6d76b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc55a086df0569f8bab8512e86ef517"><td class="memItemLeft" align="right" valign="top">building_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a0dc55a086df0569f8bab8512e86ef517">build</a> = NULL</td></tr>
+<tr class="separator:a0dc55a086df0569f8bab8512e86ef517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1d2d491f9bcc67edb770c6e61c2716"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#abc1d2d491f9bcc67edb770c6e61c2716">prevPoint</a> = NULL</td></tr>
+<tr class="separator:abc1d2d491f9bcc67edb770c6e61c2716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c8c49097061426356f4f0e7dae89fe"><td class="memItemLeft" align="right" valign="top">point_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#ac2c8c49097061426356f4f0e7dae89fe">location_buffer</a> [2]</td></tr>
+<tr class="separator:ac2c8c49097061426356f4f0e7dae89fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8d2bc37c38662fcd115922358d17c5"><td class="memItemLeft" align="right" valign="top">table_p&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a3b8d2bc37c38662fcd115922358d17c5">beacons_table</a> = NULL</td></tr>
+<tr class="separator:a3b8d2bc37c38662fcd115922358d17c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d5ea41847894c624a92830910ce462"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/location_8c.html#a25d5ea41847894c624a92830910ce462">far_flag</a> = 0</td></tr>
+<tr class="separator:a25d5ea41847894c624a92830910ce462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a59009a8e6441510ac95e93b4e246ede9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59009a8e6441510ac95e93b4e246ede9">&#9670;&nbsp;</a></span>ADJUST_DISTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADJUST_DISTANCE&#160;&#160;&#160;7.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3acffbd305ee72dcd4593c0d8af64a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3acffbd305ee72dcd4593c0d8af64a4f">&#9670;&nbsp;</a></span>MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(a) &lt; (b) ? (a) : (b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7201679abe1c828b053fb8f1904106c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7201679abe1c828b053fb8f1904106c">&#9670;&nbsp;</a></span>USE_BEACON_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_BEACON_NUM&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aa8af8427060f6729dde05e443f7b3223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8af8427060f6729dde05e443f7b3223">&#9670;&nbsp;</a></span>adjust_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p adjust_location </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_cgraph.png" border="0" usemap="#d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_cgraph" id="d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_cgraph">
+<area shape="rect" id="node2" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="218,5,266,31"/>
+<area shape="rect" id="node3" href="../../d2/d91/point_8h.html#ac05e43ddb9414732844a576a55249280" title="point_new_by_location" alt="" coords="164,156,321,181"/>
+<area shape="rect" id="node4" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="369,107,440,132"/>
+<area shape="rect" id="node5" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="370,501,438,527"/>
+<area shape="rect" id="node6" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="171,205,313,231"/>
+<area shape="rect" id="node7" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="197,255,287,280"/>
+<area shape="rect" id="node8" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="197,304,287,329"/>
+<area shape="rect" id="node9" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="191,353,293,379"/>
+<area shape="rect" id="node10" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="193,403,291,428"/>
+<area shape="rect" id="node11" href="../../d2/d91/point_8h.html#a92cb1957db665b2d976acc1f38bc530d" title="point_set_floorindex" alt="" coords="172,452,312,477"/>
+<area shape="rect" id="node12" href="../../d2/d91/point_8h.html#a48be9f99ecd98ad7b967e2f813141ff1" title="point_set_x" alt="" coords="197,107,287,132"/>
+<area shape="rect" id="node13" href="../../d2/d91/point_8h.html#a4cb2b241a0e3b18c221149c4db58fdf0" title="point_set_y" alt="" coords="197,501,287,527"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_icgraph.png" border="0" usemap="#d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_icgraph" id="d0/dad/location_8c_aa8af8427060f6729dde05e443f7b3223_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="164,5,344,31"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="392,5,550,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0102446dc70f81265a7a321ffd7b784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0102446dc70f81265a7a321ffd7b784">&#9670;&nbsp;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_cgraph.png" border="0" usemap="#d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_cgraph" id="d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_cgraph">
+<area shape="rect" id="node2" href="../../dd/d98/table_8h.html#afc6ec285f00036953fc6be61bbde95bf" title="table_map" alt="" coords="107,5,190,31"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a796fff31e782df135dc72b6902ffc895" title="apply2" alt="" coords="118,55,179,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_icgraph.png" border="0" usemap="#d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_icgraph" id="d0/dad/location_8c_ad0102446dc70f81265a7a321ffd7b784_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="107,5,219,31"/>
+<area shape="rect" id="node4" href="../../dc/d33/table_8c.html#abc1e4760556476b00197fdb1abf26c0c" title="table_map" alt="" coords="121,55,205,80"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="267,5,356,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a796fff31e782df135dc72b6902ffc895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796fff31e782df135dc72b6902ffc895">&#9670;&nbsp;</a></span>apply2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a796fff31e782df135dc72b6902ffc895_icgraph.png" border="0" usemap="#d0/dad/location_8c_a796fff31e782df135dc72b6902ffc895_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a796fff31e782df135dc72b6902ffc895_icgraph" id="d0/dad/location_8c_a796fff31e782df135dc72b6902ffc895_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784" title="apply" alt="" coords="114,31,167,56"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="215,5,328,31"/>
+<area shape="rect" id="node5" href="../../dc/d33/table_8c.html#abc1e4760556476b00197fdb1abf26c0c" title="table_map" alt="" coords="230,55,313,80"/>
+<area shape="rect" id="node4" href="../../d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="376,5,464,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a17a9c3492fc1012a331c176e76c46332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a9c3492fc1012a331c176e76c46332">&#9670;&nbsp;</a></span>calc_location_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int calc_location_map </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *&#160;</td>
+          <td class="paramname"><em>beacons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_cgraph.png" border="0" usemap="#d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_cgraph" id="d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#affbd52736d11f18ff3bf40814502313f" title="building_get_floor\l_count" alt="" coords="200,5,327,44"/>
+<area shape="rect" id="node4" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="188,68,339,93"/>
+<area shape="rect" id="node5" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="188,117,339,143"/>
+<area shape="rect" id="node6" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="185,167,342,192"/>
+<area shape="rect" id="node8" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="218,216,309,241"/>
+<area shape="rect" id="node13" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="193,265,334,291"/>
+<area shape="rect" id="node14" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="200,315,327,340"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="416,12,503,37"/>
+<area shape="rect" id="node7" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="390,141,529,167"/>
+<area shape="rect" id="node9" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="422,191,498,216"/>
+<area shape="rect" id="node10" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="414,240,505,265"/>
+<area shape="rect" id="node12" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="423,289,496,315"/>
+<area shape="rect" id="node11" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="577,265,660,291"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_icgraph.png" border="0" usemap="#d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_icgraph" id="d0/dad/location_8c_a17a9c3492fc1012a331c176e76c46332_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="185,5,343,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac45780fb840ca619c56f1954bb569d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45780fb840ca619c56f1954bb569d1f">&#9670;&nbsp;</a></span>filter_beacon_and_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p filter_beacon_and_location </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">denvelop_p&#160;</td>
+          <td class="paramname"><em>target_box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *&#160;</td>
+          <td class="paramname"><em>beacons</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>定位 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map_index</td><td>地图索引 </td></tr>
+    <tr><td class="paramname">beacon_data</td><td>beacon的数据列表 </td></tr>
+    <tr><td class="paramname">len</td><td>beacon数据的列表长度 这部分是定位的核心，分为三个步骤 1.过滤，前一步已经计算出定位的楼层，这一步是把搜索到的属于本楼层的beacon过滤出来 2.利用算法计算定位结果 3.修正定位结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_cgraph.png" border="0" usemap="#d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_cgraph" id="d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="512,23,638,61"/>
+<area shape="rect" id="node5" href="../../d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="277,184,387,209"/>
+<area shape="rect" id="node15" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="551,776,599,801"/>
+<area shape="rect" id="node16" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="284,480,380,505"/>
+<area shape="rect" id="node29" href="../../d3/d92/_c_algorithm_8h.html#aa59f100698c69bc3e957d56f42e43350" title="JCAR_LinearizationAlgorithm" alt="" coords="234,1328,430,1353"/>
+<area shape="rect" id="node35" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="754,1201,826,1227"/>
+<area shape="rect" id="node36" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="756,1025,824,1051"/>
+<area shape="rect" id="node37" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="277,875,387,900"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="747,55,833,80"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="755,5,824,31"/>
+<area shape="rect" id="node6" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="500,233,650,259"/>
+<area shape="rect" id="node7" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="500,85,650,111"/>
+<area shape="rect" id="node8" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="496,135,653,160"/>
+<area shape="rect" id="node10" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="529,184,620,209"/>
+<area shape="rect" id="node9" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="720,120,859,145"/>
+<area shape="rect" id="node11" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="752,169,828,195"/>
+<area shape="rect" id="node12" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="744,268,835,293"/>
+<area shape="rect" id="node14" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="754,219,826,244"/>
+<area shape="rect" id="node13" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="926,244,1009,269"/>
+<area shape="rect" id="node17" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="512,480,638,505"/>
+<area shape="rect" id="node18" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="508,529,642,555"/>
+<area shape="rect" id="node19" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="511,579,639,604"/>
+<area shape="rect" id="node20" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="500,283,650,308"/>
+<area shape="rect" id="node21" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="539,332,611,357"/>
+<area shape="rect" id="node22" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="541,381,609,407"/>
+<area shape="rect" id="node23" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="511,431,639,456"/>
+<area shape="rect" id="node24" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="504,677,646,703"/>
+<area shape="rect" id="node25" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="530,727,620,752"/>
+<area shape="rect" id="node26" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="530,825,620,851"/>
+<area shape="rect" id="node27" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="524,875,626,900"/>
+<area shape="rect" id="node28" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="526,628,624,653"/>
+<area shape="rect" id="node30" href="../../d2/dcb/class_c_matrix.html#ac7d4aeb4bbe1f02d956143a7fd9c97f9" title="CMatrix::LeastSquareMethod" alt="" coords="478,1379,672,1404"/>
+<area shape="rect" id="node31" href="../../d2/dcb/class_c_matrix.html#ace3fea9090a03abee09b288f8ec2b45b" title="CMatrix::Matrix" alt="" coords="734,1328,845,1353"/>
+<area shape="rect" id="node32" href="../../d2/dcb/class_c_matrix.html#aafd05e78bf74bfae598de17c06c61af3" title="CMatrix::Transpose" alt="" coords="721,1377,858,1403"/>
+<area shape="rect" id="node34" href="../../d2/dcb/class_c_matrix.html#af0378e2f6e8749fa431b9c5e76f96c24" title="CMatrix::Inverse" alt="" coords="731,1427,849,1452"/>
+<area shape="rect" id="node33" href="../../d2/dcb/class_c_matrix.html#a10c87c2346093a5660e276304e68d134" title="CMatrix::CMatrix" alt="" coords="907,1401,1028,1427"/>
+<area shape="rect" id="node38" href="../../d2/d91/point_8h.html#ac05e43ddb9414732844a576a55249280" title="point_new_by_location" alt="" coords="496,1075,653,1100"/>
+<area shape="rect" id="node39" href="../../d2/d91/point_8h.html#a92cb1957db665b2d976acc1f38bc530d" title="point_set_floorindex" alt="" coords="505,1025,645,1051"/>
+<area shape="rect" id="node40" href="../../d2/d91/point_8h.html#a48be9f99ecd98ad7b967e2f813141ff1" title="point_set_x" alt="" coords="530,1176,620,1201"/>
+<area shape="rect" id="node41" href="../../d2/d91/point_8h.html#a4cb2b241a0e3b18c221149c4db58fdf0" title="point_set_y" alt="" coords="530,976,620,1001"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_icgraph.png" border="0" usemap="#d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_icgraph" id="d0/dad/location_8c_ac45780fb840ca619c56f1954bb569d1f_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="234,5,392,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a142e928e6740eb2c3057d80e1fab49a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142e928e6740eb2c3057d80e1fab49a8">&#9670;&nbsp;</a></span>get_beacon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">beacon_p get_beacon </td>
+          <td>(</td>
+          <td class="paramtype">floor_p&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>major_minor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据beacon的major_minor属性获取beacon </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">floor</td><td>楼层如果此参数为NULL,则进行全楼层搜索 </td></tr>
+    <tr><td class="paramname">major_minor</td><td>[description] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>[description] </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_cgraph.png" border="0" usemap="#d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_cgraph" id="d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_cgraph">
+<area shape="rect" id="node2" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="152,5,228,31"/>
+<area shape="rect" id="node3" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="144,55,235,80"/>
+<area shape="rect" id="node5" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="154,104,226,129"/>
+<area shape="rect" id="node4" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="283,80,366,105"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_icgraph.png" border="0" usemap="#d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_icgraph" id="d0/dad/location_8c_a142e928e6740eb2c3057d80e1fab49a8_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="326,5,458,31"/>
+<area shape="rect" id="node4" href="../../d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="345,55,439,80"/>
+<area shape="rect" id="node5" href="../../d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="144,105,254,131"/>
+<area shape="rect" id="node7" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="151,155,247,180"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="531,55,688,80"/>
+<area shape="rect" id="node6" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="302,105,483,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa38689d3e38f62044514511c601d0491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38689d3e38f62044514511c601d0491">&#9670;&nbsp;</a></span>get_envelop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">denvelop_p get_envelop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *&#160;</td>
+          <td class="paramname"><em>beacons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>floor_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从传入的beacons数据中进行第二步定位，精确到格子 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beacons</td><td>传入的扫描到的beacon数据(已经经过楼层过滤) </td></tr>
+    <tr><td class="paramname">floor_index</td><td>楼层对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回定位的格子 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_cgraph.png" border="0" usemap="#d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_cgraph" id="d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_cgraph">
+<area shape="rect" id="node2" href="../../dc/d18/c_j_s_o_n_8h.html#a9c5f44afdd781b16dead90042fe74085" title="cJSON_CreateObject" alt="" coords="151,5,301,31"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="399,172,474,197"/>
+<area shape="rect" id="node6" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="162,107,289,145"/>
+<area shape="rect" id="node7" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="393,113,480,139"/>
+<area shape="rect" id="node8" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="402,271,471,296"/>
+<area shape="rect" id="node9" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="151,373,301,399"/>
+<area shape="rect" id="node10" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="151,423,301,448"/>
+<area shape="rect" id="node11" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="147,472,304,497"/>
+<area shape="rect" id="node13" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="180,521,271,547"/>
+<area shape="rect" id="node18" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="162,571,289,596"/>
+<area shape="rect" id="node19" href="../../de/dec/floor_8h.html#a643f8371295c454df8b43e0ced7472a4" title="floor_get_envelop_box" alt="" coords="148,221,304,247"/>
+<area shape="rect" id="node21" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="389,321,484,347"/>
+<area shape="rect" id="node24" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="175,620,276,645"/>
+<area shape="rect" id="node25" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="177,669,275,695"/>
+<area shape="rect" id="node26" href="../../d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="162,719,289,744"/>
+<area shape="rect" id="node27" href="../../dc/d18/c_j_s_o_n_8h.html#ab18060251de70a2b55a18dec694f8f8a" title="cJSON_Delete" alt="" coords="171,768,281,793"/>
+<area shape="rect" id="node28" href="../../d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="189,817,262,843"/>
+<area shape="rect" id="node3" href="../../dc/d7f/c_j_s_o_n_8c.html#a39a97485cfb9d19bad65a0522faea19f" title="cJSON_New_Item" alt="" coords="371,5,502,31"/>
+<area shape="rect" id="node5" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="569,172,665,197"/>
+<area shape="rect" id="node12" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="367,447,506,472"/>
+<area shape="rect" id="node14" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="399,496,475,521"/>
+<area shape="rect" id="node15" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="391,595,482,620"/>
+<area shape="rect" id="node17" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="400,545,473,571"/>
+<area shape="rect" id="node16" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="575,569,658,595"/>
+<area shape="rect" id="node20" href="../../d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="352,221,521,247"/>
+<area shape="rect" id="node22" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="584,321,649,347"/>
+<area shape="rect" id="node23" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="713,321,807,347"/>
+<area shape="rect" id="node29" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="396,817,478,843"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_icgraph.png" border="0" usemap="#d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_icgraph" id="d0/dad/location_8c_aa38689d3e38f62044514511c601d0491_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="147,5,305,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1920ed8501ef97fb012fe7355332481b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1920ed8501ef97fb012fe7355332481b">&#9670;&nbsp;</a></span>get_rssi_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_rssi_range </td>
+          <td>(</td>
+          <td class="paramtype">floor_p&#160;</td>
+          <td class="paramname"><em>floor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *&#160;</td>
+          <td class="paramname"><em>beacons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_cgraph.png" border="0" usemap="#d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_cgraph" id="d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_cgraph">
+<area shape="rect" id="node2" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="166,5,316,31"/>
+<area shape="rect" id="node3" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="166,55,316,80"/>
+<area shape="rect" id="node4" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="163,104,320,129"/>
+<area shape="rect" id="node6" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="196,165,287,191"/>
+<area shape="rect" id="node5" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="368,91,507,116"/>
+<area shape="rect" id="node7" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="399,140,475,165"/>
+<area shape="rect" id="node8" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="392,189,483,215"/>
+<area shape="rect" id="node10" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="401,239,474,264"/>
+<area shape="rect" id="node9" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="555,215,638,240"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_icgraph.png" border="0" usemap="#d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_icgraph" id="d0/dad/location_8c_a1920ed8501ef97fb012fe7355332481b_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="163,5,344,31"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="392,5,549,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab66b34e37247f90bbdb1e310f4a65e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66b34e37247f90bbdb1e310f4a65e65">&#9670;&nbsp;</a></span>initLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initLocation </td>
+          <td>(</td>
+          <td class="paramtype">building_p&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>初始化建筑物 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map_size</td><td>建筑物中地图的个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_ab66b34e37247f90bbdb1e310f4a65e65_cgraph.png" border="0" usemap="#d0/dad/location_8c_ab66b34e37247f90bbdb1e310f4a65e65_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_ab66b34e37247f90bbdb1e310f4a65e65_cgraph" id="d0/dad/location_8c_ab66b34e37247f90bbdb1e310f4a65e65_cgraph">
+<area shape="rect" id="node2" href="../../dd/d98/table_8h.html#a18cd22145a9504ee14d2928e2e06ab02" title="table_new" alt="" coords="348,29,430,55"/>
+<area shape="rect" id="node5" href="../../d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="142,359,255,384"/>
+<area shape="rect" id="node3" href="../../dc/d33/table_8c.html#a46002fa21bef6b07e4b0b8093cd7b4cd" title="cmpatom" alt="" coords="535,5,612,31"/>
+<area shape="rect" id="node4" href="../../dc/d33/table_8c.html#a8b92f9ce10af3b50b5c2e0067ac2b535" title="hashatom" alt="" coords="534,55,613,80"/>
+<area shape="rect" id="node6" href="../../d5/d95/building_8h.html#affbd52736d11f18ff3bf40814502313f" title="building_get_floor\l_count" alt="" coords="326,131,452,169"/>
+<area shape="rect" id="node7" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="530,127,617,152"/>
+<area shape="rect" id="node8" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="326,193,452,232"/>
+<area shape="rect" id="node9" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="539,176,608,201"/>
+<area shape="rect" id="node10" href="../../de/dec/floor_8h.html#ac4901240b6b3bb47896c08895dd7445a" title="floor_get_beacons" alt="" coords="323,308,454,333"/>
+<area shape="rect" id="node13" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="535,423,612,448"/>
+<area shape="rect" id="node19" href="../../dc/d99/beacon_8h.html#a3a31a5cbd6f589b55718e8eaf2074ac9" title="beacon_get_uuid" alt="" coords="327,459,451,484"/>
+<area shape="rect" id="node20" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="343,708,434,733"/>
+<area shape="rect" id="node22" href="../../dd/d98/table_8h.html#ab63213b8190793fb93d9908488f7b913" title="table_put" alt="" coords="351,609,427,635"/>
+<area shape="rect" id="node23" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="353,560,425,585"/>
+<area shape="rect" id="node24" href="../../dc/d99/beacon_8h.html#a40ebcd6179d43a76dc2c296995e52e5e" title="beacon_get_major_minor" alt="" coords="303,659,475,684"/>
+<area shape="rect" id="node25" href="../../dd/d98/table_8h.html#afc6ec285f00036953fc6be61bbde95bf" title="table_map" alt="" coords="532,521,615,547"/>
+<area shape="rect" id="node26" href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784" title="apply" alt="" coords="362,409,416,435"/>
+<area shape="rect" id="node11" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="536,373,611,399"/>
+<area shape="rect" id="node14" href="../../dd/d98/table_8h.html#aa9bf913a77b334c4ffccd360066563b4" title="table_toArray" alt="" coords="523,225,624,251"/>
+<area shape="rect" id="node15" href="../../dd/d98/table_8h.html#a3c844f0bfc6f4e9ced4fdbbdf2ea9014" title="table_length" alt="" coords="526,275,620,300"/>
+<area shape="rect" id="node16" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="526,324,621,349"/>
+<area shape="rect" id="node12" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="672,373,767,399"/>
+<area shape="rect" id="node17" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="687,324,752,349"/>
+<area shape="rect" id="node18" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="815,324,910,349"/>
+<area shape="rect" id="node21" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="532,633,615,659"/>
+<area shape="rect" id="node27" href="../../d0/dad/location_8c.html#a796fff31e782df135dc72b6902ffc895" title="apply2" alt="" coords="543,472,604,497"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27bc7173502b7070a2c41918586f1387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bc7173502b7070a2c41918586f1387">&#9670;&nbsp;</a></span>location_by_scan_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p location_by_scan_data </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>beacons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a27bc7173502b7070a2c41918586f1387_cgraph.png" border="0" usemap="#d0/dad/location_8c_a27bc7173502b7070a2c41918586f1387_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a27bc7173502b7070a2c41918586f1387_cgraph" id="d0/dad/location_8c_a27bc7173502b7070a2c41918586f1387_cgraph">
+<area shape="rect" id="node2" href="../../dc/d18/c_j_s_o_n_8h.html#ad3df5f943457d4befebe4109d48e4a50" title="cJSON_Parse" alt="" coords="249,285,354,311"/>
+<area shape="rect" id="node8" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="740,1472,787,1497"/>
+<area shape="rect" id="node9" href="../../d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="472,757,603,783"/>
+<area shape="rect" id="node22" href="../../d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="491,539,585,564"/>
+<area shape="rect" id="node35" href="../../dc/d18/c_j_s_o_n_8h.html#ab18060251de70a2b55a18dec694f8f8a" title="cJSON_Delete" alt="" coords="709,104,818,129"/>
+<area shape="rect" id="node38" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="211,1003,392,1028"/>
+<area shape="rect" id="node3" href="../../dc/d7f/c_j_s_o_n_8c.html#a9c63df4d9350bee4bd1726f8f23ad536" title="cJSON_ParseWithOpts" alt="" coords="683,55,844,80"/>
+<area shape="rect" id="node4" href="../../dc/d7f/c_j_s_o_n_8c.html#a39a97485cfb9d19bad65a0522faea19f" title="cJSON_New_Item" alt="" coords="911,153,1042,179"/>
+<area shape="rect" id="node5" href="../../dc/d7f/c_j_s_o_n_8c.html#a729fc5d55e059ee73870d286af691f87" title="parse_value" alt="" coords="929,104,1023,129"/>
+<area shape="rect" id="node6" href="../../dc/d7f/c_j_s_o_n_8c.html#ad1c991ebe6cb88144a8e06e6443c36c9" title="skip" alt="" coords="954,5,999,31"/>
+<area shape="rect" id="node7" href="../../dc/d7f/c_j_s_o_n_8c.html#ab18060251de70a2b55a18dec694f8f8a" title="cJSON_Delete" alt="" coords="922,55,1031,80"/>
+<area shape="rect" id="node10" href="../../d5/d95/building_8h.html#affbd52736d11f18ff3bf40814502313f" title="building_get_floor\l_count" alt="" coords="700,669,827,708"/>
+<area shape="rect" id="node12" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="688,831,839,856"/>
+<area shape="rect" id="node13" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="688,781,839,807"/>
+<area shape="rect" id="node14" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="685,880,842,905"/>
+<area shape="rect" id="node16" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="718,732,809,757"/>
+<area shape="rect" id="node20" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="693,1275,834,1300"/>
+<area shape="rect" id="node21" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="700,620,827,645"/>
+<area shape="rect" id="node11" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="933,536,1020,561"/>
+<area shape="rect" id="node15" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="907,880,1046,905"/>
+<area shape="rect" id="node17" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="938,732,1014,757"/>
+<area shape="rect" id="node18" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="931,683,1022,708"/>
+<area shape="rect" id="node19" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="940,781,1013,807"/>
+<area shape="rect" id="node23" href="../../dc/d18/c_j_s_o_n_8h.html#a9c5f44afdd781b16dead90042fe74085" title="cJSON_CreateObject" alt="" coords="689,153,838,179"/>
+<area shape="rect" id="node24" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="939,255,1014,280"/>
+<area shape="rect" id="node26" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="700,557,827,596"/>
+<area shape="rect" id="node27" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="942,356,1011,381"/>
+<area shape="rect" id="node28" href="../../de/dec/floor_8h.html#a643f8371295c454df8b43e0ced7472a4" title="floor_get_envelop_box" alt="" coords="685,305,842,331"/>
+<area shape="rect" id="node30" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="929,205,1024,231"/>
+<area shape="rect" id="node32" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="713,1176,814,1201"/>
+<area shape="rect" id="node33" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="715,1127,812,1152"/>
+<area shape="rect" id="node34" href="../../d6/d54/denvelop_8h.html#a14fd8d78e65e6ae2d374405139610302" title="denvelop_get_tag" alt="" coords="700,456,827,481"/>
+<area shape="rect" id="node36" href="../../d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="727,407,800,432"/>
+<area shape="rect" id="node25" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="1109,255,1204,280"/>
+<area shape="rect" id="node29" href="../../d6/d54/denvelop_8h.html#a227e1b9a61d28852f6924b188f7c1b86" title="denvelop_contains_point" alt="" coords="892,305,1061,331"/>
+<area shape="rect" id="node31" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="1124,205,1189,231"/>
+<area shape="rect" id="node37" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="935,407,1017,432"/>
+<area shape="rect" id="node39" href="../../d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="483,880,592,905"/>
+<area shape="rect" id="node40" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="489,1003,586,1028"/>
+<area shape="rect" id="node47" href="../../d3/d92/_c_algorithm_8h.html#aa59f100698c69bc3e957d56f42e43350" title="JCAR_LinearizationAlgorithm" alt="" coords="440,831,635,856"/>
+<area shape="rect" id="node48" href="../../d4/df5/jclog_8h.html#ab0fbe2ec0000948685f056ffe502f6b1" title="x2lon_m" alt="" coords="728,1423,799,1448"/>
+<area shape="rect" id="node49" href="../../d4/df5/jclog_8h.html#a46c7237924d6c4c6f8c0f3a899a5014f" title="y2lat_m" alt="" coords="730,1373,798,1399"/>
+<area shape="rect" id="node50" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="482,1269,593,1295"/>
+<area shape="rect" id="node41" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="700,929,827,955"/>
+<area shape="rect" id="node42" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="696,979,831,1004"/>
+<area shape="rect" id="node43" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="700,1324,827,1349"/>
+<area shape="rect" id="node44" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="689,1028,838,1053"/>
+<area shape="rect" id="node45" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="728,1077,799,1103"/>
+<area shape="rect" id="node46" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="730,1225,798,1251"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a81ee251a3a1c163563e329d8077903a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ee251a3a1c163563e329d8077903a7">&#9670;&nbsp;</a></span>parse_beacons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void parse_beacons </td>
+          <td>(</td>
+          <td class="paramtype">building_p&#160;</td>
+          <td class="paramname"><em>building</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_cgraph.png" border="0" usemap="#d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_cgraph" id="d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#affbd52736d11f18ff3bf40814502313f" title="building_get_floor\l_count" alt="" coords="189,43,315,81"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="393,56,480,81"/>
+<area shape="rect" id="node4" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="189,105,315,144"/>
+<area shape="rect" id="node5" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="402,112,471,137"/>
+<area shape="rect" id="node6" href="../../de/dec/floor_8h.html#ac4901240b6b3bb47896c08895dd7445a" title="floor_get_beacons" alt="" coords="187,220,318,245"/>
+<area shape="rect" id="node9" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="399,359,475,384"/>
+<area shape="rect" id="node15" href="../../dc/d99/beacon_8h.html#a3a31a5cbd6f589b55718e8eaf2074ac9" title="beacon_get_uuid" alt="" coords="190,321,314,347"/>
+<area shape="rect" id="node16" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="207,371,298,396"/>
+<area shape="rect" id="node18" href="../../dd/d98/table_8h.html#a18cd22145a9504ee14d2928e2e06ab02" title="table_new" alt="" coords="211,469,293,495"/>
+<area shape="rect" id="node21" href="../../dd/d98/table_8h.html#ab63213b8190793fb93d9908488f7b913" title="table_put" alt="" coords="214,519,290,544"/>
+<area shape="rect" id="node22" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="216,420,288,445"/>
+<area shape="rect" id="node23" href="../../dc/d99/beacon_8h.html#a40ebcd6179d43a76dc2c296995e52e5e" title="beacon_get_major_minor" alt="" coords="166,568,338,593"/>
+<area shape="rect" id="node24" href="../../dd/d98/table_8h.html#afc6ec285f00036953fc6be61bbde95bf" title="table_map" alt="" coords="395,619,479,644"/>
+<area shape="rect" id="node25" href="../../d0/dad/location_8c.html#ad0102446dc70f81265a7a321ffd7b784" title="apply" alt="" coords="226,669,279,695"/>
+<area shape="rect" id="node7" href="../../d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="399,161,474,187"/>
+<area shape="rect" id="node10" href="../../dd/d98/table_8h.html#aa9bf913a77b334c4ffccd360066563b4" title="table_toArray" alt="" coords="386,211,487,236"/>
+<area shape="rect" id="node11" href="../../dd/d98/table_8h.html#a3c844f0bfc6f4e9ced4fdbbdf2ea9014" title="table_length" alt="" coords="390,260,484,285"/>
+<area shape="rect" id="node12" href="../../d6/d3c/seq_8h.html#aed4241d0c604a189b6c9101c7eec1502" title="seq_addend" alt="" coords="389,309,484,335"/>
+<area shape="rect" id="node8" href="../../d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="535,161,630,187"/>
+<area shape="rect" id="node13" href="../../d2/d8b/seq_8c.html#ab1bf78fac986638817a901304b46db65" title="expand" alt="" coords="550,309,615,335"/>
+<area shape="rect" id="node14" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876" title="array_resize" alt="" coords="678,309,773,335"/>
+<area shape="rect" id="node17" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="395,415,478,440"/>
+<area shape="rect" id="node19" href="../../dc/d33/table_8c.html#a46002fa21bef6b07e4b0b8093cd7b4cd" title="cmpatom" alt="" coords="399,467,475,492"/>
+<area shape="rect" id="node20" href="../../dc/d33/table_8c.html#a8b92f9ce10af3b50b5c2e0067ac2b535" title="hashatom" alt="" coords="397,516,477,541"/>
+<area shape="rect" id="node26" href="../../d0/dad/location_8c.html#a796fff31e782df135dc72b6902ffc895" title="apply2" alt="" coords="406,669,467,695"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_icgraph.png" border="0" usemap="#d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_icgraph" id="d0/dad/location_8c_a81ee251a3a1c163563e329d8077903a7_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="166,5,255,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbc3df93f3885672340a3ee4ec133fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc3df93f3885672340a3ee4ec133fad">&#9670;&nbsp;</a></span>print_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_map </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>打印地图数据 </p>
+
+</div>
+</div>
+<a id="a9d563cdd1fdc14877e11d12a0ba705e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d563cdd1fdc14877e11d12a0ba705e1">&#9670;&nbsp;</a></span>set_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int set_distance </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em>[][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d8c/structc_j_s_o_n.html">cJSON</a> *&#160;</td>
+          <td class="paramname"><em>beacons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">denvelop_p&#160;</td>
+          <td class="paramname"><em>target_box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>firstLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secondLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thirdLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_cgraph.png" border="0" usemap="#d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_cgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_cgraph" id="d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_cgraph">
+<area shape="rect" id="node2" href="../../d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="165,23,291,61"/>
+<area shape="rect" id="node5" href="../../d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="165,85,291,111"/>
+<area shape="rect" id="node6" href="../../d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="161,135,295,160"/>
+<area shape="rect" id="node7" href="../../d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="164,184,292,209"/>
+<area shape="rect" id="node8" href="../../d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="153,233,303,259"/>
+<area shape="rect" id="node9" href="../../d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="192,283,264,308"/>
+<area shape="rect" id="node10" href="../../d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="194,332,262,357"/>
+<area shape="rect" id="node11" href="../../dc/d18/c_j_s_o_n_8h.html#adb5c049d3211599c90cd5a3d5e68d854" title="cJSON_GetArraySize" alt="" coords="153,381,303,407"/>
+<area shape="rect" id="node12" href="../../dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="153,431,303,456"/>
+<area shape="rect" id="node13" href="../../dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="150,480,306,505"/>
+<area shape="rect" id="node15" href="../../d0/dad/location_8c.html#a142e928e6740eb2c3057d80e1fab49a8" title="get_beacon" alt="" coords="182,529,274,555"/>
+<area shape="rect" id="node20" href="../../dc/d99/beacon_8h.html#a0a56b85e98c1801a4a02b5bd40c29af0" title="beacon_get_point" alt="" coords="164,579,292,604"/>
+<area shape="rect" id="node21" href="../../d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2" title="point_get_floorindex" alt="" coords="157,628,299,653"/>
+<area shape="rect" id="node22" href="../../d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="183,677,273,703"/>
+<area shape="rect" id="node23" href="../../d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="183,727,273,752"/>
+<area shape="rect" id="node24" href="../../d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="204,776,252,801"/>
+<area shape="rect" id="node25" href="../../d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="177,825,279,851"/>
+<area shape="rect" id="node26" href="../../d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="179,875,277,900"/>
+<area shape="rect" id="node3" href="../../d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="381,5,467,31"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="390,55,458,80"/>
+<area shape="rect" id="node14" href="../../dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="354,455,494,480"/>
+<area shape="rect" id="node16" href="../../dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="386,504,462,529"/>
+<area shape="rect" id="node17" href="../../d9/d49/atom_8h.html#a30b5689adb3a3097a0b61cf848e28226" title="atom_string" alt="" coords="379,553,470,579"/>
+<area shape="rect" id="node19" href="../../d9/d49/atom_8h.html#aa6a92d80750408375e0c980ae6298a7d" title="atom_int" alt="" coords="388,603,460,628"/>
+<area shape="rect" id="node18" href="../../da/da0/atom_8c.html#a7e01ac964485d07f0c47606dbbf28e37" title="atom_new" alt="" coords="542,579,624,604"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_icgraph.png" border="0" usemap="#d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_icgraph" alt=""/></div>
+<map name="d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_icgraph" id="d0/dad/location_8c_a9d563cdd1fdc14877e11d12a0ba705e1_icgraph">
+<area shape="rect" id="node2" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="150,5,330,31"/>
+<area shape="rect" id="node3" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="378,5,536,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a4a2b8b02f0b9a862681be240fb6d76b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2b8b02f0b9a862681be240fb6d76b8">&#9670;&nbsp;</a></span>beacon_box_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double beacon_box_distance = 20.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b8d2bc37c38662fcd115922358d17c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8d2bc37c38662fcd115922358d17c5">&#9670;&nbsp;</a></span>beacons_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">table_p beacons_table = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc55a086df0569f8bab8512e86ef517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc55a086df0569f8bab8512e86ef517">&#9670;&nbsp;</a></span>build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">building_p build = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25d5ea41847894c624a92830910ce462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d5ea41847894c624a92830910ce462">&#9670;&nbsp;</a></span>far_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int far_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf87ba31906df405569688a2a3c80b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf87ba31906df405569688a2a3c80b3c">&#9670;&nbsp;</a></span>first_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int first_R = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2c8c49097061426356f4f0e7dae89fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c8c49097061426356f4f0e7dae89fe">&#9670;&nbsp;</a></span>location_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p location_buffer[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc1d2d491f9bcc67edb770c6e61c2716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1d2d491f9bcc67edb770c6e61c2716">&#9670;&nbsp;</a></span>prevPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">point_p prevPoint = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a465e4693f3cc0e0120b3be13a59a4933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465e4693f3cc0e0120b3be13a59a4933">&#9670;&nbsp;</a></span>second_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int second_R = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee58cc5ac14d7bc1d74a0c50ead6fd6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee58cc5ac14d7bc1d74a0c50ead6fd6b">&#9670;&nbsp;</a></span>three_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int three_R = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

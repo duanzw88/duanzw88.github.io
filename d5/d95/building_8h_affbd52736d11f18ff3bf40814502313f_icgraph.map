@@ -1,0 +1,9 @@
+<map id="building_get_floor_count" name="building_get_floor_count">
+<area shape="rect" id="node2" href="$d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="221,5,353,31"/>
+<area shape="rect" id="node4" href="$d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="231,55,344,80"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="242,104,332,129"/>
+<area shape="rect" id="node8" href="$da/d41/proxy__building_8c.html#aa587e93e497c0414307199efa1318fd0" title="Java_com_jcble_map3d\l_map_Building_buildingGetFloor\lCount" alt="" coords="180,153,395,205"/>
+<area shape="rect" id="node3" href="$d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="443,5,600,31"/>
+<area shape="rect" id="node5" href="$d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="477,55,566,80"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="496,104,547,129"/>
+</map>

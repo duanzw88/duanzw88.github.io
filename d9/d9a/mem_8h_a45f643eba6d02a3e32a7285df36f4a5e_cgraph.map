@@ -1,0 +1,7 @@
+<map id="mem_resize" name="mem_resize">
+<area shape="rect" id="node2" href="$dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="281,5,379,31"/>
+<area shape="rect" id="node3" href="$d6/d65/memchk_8c.html#a163433500ed00b946557ac6f0432df11" title="find" alt="" coords="309,131,352,156"/>
+<area shape="rect" id="node4" href="$d6/d65/memchk_8c.html#a958eb5712100fccc1c79a028994a64f7" title="mem_alloc" alt="" coords="147,55,233,80"/>
+<area shape="rect" id="node6" href="$d6/d65/memchk_8c.html#a783959b899b6d70901a5a73fe4bf0b01" title="mem_free" alt="" coords="150,156,231,181"/>
+<area shape="rect" id="node5" href="$d6/d65/memchk_8c.html#ae5aebd3fd98703f54899ead96761cc21" title="dalloc" alt="" coords="302,55,358,80"/>
+</map>

@@ -1,3 +1,12 @@
 <map id="navichain_get_seg_count" name="navichain_get_seg_count">
-<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="226,5,367,31"/>
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#a6cf9e271cda5d35ae44ed54e4ffd5aac" title="draw_navigate" alt="" coords="259,21,367,47"/>
+<area shape="rect" id="node6" href="$d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="243,101,383,127"/>
+<area shape="rect" id="node9" href="$d7/d58/navichain_8c.html#a9fe903082105fe7a255868721802d6bd" title="navigate_get_distance\l_to_end" alt="" coords="236,151,390,189"/>
+<area shape="rect" id="node11" href="$de/dea/proxy__navichain_8c.html#a07122aa72393ebc255f0d4f3e464a703" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetSegCount" alt="" coords="226,213,400,265"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="508,5,579,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="686,31,777,56"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="825,31,875,56"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="512,55,574,80"/>
+<area shape="rect" id="node8" href="$de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="456,104,630,156"/>
+<area shape="rect" id="node10" href="$de/dea/proxy__navichain_8c.html#a91759d24ca3fe546919797a98a97511b" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetDistanceToEnd" alt="" coords="448,180,638,232"/>
 </map>

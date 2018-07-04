@@ -1,5 +1,6 @@
 <map id="building_get_adj_count" name="building_get_adj_count">
-<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="212,12,316,37"/>
-<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="364,12,474,37"/>
-<area shape="rect" id="node4" href="$d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="522,5,659,44"/>
+<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="212,57,316,83"/>
+<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="364,57,474,83"/>
+<area shape="rect" id="node4" href="$da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="522,5,720,57"/>
+<area shape="rect" id="node5" href="$da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="522,81,720,133"/>
 </map>

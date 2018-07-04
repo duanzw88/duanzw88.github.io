@@ -1,0 +1,8 @@
+<map id="get_beacon" name="get_beacon">
+<area shape="rect" id="node2" href="$de/d24/location__bak_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="313,5,445,31"/>
+<area shape="rect" id="node5" href="$de/d24/location__bak_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="145,56,239,81"/>
+<area shape="rect" id="node6" href="$de/d24/location__bak_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="144,105,241,131"/>
+<area shape="rect" id="node3" href="$de/d24/location__bak_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="517,56,675,81"/>
+<area shape="rect" id="node4" href="$d2/d0a/proxy__location_8c.html#a3ac8158eef8fd44327c4861e41019e40" title="Java_com_jcble_map3d\l_location_JCLocationManager\l_requestLocation" alt="" coords="723,43,924,95"/>
+<area shape="rect" id="node7" href="$de/d24/location__bak_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="289,107,469,132"/>
+</map>

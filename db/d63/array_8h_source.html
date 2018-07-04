@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: array.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_b2bc4b562bfe8ca8e82cb79d5264aa53.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">array.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d63/array_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _ARRAY_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _ARRAY_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../db/d63/array_8h.html#a0acb682b8260ab1c60b918599864e2e5">    4</a></span>&#160;<span class="preprocessor">#define T array_p</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../db/d63/array_8h.html#a9be7be90563460d4c3e595007d2b87ee">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d1/d16/structarray__t.html">array_t</a> *<a class="code" href="../../db/d63/array_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d5/d7e/struct_t.html">T</a>    <a class="code" href="../../db/d63/array_8h.html#a5cb775689f6e713e64287ecbbea040d4">array_new</a>(<span class="keywordtype">int</span> <a class="code" href="../../d1/d16/structarray__t.html#a9f59b34b1f25fe00023291b678246bcc">length</a>,<span class="keywordtype">int</span> <a class="code" href="../../d1/d16/structarray__t.html#a439227feff9d7f55384e8780cfc2eb82">size</a>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e">array_free</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> *<a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="../../db/d63/array_8h.html#aa0462553d163694de1dabe619994becd">array_length</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="../../db/d63/array_8h.html#ac7d2246c8c1716886a1d79a70a76783b">array_size</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> *<a class="code" href="../../db/d63/array_8h.html#af5ccc80386cd30cc741dc7b740dab855">array_get</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>,<span class="keywordtype">int</span> i);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> *<a class="code" href="../../db/d63/array_8h.html#a1348dd16b698d673d880501de52e6b06">array_put</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>,<span class="keywordtype">int</span> i,<span class="keywordtype">void</span> *elem);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876">array_resize</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>,<span class="keywordtype">int</span> <a class="code" href="../../d1/d16/structarray__t.html#a9f59b34b1f25fe00023291b678246bcc">length</a>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../db/d63/array_8h.html#a4237e2b1af0aec7eac44dcb65851007a">array_copy</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> <a class="code" href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array</a>,<span class="keywordtype">int</span> <a class="code" href="../../d1/d16/structarray__t.html#a9f59b34b1f25fe00023291b678246bcc">length</a>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#undef T</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="array_8h_html_a1348dd16b698d673d880501de52e6b06"><div class="ttname"><a href="../../db/d63/array_8h.html#a1348dd16b698d673d880501de52e6b06">array_put</a></div><div class="ttdeci">void * array_put(T array, int i, void *elem)</div><div class="ttdef"><b>Definition:</b> array.c:102</div></div>
+<div class="ttc" id="array_8h_html_a5cb775689f6e713e64287ecbbea040d4"><div class="ttname"><a href="../../db/d63/array_8h.html#a5cb775689f6e713e64287ecbbea040d4">array_new</a></div><div class="ttdeci">T array_new(int length, int size)</div><div class="ttdef"><b>Definition:</b> array.c:30</div></div>
+<div class="ttc" id="structarray__t_html_aced3600acb4bfcc18756a75d531bcfa7"><div class="ttname"><a href="../../d1/d16/structarray__t.html#aced3600acb4bfcc18756a75d531bcfa7">array_t::array</a></div><div class="ttdeci">char * array</div><div class="ttdef"><b>Definition:</b> arrayrep.h:10</div></div>
+<div class="ttc" id="structarray__t_html"><div class="ttname"><a href="../../d1/d16/structarray__t.html">array_t</a></div><div class="ttdef"><b>Definition:</b> arrayrep.h:6</div></div>
+<div class="ttc" id="struct_t_html"><div class="ttname"><a href="../../d5/d7e/struct_t.html">T</a></div><div class="ttdef"><b>Definition:</b> except.h:6</div></div>
+<div class="ttc" id="array_8h_html_aa0462553d163694de1dabe619994becd"><div class="ttname"><a href="../../db/d63/array_8h.html#aa0462553d163694de1dabe619994becd">array_length</a></div><div class="ttdeci">int array_length(T array)</div><div class="ttdef"><b>Definition:</b> array.c:64</div></div>
+<div class="ttc" id="array_8h_html_ac7d2246c8c1716886a1d79a70a76783b"><div class="ttname"><a href="../../db/d63/array_8h.html#ac7d2246c8c1716886a1d79a70a76783b">array_size</a></div><div class="ttdeci">int array_size(T array)</div><div class="ttdef"><b>Definition:</b> array.c:75</div></div>
+<div class="ttc" id="array_8h_html_a4237e2b1af0aec7eac44dcb65851007a"><div class="ttname"><a href="../../db/d63/array_8h.html#a4237e2b1af0aec7eac44dcb65851007a">array_copy</a></div><div class="ttdeci">T array_copy(T array, int length)</div><div class="ttdef"><b>Definition:</b> array.c:145</div></div>
+<div class="ttc" id="structarray__t_html_a9f59b34b1f25fe00023291b678246bcc"><div class="ttname"><a href="../../d1/d16/structarray__t.html#a9f59b34b1f25fe00023291b678246bcc">array_t::length</a></div><div class="ttdeci">int length</div><div class="ttdef"><b>Definition:</b> arrayrep.h:8</div></div>
+<div class="ttc" id="array_8h_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../db/d63/array_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> array.h:4</div></div>
+<div class="ttc" id="array_8h_html_a5e501e5c7587bda3f43458c1c62cbd1e"><div class="ttname"><a href="../../db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e">array_free</a></div><div class="ttdeci">void array_free(T *array)</div><div class="ttdef"><b>Definition:</b> array.c:51</div></div>
+<div class="ttc" id="array_8h_html_aeaa39cdc327f6e527499a9fc16ab9876"><div class="ttname"><a href="../../db/d63/array_8h.html#aeaa39cdc327f6e527499a9fc16ab9876">array_resize</a></div><div class="ttdeci">void array_resize(T array, int length)</div><div class="ttdef"><b>Definition:</b> array.c:118</div></div>
+<div class="ttc" id="structarray__t_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="../../d1/d16/structarray__t.html#a439227feff9d7f55384e8780cfc2eb82">array_t::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> arrayrep.h:9</div></div>
+<div class="ttc" id="array_8h_html_af5ccc80386cd30cc741dc7b740dab855"><div class="ttname"><a href="../../db/d63/array_8h.html#af5ccc80386cd30cc741dc7b740dab855">array_get</a></div><div class="ttdeci">void * array_get(T array, int i)</div><div class="ttdef"><b>Definition:</b> array.c:87</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

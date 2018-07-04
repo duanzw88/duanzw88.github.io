@@ -44,6 +44,10 @@ $(function() {
 <li>parse_array()
 : <a class="el" href="dc/d7f/c_j_s_o_n_8c.html#acbc1a23fb0db842b7d5935ba1036593e">cJSON.c</a>
 </li>
+<li>parse_beacons()
+: <a class="el" href="d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7">location.c</a>
+, <a class="el" href="de/d24/location__bak_8c.html#a81ee251a3a1c163563e329d8077903a7">location_bak.c</a>
+</li>
 <li>parse_hex4()
 : <a class="el" href="dc/d7f/c_j_s_o_n_8c.html#afab84cd5fbf6bce45583b8091a9585ef">cJSON.c</a>
 </li>
@@ -66,13 +70,16 @@ $(function() {
 : <a class="el" href="d4/d2b/parse_8h.html#af40c37aee1fa0709356ac8e22f57e8bc">parse.h</a>
 , <a class="el" href="db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc">parse.c</a>
 </li>
+<li>parseConn()
+: <a class="el" href="db/d97/parse_8c.html#a1ef62d3fd8cf3940adb652e4cf9da7f2">parse.c</a>
+</li>
 <li>parseFeature()
 : <a class="el" href="d4/d2b/parse_8h.html#aa0c8e4b6c0b8454eb42533d5baabc044">parse.h</a>
 , <a class="el" href="db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044">parse.c</a>
 </li>
 <li>parseFloor()
-: <a class="el" href="d4/d2b/parse_8h.html#a4b293828897332641be51f1c207b6dff">parse.h</a>
-, <a class="el" href="db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff">parse.c</a>
+: <a class="el" href="db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff">parse.c</a>
+, <a class="el" href="d4/d2b/parse_8h.html#a4b293828897332641be51f1c207b6dff">parse.h</a>
 </li>
 <li>parseOpenFile()
 : <a class="el" href="d4/d2b/parse_8h.html#acda46c21735d15b6432465144bd1fe23">parse.h</a>
@@ -89,6 +96,14 @@ $(function() {
 : <a class="el" href="d2/d91/point_8h.html#a8bb53bf00d889b43bf4254aa01308ff2">point.h</a>
 , <a class="el" href="d4/d5c/point_8c.html#a8bb53bf00d889b43bf4254aa01308ff2">point.c</a>
 </li>
+<li>point_get_lat()
+: <a class="el" href="d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#af879f044b59befdd2a061ee66a937447">point.c</a>
+</li>
+<li>point_get_lon()
+: <a class="el" href="d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#a05b6e6904abab9388be6b6d628d9cc9f">point.c</a>
+</li>
 <li>point_get_x()
 : <a class="el" href="d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093">point.h</a>
 , <a class="el" href="d4/d5c/point_8c.html#a021a03015034991e0a45a7a78231b093">point.c</a>
@@ -97,25 +112,37 @@ $(function() {
 : <a class="el" href="d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77">point.h</a>
 , <a class="el" href="d4/d5c/point_8c.html#ac92e723730bb660aacf74f7ea7dd8c77">point.c</a>
 </li>
-<li>point_new()
-: <a class="el" href="d2/d91/point_8h.html#a4e1e4e515e15913aa01386473543d99b">point.h</a>
-, <a class="el" href="d4/d5c/point_8c.html#a4e1e4e515e15913aa01386473543d99b">point.c</a>
+<li>point_new_by_location()
+: <a class="el" href="d2/d91/point_8h.html#ac05e43ddb9414732844a576a55249280">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#ac05e43ddb9414732844a576a55249280">point.c</a>
+</li>
+<li>point_new_by_wgs84()
+: <a class="el" href="d2/d91/point_8h.html#a565f1939d0782afc2b39fc748b032d11">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#a565f1939d0782afc2b39fc748b032d11">point.c</a>
 </li>
 <li>point_set_floorindex()
 : <a class="el" href="d2/d91/point_8h.html#a92cb1957db665b2d976acc1f38bc530d">point.h</a>
 , <a class="el" href="d4/d5c/point_8c.html#a92cb1957db665b2d976acc1f38bc530d">point.c</a>
 </li>
+<li>point_set_lat()
+: <a class="el" href="d2/d91/point_8h.html#a366d35b8f9294bb61341f2aa3f1a614c">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#a366d35b8f9294bb61341f2aa3f1a614c">point.c</a>
+</li>
+<li>point_set_lon()
+: <a class="el" href="d2/d91/point_8h.html#a9b86af14ca93b6040e51f48b6a17e5a3">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#a9b86af14ca93b6040e51f48b6a17e5a3">point.c</a>
+</li>
 <li>point_set_x()
-: <a class="el" href="d2/d91/point_8h.html#a48be9f99ecd98ad7b967e2f813141ff1">point.h</a>
-, <a class="el" href="d4/d5c/point_8c.html#a48be9f99ecd98ad7b967e2f813141ff1">point.c</a>
+: <a class="el" href="d4/d5c/point_8c.html#a48be9f99ecd98ad7b967e2f813141ff1">point.c</a>
+, <a class="el" href="d2/d91/point_8h.html#a48be9f99ecd98ad7b967e2f813141ff1">point.h</a>
 </li>
 <li>point_set_y()
-: <a class="el" href="d4/d5c/point_8c.html#a4cb2b241a0e3b18c221149c4db58fdf0">point.c</a>
-, <a class="el" href="d2/d91/point_8h.html#a4cb2b241a0e3b18c221149c4db58fdf0">point.h</a>
+: <a class="el" href="d2/d91/point_8h.html#a4cb2b241a0e3b18c221149c4db58fdf0">point.h</a>
+, <a class="el" href="d4/d5c/point_8c.html#a4cb2b241a0e3b18c221149c4db58fdf0">point.c</a>
 </li>
 <li>polygon_add_point()
-: <a class="el" href="dc/db6/polygon_8h.html#a71ff92436d1f44c10a864df5be8e7173">polygon.h</a>
-, <a class="el" href="da/d9d/polygon_8c.html#a71ff92436d1f44c10a864df5be8e7173">polygon.c</a>
+: <a class="el" href="da/d9d/polygon_8c.html#a71ff92436d1f44c10a864df5be8e7173">polygon.c</a>
+, <a class="el" href="dc/db6/polygon_8h.html#a71ff92436d1f44c10a864df5be8e7173">polygon.h</a>
 </li>
 <li>polygon_free()
 : <a class="el" href="dc/db6/polygon_8h.html#a0f0d50350b4c211e45dfa79ec0f6e0e6">polygon.h</a>
@@ -126,28 +153,28 @@ $(function() {
 , <a class="el" href="da/d9d/polygon_8c.html#a47bfee1a50a85ebdcce1e9b97278747b">polygon.c</a>
 </li>
 <li>polygon_get_point_count()
-: <a class="el" href="da/d9d/polygon_8c.html#ad311315a3f1713c548dac660ce709a3a">polygon.c</a>
-, <a class="el" href="dc/db6/polygon_8h.html#ad311315a3f1713c548dac660ce709a3a">polygon.h</a>
+: <a class="el" href="dc/db6/polygon_8h.html#ad311315a3f1713c548dac660ce709a3a">polygon.h</a>
+, <a class="el" href="da/d9d/polygon_8c.html#ad311315a3f1713c548dac660ce709a3a">polygon.c</a>
 </li>
 <li>polygon_new()
 : <a class="el" href="dc/db6/polygon_8h.html#adb0124bd625546ad07bebe725845b139">polygon.h</a>
 , <a class="el" href="da/d9d/polygon_8c.html#adb0124bd625546ad07bebe725845b139">polygon.c</a>
 </li>
 <li>polyline_add_point()
-: <a class="el" href="d0/ddf/polyline_8h.html#ae82d7079d6d43197c8c25e5a65683759">polyline.h</a>
-, <a class="el" href="d9/dd3/polyline_8c.html#ae82d7079d6d43197c8c25e5a65683759">polyline.c</a>
+: <a class="el" href="d9/dd3/polyline_8c.html#ae82d7079d6d43197c8c25e5a65683759">polyline.c</a>
+, <a class="el" href="d0/ddf/polyline_8h.html#ae82d7079d6d43197c8c25e5a65683759">polyline.h</a>
 </li>
 <li>polyline_free()
-: <a class="el" href="d0/ddf/polyline_8h.html#a8faab5613332748e67c95de0092e749f">polyline.h</a>
-, <a class="el" href="d9/dd3/polyline_8c.html#a8faab5613332748e67c95de0092e749f">polyline.c</a>
+: <a class="el" href="d9/dd3/polyline_8c.html#a8faab5613332748e67c95de0092e749f">polyline.c</a>
+, <a class="el" href="d0/ddf/polyline_8h.html#a8faab5613332748e67c95de0092e749f">polyline.h</a>
 </li>
 <li>polyline_get_point_by_index()
 : <a class="el" href="d9/dd3/polyline_8c.html#ac35bc1899f5275f53138088133b491e7">polyline.c</a>
 , <a class="el" href="d0/ddf/polyline_8h.html#ac35bc1899f5275f53138088133b491e7">polyline.h</a>
 </li>
 <li>polyline_get_point_count()
-: <a class="el" href="d9/dd3/polyline_8c.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline.c</a>
-, <a class="el" href="d0/ddf/polyline_8h.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline.h</a>
+: <a class="el" href="d0/ddf/polyline_8h.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline.h</a>
+, <a class="el" href="d9/dd3/polyline_8c.html#a9eae15bcc488ebfe4ef34f8de192aec3">polyline.c</a>
 </li>
 <li>polyline_new()
 : <a class="el" href="d0/ddf/polyline_8h.html#a89d434d028018eb4adaffbcef3bdea05">polyline.h</a>
@@ -158,9 +185,15 @@ $(function() {
 </li>
 <li>print()
 : <a class="el" href="d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f">jclog.c</a>
+, <a class="el" href="d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f">jclog.h</a>
 </li>
 <li>print_array()
 : <a class="el" href="dc/d7f/c_j_s_o_n_8c.html#aede2cae9f5360220a287376ba1620777">cJSON.c</a>
+</li>
+<li>print_map()
+: <a class="el" href="dd/dcf/location_8h.html#afbc3df93f3885672340a3ee4ec133fad">location.h</a>
+, <a class="el" href="d0/dad/location_8c.html#afbc3df93f3885672340a3ee4ec133fad">location.c</a>
+, <a class="el" href="de/d24/location__bak_8c.html#afbc3df93f3885672340a3ee4ec133fad">location_bak.c</a>
 </li>
 <li>print_number()
 : <a class="el" href="dc/d7f/c_j_s_o_n_8c.html#a363f9c1512c939122c6bc611cb03c645">cJSON.c</a>

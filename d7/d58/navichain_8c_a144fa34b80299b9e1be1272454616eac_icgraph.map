@@ -1,4 +1,12 @@
 <map id="_make_next_direction" name="_make_next_direction">
-<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="205,5,346,31"/>
-<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html#ae4d0ab2390dd7ef5a4f7ed6b041771ad" title="arrive_status" alt="" coords="227,55,324,80"/>
+<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="205,39,346,64"/>
+<area shape="rect" id="node7" href="$d7/d58/navichain_8c.html#ae4d0ab2390dd7ef5a4f7ed6b041771ad" title="arrive_status" alt="" coords="227,88,324,113"/>
+<area shape="rect" id="node8" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="223,137,328,163"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="450,5,512,31"/>
+<area shape="rect" id="node6" href="$de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="394,55,568,107"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="670,5,760,31"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="862,5,913,31"/>
+<area shape="rect" id="node9" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="426,137,536,163"/>
+<area shape="rect" id="node10" href="$da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="616,89,814,141"/>
+<area shape="rect" id="node11" href="$da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="616,165,814,217"/>
 </map>

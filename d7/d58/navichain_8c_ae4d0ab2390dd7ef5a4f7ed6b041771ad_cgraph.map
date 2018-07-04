@@ -1,3 +1,5 @@
 <map id="arrive_status" name="arrive_status">
-<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#a144fa34b80299b9e1be1272454616eac" title="_make_next_direction" alt="" coords="151,5,303,31"/>
+<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#a144fa34b80299b9e1be1272454616eac" title="_make_next_direction" alt="" coords="151,31,303,56"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="351,5,437,31"/>
+<area shape="rect" id="node4" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="360,55,428,80"/>
 </map>

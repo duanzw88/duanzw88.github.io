@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: arena.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_cd16c2705fca4e08149156ad3db61bec.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">arena.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/da7/assert_8h_source.html">assert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d0c/arena_8h_source.html">arena.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+arena.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d41/arena_8c__incl.png" border="0" usemap="#arena_8c" alt=""/></div>
+<map name="arena_8c" id="arena_8c">
+<area shape="rect" id="node5" href="../../dc/da7/assert_8h.html" title="assert.h" alt="" coords="267,79,335,104"/>
+<area shape="rect" id="node8" href="../../da/d0c/arena_8h.html" title="arena.h" alt="" coords="360,79,426,104"/>
+<area shape="rect" id="node6" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="310,152,382,177"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4b/structarena__t.html">arena_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dca/unionalign.html">align</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/unionheader.html">header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0acb682b8260ab1c60b918599864e2e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;&#160;&#160;arena_p</td></tr>
+<tr class="separator:a0acb682b8260ab1c60b918599864e2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4679d8ea8690999a6c6c7c0cb245c879"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a4679d8ea8690999a6c6c7c0cb245c879">THRESHOLD</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a4679d8ea8690999a6c6c7c0cb245c879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a15af024f02606dc447b705985ee68d51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a15af024f02606dc447b705985ee68d51">arena_new</a> (void)</td></tr>
+<tr class="separator:a15af024f02606dc447b705985ee68d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de8cf20e4f5834595b4c38a61d10d4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a1de8cf20e4f5834595b4c38a61d10d4c">arena_dispose</a> (<a class="el" href="../../d5/d7e/struct_t.html">T</a> *ap)</td></tr>
+<tr class="separator:a1de8cf20e4f5834595b4c38a61d10d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28e8e3f0d18787a5cbd1e6b40555285"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#ab28e8e3f0d18787a5cbd1e6b40555285">arena_alloc</a> (<a class="el" href="../../d5/d7e/struct_t.html">T</a> arena, long nbytes, const char *file, int line)</td></tr>
+<tr class="separator:ab28e8e3f0d18787a5cbd1e6b40555285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b001a5c5aeffbcf983c00e076759155"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a1b001a5c5aeffbcf983c00e076759155">arena_calloc</a> (<a class="el" href="../../d5/d7e/struct_t.html">T</a> arena, long count, long nbytes, const char *file, int line)</td></tr>
+<tr class="separator:a1b001a5c5aeffbcf983c00e076759155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c0780ec4a22392dc4d5d86c86761f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a03c0780ec4a22392dc4d5d86c86761f5">arena_free</a> (<a class="el" href="../../d5/d7e/struct_t.html">T</a> arena)</td></tr>
+<tr class="separator:a03c0780ec4a22392dc4d5d86c86761f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ab5286aaa1c59d4c82c0c1f06fd7315dd"><td class="memItemLeft" align="right" valign="top">const Except_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#ab5286aaa1c59d4c82c0c1f06fd7315dd">Arena_NewFailed</a> = {&quot;Arena Creation Failed&quot;}</td></tr>
+<tr class="separator:ab5286aaa1c59d4c82c0c1f06fd7315dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6053a34c90a976ac971313bd5f201fb3"><td class="memItemLeft" align="right" valign="top">const Except_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a6053a34c90a976ac971313bd5f201fb3">Arena_Failed</a> = {&quot;Arena Allocation Failed&quot;}</td></tr>
+<tr class="separator:a6053a34c90a976ac971313bd5f201fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e754c164ab22fe8ea948058e5590ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#ac9e754c164ab22fe8ea948058e5590ef">freechunks</a></td></tr>
+<tr class="separator:ac9e754c164ab22fe8ea948058e5590ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe8a2dc1f519820574cbba35b223aa1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/arena_8c.html#a6fe8a2dc1f519820574cbba35b223aa1">nfree</a></td></tr>
+<tr class="separator:a6fe8a2dc1f519820574cbba35b223aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a0acb682b8260ab1c60b918599864e2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0acb682b8260ab1c60b918599864e2e5">&#9670;&nbsp;</a></span>T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;&#160;&#160;arena_p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4679d8ea8690999a6c6c7c0cb245c879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4679d8ea8690999a6c6c7c0cb245c879">&#9670;&nbsp;</a></span>THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRESHOLD&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab28e8e3f0d18787a5cbd1e6b40555285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28e8e3f0d18787a5cbd1e6b40555285">&#9670;&nbsp;</a></span>arena_alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* arena_alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;</td>
+          <td class="paramname"><em>arena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在内存池中分配内存块 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arena</td><td>目标内存池 </td></tr>
+    <tr><td class="paramname">nbytes</td><td>需要分配的新块的大小 </td></tr>
+    <tr><td class="paramname">file</td><td>调用分配函数的文件名 </td></tr>
+    <tr><td class="paramname">line</td><td>调用分配函数的行号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新内存块的第一个字节的指针 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_cgraph.png" border="0" usemap="#de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_cgraph" alt=""/></div>
+<map name="de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_cgraph" id="de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_cgraph">
+<area shape="rect" id="node2" href="../../dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="144,5,242,31"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_icgraph.png" border="0" usemap="#de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_icgraph" alt=""/></div>
+<map name="de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_icgraph" id="de/d6c/arena_8c_ab28e8e3f0d18787a5cbd1e6b40555285_icgraph">
+<area shape="rect" id="node2" href="../../de/d6c/arena_8c.html#a1b001a5c5aeffbcf983c00e076759155" title="arena_calloc" alt="" coords="144,5,241,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b001a5c5aeffbcf983c00e076759155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b001a5c5aeffbcf983c00e076759155">&#9670;&nbsp;</a></span>arena_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* arena_calloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;</td>
+          <td class="paramname"><em>arena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6c/arena_8c_a1b001a5c5aeffbcf983c00e076759155_cgraph.png" border="0" usemap="#de/d6c/arena_8c_a1b001a5c5aeffbcf983c00e076759155_cgraph" alt=""/></div>
+<map name="de/d6c/arena_8c_a1b001a5c5aeffbcf983c00e076759155_cgraph" id="de/d6c/arena_8c_a1b001a5c5aeffbcf983c00e076759155_cgraph">
+<area shape="rect" id="node2" href="../../de/d6c/arena_8c.html#ab28e8e3f0d18787a5cbd1e6b40555285" title="arena_alloc" alt="" coords="150,5,241,31"/>
+<area shape="rect" id="node3" href="../../dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="289,5,387,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1de8cf20e4f5834595b4c38a61d10d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de8cf20e4f5834595b4c38a61d10d4c">&#9670;&nbsp;</a></span>arena_dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arena_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d7e/struct_t.html">T</a> *&#160;</td>
+          <td class="paramname"><em>ap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>释放与*ap内存池相关联的内存，即释放内存池本身，并将*ap清零 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ap</td><td>内存池 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6c/arena_8c_a1de8cf20e4f5834595b4c38a61d10d4c_cgraph.png" border="0" usemap="#de/d6c/arena_8c_a1de8cf20e4f5834595b4c38a61d10d4c_cgraph" alt=""/></div>
+<map name="de/d6c/arena_8c_a1de8cf20e4f5834595b4c38a61d10d4c_cgraph" id="de/d6c/arena_8c_a1de8cf20e4f5834595b4c38a61d10d4c_cgraph">
+<area shape="rect" id="node2" href="../../de/d6c/arena_8c.html#a03c0780ec4a22392dc4d5d86c86761f5" title="arena_free" alt="" coords="162,5,248,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a03c0780ec4a22392dc4d5d86c86761f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c0780ec4a22392dc4d5d86c86761f5">&#9670;&nbsp;</a></span>arena_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arena_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d7e/struct_t.html">T</a>&#160;</td>
+          <td class="paramname"><em>arena</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6c/arena_8c_a03c0780ec4a22392dc4d5d86c86761f5_icgraph.png" border="0" usemap="#de/d6c/arena_8c_a03c0780ec4a22392dc4d5d86c86761f5_icgraph" alt=""/></div>
+<map name="de/d6c/arena_8c_a03c0780ec4a22392dc4d5d86c86761f5_icgraph" id="de/d6c/arena_8c_a03c0780ec4a22392dc4d5d86c86761f5_icgraph">
+<area shape="rect" id="node2" href="../../de/d6c/arena_8c.html#a1de8cf20e4f5834595b4c38a61d10d4c" title="arena_dispose" alt="" coords="139,5,248,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15af024f02606dc447b705985ee68d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15af024f02606dc447b705985ee68d51">&#9670;&nbsp;</a></span>arena_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d7e/struct_t.html">T</a> arena_new </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>创建一个内存池，如果该函数无法分配内存池，则引发Arena_NewFailed异常 </p><dl class="section return"><dt>返回</dt><dd>返回指向新建内存池的一个不透明指针 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a6053a34c90a976ac971313bd5f201fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6053a34c90a976ac971313bd5f201fb3">&#9670;&nbsp;</a></span>Arena_Failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Except_T Arena_Failed = {&quot;Arena Allocation Failed&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5286aaa1c59d4c82c0c1f06fd7315dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5286aaa1c59d4c82c0c1f06fd7315dd">&#9670;&nbsp;</a></span>Arena_NewFailed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Except_T Arena_NewFailed = {&quot;Arena Creation Failed&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9e754c164ab22fe8ea948058e5590ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e754c164ab22fe8ea948058e5590ef">&#9670;&nbsp;</a></span>freechunks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d7e/struct_t.html">T</a> freechunks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fe8a2dc1f519820574cbba35b223aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe8a2dc1f519820574cbba35b223aa1">&#9670;&nbsp;</a></span>nfree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nfree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

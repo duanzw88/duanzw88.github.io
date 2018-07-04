@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: ring.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_b2bc4b562bfe8ca8e82cb79d5264aa53.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ring.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d6d/ring_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RING_INCLUDE</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RING_INCLUDE</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../d0/d6d/ring_8h.html#a0acb682b8260ab1c60b918599864e2e5">    4</a></span>&#160;<span class="preprocessor">#define T ring_p</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d0/d6d/ring_8h.html#a32a79573f23e5f2f8b0eb13f21f83c73">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d6/d5e/structring__t.html">ring_t</a> *<a class="code" href="../../d0/d6d/ring_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d5/d7e/struct_t.html">T</a>        <a class="code" href="../../d0/d6d/ring_8h.html#a193cfdf6ed064a80500f303d2d90a715">ring_new</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d5/d7e/struct_t.html">T</a>        <a class="code" href="../../d0/d6d/ring_8h.html#aa010f6996c8001fd7b16e13261706aa3">ring_ring</a>(<span class="keywordtype">void</span> *x, ...);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="../../d0/d6d/ring_8h.html#aac5a49f790069389d4c77780ebb930a4">ring_free</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> *ring);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>      <a class="code" href="../../d0/d6d/ring_8h.html#a0c2062809b43c76e46465008c1935346">ring_length</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#a963fa418558f2c9362c9959673803a19">ring_get</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">int</span> position);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#ac1228ec64cb51617f50af6a772d69c58">ring_put</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">int</span> position, <span class="keywordtype">void</span> *x);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#a4452a31c7d7421727dffd0437307c7eb">ring_add</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">int</span> position, <span class="keywordtype">void</span> *x);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#aee083da76f9d41aa44c7f5193f0bb5c5">ring_add_low</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">void</span> *x);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#a5ff2afafc8dff4d75f6da88fd3739db1">ring_add_high</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">void</span> *x);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#a425debc7fa40caa9d0abcc211fc50a00">ring_remove</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">int</span> position);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#a837da5336b831dd69f5ee8a33fc3e0b5">ring_remove_low</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>    *<a class="code" href="../../d0/d6d/ring_8h.html#aa921618a3bd9e799bc16369d6d3e5793">ring_remove_high</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="../../d0/d6d/ring_8h.html#a88a84612bc9ce4c3334e8cf6a10d5144">ring_rotate</a>(<a class="code" href="../../d5/d7e/struct_t.html">T</a> ring, <span class="keywordtype">int</span> n);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#undef T</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*RING_INCLUDE*/</span><span class="preprocessor"></span></div><div class="ttc" id="ring_8h_html_a837da5336b831dd69f5ee8a33fc3e0b5"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a837da5336b831dd69f5ee8a33fc3e0b5">ring_remove_low</a></div><div class="ttdeci">void * ring_remove_low(T ring)</div><div class="ttdef"><b>Definition:</b> ring.c:227</div></div>
+<div class="ttc" id="ring_8h_html_ac1228ec64cb51617f50af6a772d69c58"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#ac1228ec64cb51617f50af6a772d69c58">ring_put</a></div><div class="ttdeci">void * ring_put(T ring, int position, void *x)</div><div class="ttdef"><b>Definition:</b> ring.c:116</div></div>
+<div class="ttc" id="ring_8h_html_aee083da76f9d41aa44c7f5193f0bb5c5"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#aee083da76f9d41aa44c7f5193f0bb5c5">ring_add_low</a></div><div class="ttdeci">void * ring_add_low(T ring, void *x)</div><div class="ttdef"><b>Definition:</b> ring.c:166</div></div>
+<div class="ttc" id="struct_t_html"><div class="ttname"><a href="../../d5/d7e/struct_t.html">T</a></div><div class="ttdef"><b>Definition:</b> except.h:6</div></div>
+<div class="ttc" id="ring_8h_html_a963fa418558f2c9362c9959673803a19"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a963fa418558f2c9362c9959673803a19">ring_get</a></div><div class="ttdeci">void * ring_get(T ring, int position)</div><div class="ttdef"><b>Definition:</b> ring.c:93</div></div>
+<div class="ttc" id="ring_8h_html_a425debc7fa40caa9d0abcc211fc50a00"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a425debc7fa40caa9d0abcc211fc50a00">ring_remove</a></div><div class="ttdeci">void * ring_remove(T ring, int position)</div><div class="ttdef"><b>Definition:</b> ring.c:203</div></div>
+<div class="ttc" id="ring_8h_html_a5ff2afafc8dff4d75f6da88fd3739db1"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a5ff2afafc8dff4d75f6da88fd3739db1">ring_add_high</a></div><div class="ttdeci">void * ring_add_high(T ring, void *x)</div><div class="ttdef"><b>Definition:</b> ring.c:178</div></div>
+<div class="ttc" id="ring_8h_html_a88a84612bc9ce4c3334e8cf6a10d5144"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a88a84612bc9ce4c3334e8cf6a10d5144">ring_rotate</a></div><div class="ttdeci">void ring_rotate(T ring, int n)</div><div class="ttdef"><b>Definition:</b> ring.c:257</div></div>
+<div class="ttc" id="ring_8h_html_a0c2062809b43c76e46465008c1935346"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a0c2062809b43c76e46465008c1935346">ring_length</a></div><div class="ttdeci">int ring_length(T ring)</div><div class="ttdef"><b>Definition:</b> ring.c:85</div></div>
+<div class="ttc" id="ring_8h_html_aac5a49f790069389d4c77780ebb930a4"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#aac5a49f790069389d4c77780ebb930a4">ring_free</a></div><div class="ttdeci">void ring_free(T *ring)</div><div class="ttdef"><b>Definition:</b> ring.c:61</div></div>
+<div class="ttc" id="structring__t_html"><div class="ttname"><a href="../../d6/d5e/structring__t.html">ring_t</a></div><div class="ttdef"><b>Definition:</b> ring.c:10</div></div>
+<div class="ttc" id="ring_8h_html_a193cfdf6ed064a80500f303d2d90a715"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a193cfdf6ed064a80500f303d2d90a715">ring_new</a></div><div class="ttdeci">T ring_new(void)</div><div class="ttdef"><b>Definition:</b> ring.c:31</div></div>
+<div class="ttc" id="ring_8h_html_a4452a31c7d7421727dffd0437307c7eb"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a4452a31c7d7421727dffd0437307c7eb">ring_add</a></div><div class="ttdeci">void * ring_add(T ring, int position, void *x)</div><div class="ttdef"><b>Definition:</b> ring.c:134</div></div>
+<div class="ttc" id="ring_8h_html_aa010f6996c8001fd7b16e13261706aa3"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#aa010f6996c8001fd7b16e13261706aa3">ring_ring</a></div><div class="ttdeci">T ring_ring(void *x,...)</div><div class="ttdef"><b>Definition:</b> ring.c:42</div></div>
+<div class="ttc" id="ring_8h_html_aa921618a3bd9e799bc16369d6d3e5793"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#aa921618a3bd9e799bc16369d6d3e5793">ring_remove_high</a></div><div class="ttdeci">void * ring_remove_high(T ring)</div><div class="ttdef"><b>Definition:</b> ring.c:238</div></div>
+<div class="ttc" id="ring_8h_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../d0/d6d/ring_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> ring.h:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

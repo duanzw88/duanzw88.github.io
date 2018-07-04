@@ -1,3 +1,7 @@
 <map id="polygon_free" name="polygon_free">
-<area shape="rect" id="node2" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="152,5,232,31"/>
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="152,5,238,31"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="161,55,229,80"/>
+<area shape="rect" id="node4" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="155,104,235,129"/>
+<area shape="rect" id="node5" href="$d6/d3c/seq_8h.html#a00dd873959603e6005b70ab7c8f8fa6e" title="seq_free" alt="" coords="158,153,232,179"/>
+<area shape="rect" id="node6" href="$db/d63/array_8h.html#a5e501e5c7587bda3f43458c1c62cbd1e" title="array_free" alt="" coords="286,153,368,179"/>
 </map>

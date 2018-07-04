@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_47e8bd7b1768c3ca68889cedd10c80ed.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_9b154e750cd6c3d176e4ecfc6e04b422.html">module</a></li><li class="navelem"><a class="el" href="../../dir_730e3d2e1bd24dffc9b89d39f823faa6.html">map</a></li><li class="navelem"><a class="el" href="../../dir_04b53c11008c891bfae371b11c6d589f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_70b1c78b14eb6e0b1b4177905ce2210b.html">map</a></li><li class="navelem"><a class="el" href="../../dir_fdf135b388aaa641bf8ece842dc93394.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -50,20 +50,23 @@ $(function() {
 <div class="title">jclog.c 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;jclog.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/df5/jclog_8h_source.html">jclog.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d19/jclog_8c__incl.png" border="0" usemap="#jclog_8c" alt=""/></div>
 <map name="jclog_8c" id="jclog_8c">
+<area shape="rect" id="node2" href="../../d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="95,79,155,104"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 宏定义</h2></td></tr>
-<tr class="memitem:aacdf1719d113d68a71127426f7c730cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#aacdf1719d113d68a71127426f7c730cd">EARTH_RADIUS</a>&#160;&#160;&#160;6378137.0</td></tr>
-<tr class="separator:aacdf1719d113d68a71127426f7c730cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553a50b45b6c2e369a821a9fcfa41fd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a553a50b45b6c2e369a821a9fcfa41fd9">MERCATOR_OFFSET</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a553a50b45b6c2e369a821a9fcfa41fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391c7e68964224167a50e8484446eabd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a391c7e68964224167a50e8484446eabd">MERCATOR_RADIUS</a>&#160;&#160;&#160;6378137.0</td></tr>
+<tr class="separator:a391c7e68964224167a50e8484446eabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
@@ -73,23 +76,17 @@ jclog.c 的引用(Include)关系图:</div>
 <tr class="separator:a481a880e3f160319f4a4f25840b8d213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d42affcdcfe42b0bbd77e3d3329d8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f">print</a> (const char *fmt,...)</td></tr>
 <tr class="separator:af9d42affcdcfe42b0bbd77e3d3329d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cacbabacfc3dd5dd42377809f20fa02"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a7cacbabacfc3dd5dd42377809f20fa02">lat2y_m</a> (double lat)</td></tr>
-<tr class="separator:a7cacbabacfc3dd5dd42377809f20fa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e6db44cc79de71861a395a26d6b7f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a41e6db44cc79de71861a395a26d6b7f4">lon2x_m</a> (double lon)</td></tr>
 <tr class="separator:a41e6db44cc79de71861a395a26d6b7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cacbabacfc3dd5dd42377809f20fa02"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a7cacbabacfc3dd5dd42377809f20fa02">lat2y_m</a> (double lat)</td></tr>
+<tr class="separator:a7cacbabacfc3dd5dd42377809f20fa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c7237924d6c4c6f8c0f3a899a5014f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a46c7237924d6c4c6f8c0f3a899a5014f">y2lat_m</a> (double y)</td></tr>
 <tr class="separator:a46c7237924d6c4c6f8c0f3a899a5014f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fbe2ec0000948685f056ffe502f6b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#ab0fbe2ec0000948685f056ffe502f6b1">x2lon_m</a> (double x)</td></tr>
 <tr class="separator:ab0fbe2ec0000948685f056ffe502f6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad832b1fe02754749b6eeb902cb290502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#ad832b1fe02754749b6eeb902cb290502">set_mapdata_scale</a> (int scale)</td></tr>
-<tr class="separator:ad832b1fe02754749b6eeb902cb290502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc927be045b6a2ba91d0a0dee33faa69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#afc927be045b6a2ba91d0a0dee33faa69">get_mapdata_scale</a> ()</td></tr>
-<tr class="separator:afc927be045b6a2ba91d0a0dee33faa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 变量</h2></td></tr>
-<tr class="memitem:af3d95b36fb5235b8688d78bcc0d5658e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#af3d95b36fb5235b8688d78bcc0d5658e">map_scale</a> = 10</td></tr>
-<tr class="separator:af3d95b36fb5235b8688d78bcc0d5658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b47532b8c6eebbeb8ec4ac73fe096a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/jclog_8c.html#a08b47532b8c6eebbeb8ec4ac73fe096a">log_flag</a> = 1</td></tr>
 <tr class="separator:a08b47532b8c6eebbeb8ec4ac73fe096a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -99,14 +96,28 @@ jclog.c 的引用(Include)关系图:</div>
 <dl class="section version"><dt>版本</dt><dd>V0.1 </dd></dl>
 <dl class="section user"><dt>Copyright (c):</dt><dd>重庆甲虫网络科技有限公司 </dd></dl>
 </div><h2 class="groupheader">宏定义说明</h2>
-<a id="aacdf1719d113d68a71127426f7c730cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacdf1719d113d68a71127426f7c730cd">&#9670;&nbsp;</a></span>EARTH_RADIUS</h2>
+<a id="a553a50b45b6c2e369a821a9fcfa41fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553a50b45b6c2e369a821a9fcfa41fd9">&#9670;&nbsp;</a></span>MERCATOR_OFFSET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EARTH_RADIUS&#160;&#160;&#160;6378137.0</td>
+          <td class="memname">#define MERCATOR_OFFSET&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a391c7e68964224167a50e8484446eabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391c7e68964224167a50e8484446eabd">&#9670;&nbsp;</a></span>MERCATOR_RADIUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MERCATOR_RADIUS&#160;&#160;&#160;6378137.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,23 +140,6 @@ jclog.c 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 <p>关闭日志打印 </p>
-
-</div>
-</div>
-<a id="afc927be045b6a2ba91d0a0dee33faa69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc927be045b6a2ba91d0a0dee33faa69">&#9670;&nbsp;</a></span>get_mapdata_scale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int get_mapdata_scale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -176,16 +170,38 @@ jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d4d/jclog_8c_a7cacbabacfc3dd5dd42377809f20fa02_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_a7cacbabacfc3dd5dd42377809f20fa02_icgraph" alt=""/></div>
 <map name="d8/d4d/jclog_8c_a7cacbabacfc3dd5dd42377809f20fa02_icgraph" id="d8/d4d/jclog_8c_a7cacbabacfc3dd5dd42377809f20fa02_icgraph">
-<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="121,5,283,44"/>
-<area shape="rect" id="node5" href="../../d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="132,68,272,93"/>
-<area shape="rect" id="node6" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="157,117,247,143"/>
-<area shape="rect" id="node11" href="../../db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="152,167,252,192"/>
-<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="331,12,477,37"/>
-<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="525,5,662,44"/>
-<area shape="rect" id="node7" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="353,141,454,167"/>
-<area shape="rect" id="node8" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="551,141,636,167"/>
-<area shape="rect" id="node9" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="710,141,813,167"/>
-<area shape="rect" id="node10" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="861,141,969,167"/>
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="122,80,284,118"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="381,114,527,140"/>
+<area shape="rect" id="node13" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="155,601,251,626"/>
+<area shape="rect" id="node16" href="../../d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="132,488,273,513"/>
+<area shape="rect" id="node18" href="../../d7/d58/navichain_8c.html#ad093f5323b74b10c431476381b07d2f4" title="navigate_get_projection\l_segindex" alt="" coords="121,650,284,689"/>
+<area shape="rect" id="node20" href="../../d7/d58/navichain_8c.html#ac552d60b8225947d2fe7b323584c5561" title="navigate_get_projection" alt="" coords="121,713,284,738"/>
+<area shape="rect" id="node22" href="../../d7/d58/navichain_8c.html#a9fe903082105fe7a255868721802d6bd" title="navigate_get_distance\l_to_end" alt="" coords="125,762,280,801"/>
+<area shape="rect" id="node24" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="158,552,248,577"/>
+<area shape="rect" id="node30" href="../../d4/d5c/point_8c.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="128,248,278,273"/>
+<area shape="rect" id="node33" href="../../d4/d5c/point_8c.html#a366d35b8f9294bb61341f2aa3f1a614c" title="point_set_lat" alt="" coords="154,825,251,850"/>
+<area shape="rect" id="node5" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="904,6,954,32"/>
+<area shape="rect" id="node12" href="../../da/d41/proxy__building_8c.html#a7b6364d03ed203a739526875c8d3c777" title="Java_com_jcble_map3d\l_map_Building_buildingGetProjection" alt="" coords="332,52,576,90"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="634,44,772,82"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="634,158,772,197"/>
+<area shape="rect" id="node6" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="830,81,1028,133"/>
+<area shape="rect" id="node8" href="../../d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="898,281,960,306"/>
+<area shape="rect" id="node11" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="830,202,1028,254"/>
+<area shape="rect" id="node9" href="../../d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1236,293,1326,318"/>
+<area shape="rect" id="node10" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1443,294,1493,320"/>
+<area shape="rect" id="node14" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="364,602,544,628"/>
+<area shape="rect" id="node15" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="624,602,782,628"/>
+<area shape="rect" id="node17" href="../../de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="367,474,541,526"/>
+<area shape="rect" id="node19" href="../../de/dea/proxy__navichain_8c.html#ada3d8e593e84ebc76ef1e3081d720ef5" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectSegIndex" alt="" coords="355,652,553,704"/>
+<area shape="rect" id="node21" href="../../de/dea/proxy__navichain_8c.html#a79b95df493f764a5197f262957c73633" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectPoint" alt="" coords="367,728,541,780"/>
+<area shape="rect" id="node23" href="../../de/dea/proxy__navichain_8c.html#a91759d24ca3fe546919797a98a97511b" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetDistanceToEnd" alt="" coords="359,804,549,856"/>
+<area shape="rect" id="node25" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="653,425,753,450"/>
+<area shape="rect" id="node26" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="886,425,971,450"/>
+<area shape="rect" id="node27" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="1076,374,1178,400"/>
+<area shape="rect" id="node28" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1226,358,1335,384"/>
+<area shape="rect" id="node29" href="../../dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1383,352,1553,390"/>
+<area shape="rect" id="node31" href="../../db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="404,425,504,450"/>
+<area shape="rect" id="node32" href="../../db/d97/parse_8c.html#a1ef62d3fd8cf3940adb652e4cf9da7f2" title="parseConn" alt="" coords="660,374,746,400"/>
 </map>
 </div>
 
@@ -218,16 +234,38 @@ jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d4d/jclog_8c_a41e6db44cc79de71861a395a26d6b7f4_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_a41e6db44cc79de71861a395a26d6b7f4_icgraph" alt=""/></div>
 <map name="d8/d4d/jclog_8c_a41e6db44cc79de71861a395a26d6b7f4_icgraph" id="d8/d4d/jclog_8c_a41e6db44cc79de71861a395a26d6b7f4_icgraph">
-<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="125,5,287,44"/>
-<area shape="rect" id="node5" href="../../d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="135,68,276,93"/>
-<area shape="rect" id="node6" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="161,117,251,143"/>
-<area shape="rect" id="node11" href="../../db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="156,167,256,192"/>
-<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="335,12,480,37"/>
-<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="528,5,666,44"/>
-<area shape="rect" id="node7" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="357,141,458,167"/>
-<area shape="rect" id="node8" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="555,141,640,167"/>
-<area shape="rect" id="node9" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="714,141,816,167"/>
-<area shape="rect" id="node10" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="864,141,973,167"/>
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="126,80,287,118"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="385,114,531,140"/>
+<area shape="rect" id="node13" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="158,601,255,626"/>
+<area shape="rect" id="node16" href="../../d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="136,488,277,513"/>
+<area shape="rect" id="node18" href="../../d7/d58/navichain_8c.html#ad093f5323b74b10c431476381b07d2f4" title="navigate_get_projection\l_segindex" alt="" coords="125,650,288,689"/>
+<area shape="rect" id="node20" href="../../d7/d58/navichain_8c.html#ac552d60b8225947d2fe7b323584c5561" title="navigate_get_projection" alt="" coords="125,713,288,738"/>
+<area shape="rect" id="node22" href="../../d7/d58/navichain_8c.html#a9fe903082105fe7a255868721802d6bd" title="navigate_get_distance\l_to_end" alt="" coords="129,762,284,801"/>
+<area shape="rect" id="node24" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="161,552,252,577"/>
+<area shape="rect" id="node30" href="../../d4/d5c/point_8c.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="132,248,281,273"/>
+<area shape="rect" id="node33" href="../../d4/d5c/point_8c.html#a9b86af14ca93b6040e51f48b6a17e5a3" title="point_set_lon" alt="" coords="156,825,257,850"/>
+<area shape="rect" id="node5" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="908,6,958,32"/>
+<area shape="rect" id="node12" href="../../da/d41/proxy__building_8c.html#a7b6364d03ed203a739526875c8d3c777" title="Java_com_jcble_map3d\l_map_Building_buildingGetProjection" alt="" coords="336,52,580,90"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="638,44,775,82"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="638,158,775,197"/>
+<area shape="rect" id="node6" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="833,81,1032,133"/>
+<area shape="rect" id="node8" href="../../d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="902,281,964,306"/>
+<area shape="rect" id="node11" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="833,202,1032,254"/>
+<area shape="rect" id="node9" href="../../d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1239,293,1330,318"/>
+<area shape="rect" id="node10" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1447,294,1497,320"/>
+<area shape="rect" id="node14" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="367,602,548,628"/>
+<area shape="rect" id="node15" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="628,602,785,628"/>
+<area shape="rect" id="node17" href="../../de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="371,474,545,526"/>
+<area shape="rect" id="node19" href="../../de/dea/proxy__navichain_8c.html#ada3d8e593e84ebc76ef1e3081d720ef5" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectSegIndex" alt="" coords="359,652,557,704"/>
+<area shape="rect" id="node21" href="../../de/dea/proxy__navichain_8c.html#a79b95df493f764a5197f262957c73633" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectPoint" alt="" coords="371,728,545,780"/>
+<area shape="rect" id="node23" href="../../de/dea/proxy__navichain_8c.html#a91759d24ca3fe546919797a98a97511b" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetDistanceToEnd" alt="" coords="363,804,553,856"/>
+<area shape="rect" id="node25" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="656,425,757,450"/>
+<area shape="rect" id="node26" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="890,425,975,450"/>
+<area shape="rect" id="node27" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="1080,374,1182,400"/>
+<area shape="rect" id="node28" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1230,358,1339,384"/>
+<area shape="rect" id="node29" href="../../dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1387,352,1557,390"/>
+<area shape="rect" id="node31" href="../../db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="408,425,508,450"/>
+<area shape="rect" id="node32" href="../../db/d97/parse_8c.html#a1ef62d3fd8cf3940adb652e4cf9da7f2" title="parseConn" alt="" coords="663,374,750,400"/>
 </map>
 </div>
 
@@ -248,6 +286,14 @@ jclog.c 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 <p>开启日志打印 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d4d/jclog_8c_afdd7fb2369574ac489b2ccff3362ec29_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_afdd7fb2369574ac489b2ccff3362ec29_icgraph" alt=""/></div>
+<map name="d8/d4d/jclog_8c_afdd7fb2369574ac489b2ccff3362ec29_icgraph" id="d8/d4d/jclog_8c_afdd7fb2369574ac489b2ccff3362ec29_icgraph">
+<area shape="rect" id="node2" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="130,5,180,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -281,38 +327,38 @@ jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d4d/jclog_8c_af9d42affcdcfe42b0bbd77e3d3329d8f_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_af9d42affcdcfe42b0bbd77e3d3329d8f_icgraph" alt=""/></div>
 <map name="d8/d4d/jclog_8c_af9d42affcdcfe42b0bbd77e3d3329d8f_icgraph" id="d8/d4d/jclog_8c_af9d42affcdcfe42b0bbd77e3d3329d8f_icgraph">
-<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a3f8b1a0fc5e0271de3da0a1e37f4d6bc" title="building_get_near_road\l_point" alt="" coords="101,315,262,354"/>
-<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a07a13fa8ad31fd94f455e3846f9d7b09" title="get_navi_routenodes" alt="" coords="310,191,456,217"/>
-<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="504,59,642,98"/>
-<area shape="rect" id="node5" href="../../dc/de3/floor_8c.html#a2dbe0f80be81e799a028e2a4e05ff39e" title="floor_get_beacon" alt="" coords="119,167,244,193"/>
-<area shape="rect" id="node6" href="../../d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="111,217,252,242"/>
-<area shape="rect" id="node7" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="129,66,234,91"/>
-<area shape="rect" id="node9" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="518,403,627,429"/>
-<area shape="rect" id="node10" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="139,378,224,403"/>
-<area shape="rect" id="node12" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="127,266,236,291"/>
-<area shape="rect" id="node13" href="../../d3/db2/wdigraph_8c.html#a29881b823a3809fc513dd2a89ab131d9" title="wdigraph_print_adj" alt="" coords="114,479,248,505"/>
-<area shape="rect" id="node8" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="328,66,438,91"/>
-<area shape="rect" id="node11" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="332,378,434,403"/>
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a75f8667c22c650b84a119a2ccff21126" title="building_add_route" alt="" coords="312,378,447,404"/>
+<area shape="rect" id="node4" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="833,716,942,741"/>
+<area shape="rect" id="node6" href="../../dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1035,654,1205,693"/>
+<area shape="rect" id="node8" href="../../d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="560,144,698,182"/>
+<area shape="rect" id="node10" href="../../d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="560,206,698,245"/>
+<area shape="rect" id="node11" href="../../d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="856,512,919,537"/>
+<area shape="rect" id="node12" href="../../d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1075,474,1165,500"/>
+<area shape="rect" id="node14" href="../../d6/d32/building_8c.html#a3290f202931ad330c282408f2204397c" title="add_route" alt="" coords="130,364,212,389"/>
+<area shape="rect" id="node15" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="307,162,453,188"/>
+<area shape="rect" id="node16" href="../../d6/d32/building_8c.html#a33faae6b52ef2cc824861e7b77723d8b" title="route_plan" alt="" coords="129,162,213,188"/>
+<area shape="rect" id="node17" href="../../dc/de3/floor_8c.html#afbed2f5b0ba5bf22c1d1f4e3502476eb" title="floor_split_grid" alt="" coords="326,817,434,842"/>
+<area shape="rect" id="node18" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="578,792,680,817"/>
+<area shape="rect" id="node19" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="550,1094,708,1120"/>
+<area shape="rect" id="node20" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="289,1044,470,1069"/>
+<area shape="rect" id="node21" href="../../d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="123,969,219,994"/>
+<area shape="rect" id="node22" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="116,1018,226,1044"/>
+<area shape="rect" id="node23" href="../../d0/d29/main_8c.html#a519633830f0ae2cb50bfeae5c0b55210" title="floor_box_changed" alt="" coords="820,272,955,297"/>
+<area shape="rect" id="node24" href="../../d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="101,578,241,604"/>
+<area shape="rect" id="node26" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="327,10,432,36"/>
+<area shape="rect" id="node28" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="337,868,422,893"/>
+<area shape="rect" id="node29" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="121,868,221,893"/>
+<area shape="rect" id="node30" href="../../d3/db2/wdigraph_8c.html#ad791eb181af5146a417b03301a3b9288" title="wdigraph_path" alt="" coords="117,212,225,237"/>
+<area shape="rect" id="node31" href="../../d3/db2/wdigraph_8c.html#a29881b823a3809fc513dd2a89ab131d9" title="wdigraph_print_adj" alt="" coords="104,1170,238,1196"/>
+<area shape="rect" id="node3" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="862,321,913,346"/>
+<area shape="rect" id="node7" href="../../da/d41/proxy__building_8c.html#a97d1803347e8bd8bc4868305658b40ad" title="Java_com_jcble_map3d\l_map_Building_buildingAddRoute" alt="" coords="518,372,740,410"/>
+<area shape="rect" id="node5" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1253,628,1303,653"/>
+<area shape="rect" id="node9" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="788,92,987,144"/>
+<area shape="rect" id="node13" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="788,177,987,229"/>
+<area shape="rect" id="node25" href="../../de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="293,588,467,640"/>
+<area shape="rect" id="node27" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="574,94,684,120"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ad832b1fe02754749b6eeb902cb290502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad832b1fe02754749b6eeb902cb290502">&#9670;&nbsp;</a></span>set_mapdata_scale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_mapdata_scale </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -343,9 +389,33 @@ jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d4d/jclog_8c_ab0fbe2ec0000948685f056ffe502f6b1_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_ab0fbe2ec0000948685f056ffe502f6b1_icgraph" alt=""/></div>
 <map name="d8/d4d/jclog_8c_ab0fbe2ec0000948685f056ffe502f6b1_icgraph" id="d8/d4d/jclog_8c_ab0fbe2ec0000948685f056ffe502f6b1_icgraph">
-<area shape="rect" id="node2" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="125,12,229,37"/>
-<area shape="rect" id="node3" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="277,12,387,37"/>
-<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="435,5,573,44"/>
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="125,76,287,115"/>
+<area shape="rect" id="node13" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="626,256,807,281"/>
+<area shape="rect" id="node15" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="401,269,512,295"/>
+<area shape="rect" id="node16" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="154,168,258,193"/>
+<area shape="rect" id="node18" href="../../d4/d5c/point_8c.html#ac05e43ddb9414732844a576a55249280" title="point_new_by_location" alt="" coords="127,371,284,396"/>
+<area shape="rect" id="node28" href="../../d4/d5c/point_8c.html#a48be9f99ecd98ad7b967e2f813141ff1" title="point_set_x" alt="" coords="161,269,251,295"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="383,55,529,80"/>
+<area shape="rect" id="node5" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="929,5,979,31"/>
+<area shape="rect" id="node12" href="../../da/d41/proxy__building_8c.html#a7b6364d03ed203a739526875c8d3c777" title="Java_com_jcble_map3d\l_map_Building_buildingGetProjection" alt="" coords="335,104,578,143"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="648,55,785,93"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="648,180,785,219"/>
+<area shape="rect" id="node6" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="855,55,1053,107"/>
+<area shape="rect" id="node8" href="../../d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="923,207,985,232"/>
+<area shape="rect" id="node11" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="855,131,1053,183"/>
+<area shape="rect" id="node9" href="../../d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1261,215,1351,240"/>
+<area shape="rect" id="node10" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1468,217,1519,243"/>
+<area shape="rect" id="node14" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="875,256,1033,281"/>
+<area shape="rect" id="node17" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="662,131,771,156"/>
+<area shape="rect" id="node19" href="../../dc/de3/floor_8c.html#afbed2f5b0ba5bf22c1d1f4e3502476eb" title="floor_split_grid" alt="" coords="663,431,771,456"/>
+<area shape="rect" id="node23" href="../../d7/d58/navichain_8c.html#ac552d60b8225947d2fe7b323584c5561" title="navigate_get_projection" alt="" coords="375,369,538,395"/>
+<area shape="rect" id="node25" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="411,319,501,344"/>
+<area shape="rect" id="node20" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="1101,305,1204,331"/>
+<area shape="rect" id="node21" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1252,284,1360,309"/>
+<area shape="rect" id="node22" href="../../dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1408,277,1579,316"/>
+<area shape="rect" id="node24" href="../../de/dea/proxy__navichain_8c.html#a79b95df493f764a5197f262957c73633" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectPoint" alt="" coords="630,355,804,407"/>
+<area shape="rect" id="node26" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="666,305,767,331"/>
+<area shape="rect" id="node27" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="912,305,997,331"/>
 </map>
 </div>
 
@@ -378,9 +448,33 @@ jclog.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d4d/jclog_8c_a46c7237924d6c4c6f8c0f3a899a5014f_icgraph.png" border="0" usemap="#d8/d4d/jclog_8c_a46c7237924d6c4c6f8c0f3a899a5014f_icgraph" alt=""/></div>
 <map name="d8/d4d/jclog_8c_a46c7237924d6c4c6f8c0f3a899a5014f_icgraph" id="d8/d4d/jclog_8c_a46c7237924d6c4c6f8c0f3a899a5014f_icgraph">
-<area shape="rect" id="node2" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="121,12,226,37"/>
-<area shape="rect" id="node3" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="274,12,383,37"/>
-<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="431,5,569,44"/>
+<area shape="rect" id="node2" href="../../d6/d32/building_8c.html#a8387a9bdba46cd68a243d22fd0a96b12" title="building_get_near_road\l_point" alt="" coords="121,76,283,115"/>
+<area shape="rect" id="node13" href="../../d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="623,256,803,281"/>
+<area shape="rect" id="node15" href="../../d0/dad/location_8c.html#aa8af8427060f6729dde05e443f7b3223" title="adjust_location" alt="" coords="398,269,508,295"/>
+<area shape="rect" id="node16" href="../../d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="150,168,254,193"/>
+<area shape="rect" id="node18" href="../../d4/d5c/point_8c.html#ac05e43ddb9414732844a576a55249280" title="point_new_by_location" alt="" coords="124,371,281,396"/>
+<area shape="rect" id="node28" href="../../d4/d5c/point_8c.html#a4cb2b241a0e3b18c221149c4db58fdf0" title="point_set_y" alt="" coords="157,269,247,295"/>
+<area shape="rect" id="node3" href="../../d6/d32/building_8c.html#a5680ad352ada0b67872dc780deec4f7e" title="get_navi_routenodes" alt="" coords="380,55,526,80"/>
+<area shape="rect" id="node5" href="../../d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="925,5,976,31"/>
+<area shape="rect" id="node12" href="../../da/d41/proxy__building_8c.html#a7b6364d03ed203a739526875c8d3c777" title="Java_com_jcble_map3d\l_map_Building_buildingGetProjection" alt="" coords="331,104,575,143"/>
+<area shape="rect" id="node4" href="../../d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="644,55,782,93"/>
+<area shape="rect" id="node7" href="../../d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="644,180,782,219"/>
+<area shape="rect" id="node6" href="../../da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="851,55,1050,107"/>
+<area shape="rect" id="node8" href="../../d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="919,207,982,232"/>
+<area shape="rect" id="node11" href="../../da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="851,131,1050,183"/>
+<area shape="rect" id="node9" href="../../d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1257,215,1347,240"/>
+<area shape="rect" id="node10" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1465,217,1515,243"/>
+<area shape="rect" id="node14" href="../../d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="872,256,1029,281"/>
+<area shape="rect" id="node17" href="../../d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="658,131,768,156"/>
+<area shape="rect" id="node19" href="../../dc/de3/floor_8c.html#afbed2f5b0ba5bf22c1d1f4e3502476eb" title="floor_split_grid" alt="" coords="659,431,767,456"/>
+<area shape="rect" id="node23" href="../../d7/d58/navichain_8c.html#ac552d60b8225947d2fe7b323584c5561" title="navigate_get_projection" alt="" coords="371,369,534,395"/>
+<area shape="rect" id="node25" href="../../db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="408,319,498,344"/>
+<area shape="rect" id="node20" href="../../db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="1098,305,1200,331"/>
+<area shape="rect" id="node21" href="../../db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1248,284,1357,309"/>
+<area shape="rect" id="node22" href="../../dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1405,277,1575,316"/>
+<area shape="rect" id="node24" href="../../de/dea/proxy__navichain_8c.html#a79b95df493f764a5197f262957c73633" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectPoint" alt="" coords="626,355,800,407"/>
+<area shape="rect" id="node26" href="../../db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="663,305,763,331"/>
+<area shape="rect" id="node27" href="../../db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="908,305,993,331"/>
 </map>
 </div>
 
@@ -398,28 +492,6 @@ jclog.c 的引用(Include)关系图:</div>
       <table class="memname">
         <tr>
           <td class="memname">int log_flag = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af3d95b36fb5235b8688d78bcc0d5658e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3d95b36fb5235b8688d78bcc0d5658e">&#9670;&nbsp;</a></span>map_scale</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int map_scale = 10</td>
         </tr>
       </table>
   </td>

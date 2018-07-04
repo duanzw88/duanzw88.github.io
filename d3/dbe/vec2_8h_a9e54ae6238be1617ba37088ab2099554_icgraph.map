@@ -1,11 +1,20 @@
 <map id="vec2_norm_sq" name="vec2_norm_sq">
-<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#adf6566f8a9e9de8092fa8bb0e7f74e52" title="_make_angle" alt="" coords="193,23,294,48"/>
-<area shape="rect" id="node6" href="$db/de6/vec2_8c.html#aef74935c0b4006564fd26985121dd50d" title="vec2_normal_projection" alt="" coords="162,85,325,111"/>
-<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="386,16,490,41"/>
-<area shape="rect" id="node4" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="578,12,688,37"/>
-<area shape="rect" id="node5" href="$d6/d32/building_8c.html#a1d68c72b646956c32d5113b65fbe3c82" title="building_route_plan\l_by_walk" alt="" coords="762,5,900,44"/>
-<area shape="rect" id="node7" href="$d7/d58/navichain_8c.html#aeb289ca8b5b4de6ea0d5f10154eab9b2" title="_projection_2_seg" alt="" coords="373,113,503,139"/>
-<area shape="rect" id="node8" href="$d7/d58/navichain_8c.html#acb03dca018bfae07672aa55e25d92f9a" title="navigate_get_status" alt="" coords="562,61,703,87"/>
-<area shape="rect" id="node9" href="$d7/d58/navichain_8c.html#a27af2007b5df95f90815692d6b359c58" title="navigate_get_projection\l_segindex" alt="" coords="551,111,714,149"/>
-<area shape="rect" id="node10" href="$d7/d58/navichain_8c.html#a07af10219df70d5cc13f066351fdf0a7" title="navigate_get_projection" alt="" coords="551,173,714,199"/>
+<area shape="rect" id="node2" href="$d7/d58/navichain_8c.html#adf6566f8a9e9de8092fa8bb0e7f74e52" title="_make_angle" alt="" coords="193,133,294,159"/>
+<area shape="rect" id="node7" href="$db/de6/vec2_8c.html#aef74935c0b4006564fd26985121dd50d" title="vec2_normal_projection" alt="" coords="162,220,325,245"/>
+<area shape="rect" id="node3" href="$d7/d58/navichain_8c.html#aeb0b019474f97b741a927bf2ccf894a7" title="_load_nc_seg" alt="" coords="386,115,490,140"/>
+<area shape="rect" id="node4" href="$d7/d58/navichain_8c.html#adb5ea1d7c0c35ff786c1c94783121cca" title="navichain_new" alt="" coords="578,95,688,120"/>
+<area shape="rect" id="node5" href="$da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="762,5,961,57"/>
+<area shape="rect" id="node6" href="$da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="762,81,961,133"/>
+<area shape="rect" id="node8" href="$d7/d58/navichain_8c.html#aeb289ca8b5b4de6ea0d5f10154eab9b2" title="_projection_2_seg" alt="" coords="373,296,503,321"/>
+<area shape="rect" id="node9" href="$d7/d58/navichain_8c.html#af1e2b0fab67ccf69c6c0cf7fc99a4900" title="navigate_get_status" alt="" coords="562,220,703,245"/>
+<area shape="rect" id="node14" href="$d7/d58/navichain_8c.html#ad093f5323b74b10c431476381b07d2f4" title="navigate_get_projection\l_segindex" alt="" coords="551,289,714,328"/>
+<area shape="rect" id="node16" href="$d7/d58/navichain_8c.html#ac552d60b8225947d2fe7b323584c5561" title="navigate_get_projection" alt="" coords="551,361,714,387"/>
+<area shape="rect" id="node18" href="$d7/d58/navichain_8c.html#a9fe903082105fe7a255868721802d6bd" title="navigate_get_distance\l_to_end" alt="" coords="555,431,710,469"/>
+<area shape="rect" id="node10" href="$d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="830,157,893,183"/>
+<area shape="rect" id="node13" href="$de/dea/proxy__navichain_8c.html#a8b22f93beef1a07bce06f71e18113024" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetStatus" alt="" coords="774,207,949,259"/>
+<area shape="rect" id="node11" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="1009,157,1099,183"/>
+<area shape="rect" id="node12" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1147,157,1197,183"/>
+<area shape="rect" id="node15" href="$de/dea/proxy__navichain_8c.html#ada3d8e593e84ebc76ef1e3081d720ef5" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectSegIndex" alt="" coords="762,283,961,335"/>
+<area shape="rect" id="node17" href="$de/dea/proxy__navichain_8c.html#a79b95df493f764a5197f262957c73633" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetProjectPoint" alt="" coords="774,359,949,411"/>
+<area shape="rect" id="node19" href="$de/dea/proxy__navichain_8c.html#a91759d24ca3fe546919797a98a97511b" title="Java_com_jcble_map3d\l_navigate_NavigateChain\l_navigateGetDistanceToEnd" alt="" coords="766,435,957,487"/>
 </map>

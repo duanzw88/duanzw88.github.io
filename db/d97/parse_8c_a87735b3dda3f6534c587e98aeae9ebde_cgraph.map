@@ -1,17 +1,30 @@
 <map id="parseBeacon" name="parseBeacon">
-<area shape="rect" id="node2" href="$dc/d99/beacon_8h.html#a3e8ce59810a8b141c11e040c0cd39f90" title="beacon_new" alt="" coords="191,5,288,31"/>
-<area shape="rect" id="node3" href="$dc/d99/beacon_8h.html#ae5e335ac2bd44c10b04caf133ded7965" title="beacon_set_sn" alt="" coords="183,55,295,80"/>
-<area shape="rect" id="node4" href="$dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="161,104,318,129"/>
-<area shape="rect" id="node6" href="$dc/d99/beacon_8h.html#a9f6abf8cb2695062297cdbe8c23a1b32" title="beacon_set_uuid" alt="" coords="178,153,301,179"/>
-<area shape="rect" id="node7" href="$dc/d99/beacon_8h.html#ae227164ba27845578896a5c68feaddd7" title="beacon_set_rsa" alt="" coords="181,203,297,228"/>
-<area shape="rect" id="node11" href="$dc/d99/beacon_8h.html#a98c9d32c4040281e3184af31979271d3" title="beacon_set_major_minor" alt="" coords="153,252,325,277"/>
-<area shape="rect" id="node12" href="$dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="164,301,314,327"/>
-<area shape="rect" id="node13" href="$d2/d91/point_8h.html#a4e1e4e515e15913aa01386473543d99b" title="point_new" alt="" coords="198,351,280,376"/>
-<area shape="rect" id="node14" href="$d8/d4d/jclog_8c.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="203,400,275,425"/>
-<area shape="rect" id="node15" href="$d8/d4d/jclog_8c.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="205,449,273,475"/>
-<area shape="rect" id="node16" href="$dc/d99/beacon_8h.html#aa1e112de0dfb3ebd9b7c5bb22c58817e" title="beacon_set_point" alt="" coords="176,499,302,524"/>
-<area shape="rect" id="node5" href="$dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="376,104,516,129"/>
-<area shape="rect" id="node8" href="$d6/dcc/beacon_8c.html#a1343d9da752b44882c3f94f0dc787f86" title="set_rssi_by_distance" alt="" coords="373,153,519,179"/>
-<area shape="rect" id="node9" href="$d6/dcc/beacon_8c.html#adc73b368b1aeb48fc971fd76b5dd0a98" title="set_beacon_dn" alt="" coords="390,203,502,228"/>
-<area shape="rect" id="node10" href="$d6/dcc/beacon_8c.html#af75dba95e799d5369650f20ada4d4be4" title="get_dn_by_distance" alt="" coords="376,252,516,277"/>
+<area shape="rect" id="node2" href="$dc/d99/beacon_8h.html#a3e8ce59810a8b141c11e040c0cd39f90" title="beacon_new" alt="" coords="191,17,288,43"/>
+<area shape="rect" id="node8" href="$dc/d99/beacon_8h.html#ae5e335ac2bd44c10b04caf133ded7965" title="beacon_set_sn" alt="" coords="183,67,295,92"/>
+<area shape="rect" id="node9" href="$dc/d18/c_j_s_o_n_8h.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="161,116,318,141"/>
+<area shape="rect" id="node11" href="$dc/d99/beacon_8h.html#a9f6abf8cb2695062297cdbe8c23a1b32" title="beacon_set_uuid" alt="" coords="178,165,301,191"/>
+<area shape="rect" id="node12" href="$dc/d99/beacon_8h.html#ae227164ba27845578896a5c68feaddd7" title="beacon_set_rsa" alt="" coords="181,215,297,240"/>
+<area shape="rect" id="node24" href="$dc/d99/beacon_8h.html#a98c9d32c4040281e3184af31979271d3" title="beacon_set_major_minor" alt="" coords="153,264,325,289"/>
+<area shape="rect" id="node25" href="$dc/d18/c_j_s_o_n_8h.html#ac48335f22f743aff913991d809e0d620" title="cJSON_GetArrayItem" alt="" coords="164,313,314,339"/>
+<area shape="rect" id="node26" href="$d2/d91/point_8h.html#a565f1939d0782afc2b39fc748b032d11" title="point_new_by_wgs84" alt="" coords="164,364,314,389"/>
+<area shape="rect" id="node29" href="$dc/d99/beacon_8h.html#aa1e112de0dfb3ebd9b7c5bb22c58817e" title="beacon_set_point" alt="" coords="176,413,302,439"/>
+<area shape="rect" id="node3" href="$d3/d61/sparsearray_8h.html#aceb31ad9b44adf423066ad38109f44d9" title="sparsearray_new" alt="" coords="384,17,508,43"/>
+<area shape="rect" id="node4" href="$d0/d6d/ring_8h.html#a193cfdf6ed064a80500f303d2d90a715" title="ring_new" alt="" coords="588,5,663,31"/>
+<area shape="rect" id="node5" href="$dd/d98/table_8h.html#a18cd22145a9504ee14d2928e2e06ab02" title="table_new" alt="" coords="585,55,667,80"/>
+<area shape="rect" id="node6" href="$dc/d33/table_8c.html#a46002fa21bef6b07e4b0b8093cd7b4cd" title="cmpatom" alt="" coords="747,24,824,49"/>
+<area shape="rect" id="node7" href="$dc/d33/table_8c.html#a8b92f9ce10af3b50b5c2e0067ac2b535" title="hashatom" alt="" coords="746,73,825,99"/>
+<area shape="rect" id="node10" href="$dc/d7f/c_j_s_o_n_8c.html#ab6066e9a7036815e0c14b658dee3d1f5" title="cJSON_strcasecmp" alt="" coords="376,67,516,92"/>
+<area shape="rect" id="node13" href="$d6/dcc/beacon_8c.html#a1343d9da752b44882c3f94f0dc787f86" title="set_rssi_by_distance" alt="" coords="373,116,519,141"/>
+<area shape="rect" id="node18" href="$d3/d61/sparsearray_8h.html#aa7853e762468e279c96e2297898d9ba0" title="sparsearray_length" alt="" coords="378,215,514,240"/>
+<area shape="rect" id="node20" href="$d3/d61/sparsearray_8h.html#aee6f4160d0fd077f6345aa3908d48c05" title="sparsearray_get" alt="" coords="567,291,685,316"/>
+<area shape="rect" id="node22" href="$d6/dcc/beacon_8c.html#adc73b368b1aeb48fc971fd76b5dd0a98" title="set_beacon_dn" alt="" coords="390,165,502,191"/>
+<area shape="rect" id="node23" href="$d6/dcc/beacon_8c.html#af75dba95e799d5369650f20ada4d4be4" title="get_dn_by_distance" alt="" coords="376,316,516,341"/>
+<area shape="rect" id="node14" href="$d3/d61/sparsearray_8h.html#ad7b51d2e2cc340fc639dff6b5917c593" title="sparsearray_put" alt="" coords="567,156,685,181"/>
+<area shape="rect" id="node15" href="$dd/d98/table_8h.html#ab63213b8190793fb93d9908488f7b913" title="table_put" alt="" coords="747,147,824,172"/>
+<area shape="rect" id="node16" href="$d0/d6d/ring_8h.html#a5ff2afafc8dff4d75f6da88fd3739db1" title="ring_add_high" alt="" coords="733,196,838,221"/>
+<area shape="rect" id="node17" href="$d9/de9/ring_8c.html#a5573b04af622576e785a6ef514181696" title="_reset_lastget" alt="" coords="886,196,991,221"/>
+<area shape="rect" id="node19" href="$dd/d98/table_8h.html#a3c844f0bfc6f4e9ced4fdbbdf2ea9014" title="table_length" alt="" coords="579,215,673,240"/>
+<area shape="rect" id="node21" href="$dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="747,291,824,316"/>
+<area shape="rect" id="node27" href="$d4/df5/jclog_8h.html#a41e6db44cc79de71861a395a26d6b7f4" title="lon2x_m" alt="" coords="410,365,482,391"/>
+<area shape="rect" id="node28" href="$d4/df5/jclog_8h.html#a7cacbabacfc3dd5dd42377809f20fa02" title="lat2y_m" alt="" coords="412,415,480,440"/>
 </map>

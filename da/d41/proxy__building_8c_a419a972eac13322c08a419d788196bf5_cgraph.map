@@ -1,0 +1,5 @@
+<map id="Java_com_jcble_map3d_map_Building_buildingGetFloorByIndex" name="Java_com_jcble_map3d_map_Building_buildingGetFloorByIndex">
+<area shape="rect" id="node2" href="$d5/d95/building_8h.html#a70099aa4654da1c692bd53104824ebab" title="building_get_floor\l_by_index" alt="" coords="268,24,395,63"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="443,5,529,31"/>
+<area shape="rect" id="node4" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="452,55,520,80"/>
+</map>

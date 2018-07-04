@@ -1,7 +1,12 @@
 <map id="beacon_get_uuid" name="beacon_get_uuid">
-<area shape="rect" id="node2" href="$dc/de3/floor_8c.html#ab38f891bb526f683e05aa6a1d5640324" title="floor_add_beacon" alt="" coords="177,5,305,31"/>
-<area shape="rect" id="node3" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="353,5,454,31"/>
-<area shape="rect" id="node4" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="502,5,587,31"/>
-<area shape="rect" id="node5" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="635,5,737,31"/>
-<area shape="rect" id="node6" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="785,5,894,31"/>
+<area shape="rect" id="node2" href="$dc/de3/floor_8c.html#ab38f891bb526f683e05aa6a1d5640324" title="floor_add_beacon" alt="" coords="235,33,363,59"/>
+<area shape="rect" id="node9" href="$d0/dad/location_8c.html#a81ee251a3a1c163563e329d8077903a7" title="parse_beacons" alt="" coords="243,83,355,108"/>
+<area shape="rect" id="node11" href="$db/d8c/proxy__beacon_8c.html#a0b5af90d1fc50bafaaa8ca67b9313414" title="Java_com_jcble_mapsdkv2\l_map_base_Beacon_beaconGetUuid" alt="" coords="177,132,421,171"/>
+<area shape="rect" id="node3" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="469,33,569,59"/>
+<area shape="rect" id="node4" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="617,33,702,59"/>
+<area shape="rect" id="node5" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="750,33,853,59"/>
+<area shape="rect" id="node6" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="901,33,1009,59"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1117,5,1168,31"/>
+<area shape="rect" id="node8" href="$dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1057,55,1228,93"/>
+<area shape="rect" id="node10" href="$d0/dad/location_8c.html#ab66b34e37247f90bbdb1e310f4a65e65" title="initLocation" alt="" coords="475,83,563,108"/>
 </map>

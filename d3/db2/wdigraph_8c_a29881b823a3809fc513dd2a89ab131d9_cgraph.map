@@ -1,3 +1,5 @@
 <map id="wdigraph_print_adj" name="wdigraph_print_adj">
-<area shape="rect" id="node2" href="$d8/d4d/jclog_8c.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="187,5,235,31"/>
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="187,5,274,31"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="196,55,265,80"/>
+<area shape="rect" id="node4" href="$d4/df5/jclog_8h.html#af9d42affcdcfe42b0bbd77e3d3329d8f" title="print" alt="" coords="207,104,254,129"/>
 </map>

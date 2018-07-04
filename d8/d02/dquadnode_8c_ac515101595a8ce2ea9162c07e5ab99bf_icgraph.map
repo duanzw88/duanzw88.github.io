@@ -1,0 +1,9 @@
+<map id="split_space" name="split_space">
+<area shape="rect" id="node2" href="$d8/d02/dquadnode_8c.html#a0612e657b780db42ff6b01c2c6a08b85" title="insert" alt="" coords="141,29,195,55"/>
+<area shape="rect" id="node3" href="$d8/d02/dquadnode_8c.html#aa11e53d8f169e499bc5e8827ddaea8ba" title="dquadnode_insert" alt="" coords="248,5,376,31"/>
+<area shape="rect" id="node8" href="$d8/d02/dquadnode_8c.html#adad303db569e399b0224a73255d28707" title="insert_to_subspace" alt="" coords="243,55,380,80"/>
+<area shape="rect" id="node4" href="$d3/d0e/dquadtree_8c.html#a87b453ab3496e2404c4e625822a1aa75" title="dquadtree_insert" alt="" coords="428,5,550,31"/>
+<area shape="rect" id="node5" href="$da/dba/quadtree__test_8c.html#a68d24d109716b06f6054d6d7e9565369" title="key_press" alt="" coords="598,5,680,31"/>
+<area shape="rect" id="node6" href="$da/dba/quadtree__test_8c.html#a04848af6cf5029fee4831b592bd215ce" title="init_window" alt="" coords="728,5,818,31"/>
+<area shape="rect" id="node7" href="$da/dba/quadtree__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="866,5,916,31"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="draw_beacon" name="draw_beacon">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="155,5,226,31"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="274,5,364,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="412,5,462,31"/>
+</map>

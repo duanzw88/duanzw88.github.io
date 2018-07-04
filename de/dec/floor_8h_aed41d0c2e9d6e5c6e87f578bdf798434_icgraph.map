@@ -1,0 +1,6 @@
+<map id="floor_get_top" name="floor_get_top">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="369,5,460,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#a519633830f0ae2cb50bfeae5c0b55210" title="floor_box_changed" alt="" coords="170,31,304,56"/>
+<area shape="rect" id="node5" href="$d3/d8e/proxy__floor_8c.html#a50ebd080acc9c8f4af1ff202ad93c9cd" title="Java_com_jcble_map3d\l_map_Floor_floorGetTop" alt="" coords="153,80,321,119"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="508,5,558,31"/>
+</map>

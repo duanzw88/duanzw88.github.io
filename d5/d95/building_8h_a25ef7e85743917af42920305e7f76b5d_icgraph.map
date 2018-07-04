@@ -1,0 +1,7 @@
+<map id="building_get_floor_by_id" name="building_get_floor_by_id">
+<area shape="rect" id="node2" href="$db/d97/parse_8c.html#a1ef62d3fd8cf3940adb652e4cf9da7f2" title="parseConn" alt="" coords="180,33,266,59"/>
+<area shape="rect" id="node3" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="314,33,417,59"/>
+<area shape="rect" id="node4" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="465,33,573,59"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="681,5,732,31"/>
+<area shape="rect" id="node6" href="$dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="621,55,792,93"/>
+</map>

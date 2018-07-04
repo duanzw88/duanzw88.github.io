@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: location.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_ac286324843e942850b0bca418d812f8.html">location</a></li><li class="navelem"><a class="el" href="../../dir_173f229f5e770f9e7a4c9ae1f9779cdd.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">location.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/dcf/location_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LOCATION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __LOCATION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">point.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d95/building_8h.html">building.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/dcf/location_8h.html#ab66b34e37247f90bbdb1e310f4a65e65">initLocation</a>(building_p b);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/dcf/location_8h.html#afbc3df93f3885672340a3ee4ec133fad">print_map</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;point_p <a class="code" href="../../dd/dcf/location_8h.html#a27bc7173502b7070a2c41918586f1387">location_by_scan_data</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *beacons);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// point_p location_by_scan_data2(int *beacon_data,int len,int* usebeacons,int *count);</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="building_8h_html"><div class="ttname"><a href="../../d5/d95/building_8h.html">building.h</a></div></div>
+<div class="ttc" id="point_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div></div>
+<div class="ttc" id="location_8h_html_a27bc7173502b7070a2c41918586f1387"><div class="ttname"><a href="../../dd/dcf/location_8h.html#a27bc7173502b7070a2c41918586f1387">location_by_scan_data</a></div><div class="ttdeci">point_p location_by_scan_data(const char *beacons)</div><div class="ttdef"><b>Definition:</b> location.c:65</div></div>
+<div class="ttc" id="location_8h_html_ab66b34e37247f90bbdb1e310f4a65e65"><div class="ttname"><a href="../../dd/dcf/location_8h.html#ab66b34e37247f90bbdb1e310f4a65e65">initLocation</a></div><div class="ttdeci">void initLocation(building_p b)</div><div class="ttdef"><b>Definition:</b> location.c:47</div></div>
+<div class="ttc" id="location_8h_html_afbc3df93f3885672340a3ee4ec133fad"><div class="ttname"><a href="../../dd/dcf/location_8h.html#afbc3df93f3885672340a3ee4ec133fad">print_map</a></div><div class="ttdeci">void print_map()</div><div class="ttdef"><b>Definition:</b> location.c:97</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,3 +1,13 @@
 <map id="beacon_free" name="beacon_free">
-<area shape="rect" id="node2" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="149,5,229,31"/>
+<area shape="rect" id="node2" href="$d3/d61/sparsearray_8h.html#aa7853e762468e279c96e2297898d9ba0" title="sparsearray_length" alt="" coords="149,31,285,56"/>
+<area shape="rect" id="node4" href="$d3/d61/sparsearray_8h.html#a615247275825befe4105c552dcb8d415" title="sparsearray_get_at" alt="" coords="149,104,285,129"/>
+<area shape="rect" id="node9" href="$d3/d61/sparsearray_8h.html#ac90fe92d1c24d61cc641dba317b1d870" title="sparsearray_free" alt="" coords="156,153,278,179"/>
+<area shape="rect" id="node12" href="$d2/d91/point_8h.html#ab4899101cbf6be63480e7c4d4515801a" title="point_free" alt="" coords="177,203,257,228"/>
+<area shape="rect" id="node3" href="$dd/d98/table_8h.html#a3c844f0bfc6f4e9ced4fdbbdf2ea9014" title="table_length" alt="" coords="355,5,449,31"/>
+<area shape="rect" id="node5" href="$de/d2b/sparsearray_8c.html#ae37d0157f772b60509edcb514c0252f6" title="sparsearray_key_at" alt="" coords="333,55,471,80"/>
+<area shape="rect" id="node8" href="$dd/d98/table_8h.html#a1bfdacd702cc9d5c31a1bc9fa36a83e7" title="查找与键对应的值，首先得到键的哈希码，而后将哈希码对buckets桶中的元素取模， 然后搜索对应的链表查找与k..." alt="" coords="364,104,440,129"/>
+<area shape="rect" id="node6" href="$d0/d6d/ring_8h.html#a963fa418558f2c9362c9959673803a19" title="ring_get" alt="" coords="519,55,589,80"/>
+<area shape="rect" id="node7" href="$d9/de9/ring_8c.html#a7f009fd9dcde2371fc8a568619eb5a33" title="_ring_node" alt="" coords="637,55,725,80"/>
+<area shape="rect" id="node10" href="$d0/d6d/ring_8h.html#aac5a49f790069389d4c77780ebb930a4" title="ring_free" alt="" coords="365,153,439,179"/>
+<area shape="rect" id="node11" href="$dd/d98/table_8h.html#af041927224af0a0cbabb2caea73eeb5b" title="table_free" alt="" coords="362,203,443,228"/>
 </map>

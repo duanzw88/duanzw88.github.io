@@ -1,4 +1,8 @@
 <map id="routenode.c" name="routenode.c">
-<area shape="rect" id="node5" href="$d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="272,79,365,104"/>
-<area shape="rect" id="node6" href="$d2/d91/point_8h.html" title="point.h" alt="" coords="288,152,349,177"/>
+<area shape="rect" id="node3" href="$dc/da7/assert_8h.html" title="assert.h" alt="" coords="93,79,162,104"/>
+<area shape="rect" id="node6" href="$d9/d9a/mem_8h.html" title="mem.h" alt="" coords="186,79,248,104"/>
+<area shape="rect" id="node7" href="$d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="272,79,365,104"/>
+<area shape="rect" id="node9" href="$d4/df5/jclog_8h.html" title="jclog.h" alt="" coords="426,79,486,104"/>
+<area shape="rect" id="node4" href="$dc/d65/except_8h.html" title="except.h" alt="" coords="161,152,233,177"/>
+<area shape="rect" id="node8" href="$d2/d91/point_8h.html" title="point.h" alt="" coords="269,152,330,177"/>
 </map>

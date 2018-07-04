@@ -1,0 +1,6 @@
+<map id="floor_get_right" name="floor_get_right">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="386,5,477,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#a519633830f0ae2cb50bfeae5c0b55210" title="floor_box_changed" alt="" coords="182,31,317,56"/>
+<area shape="rect" id="node5" href="$d3/d8e/proxy__floor_8c.html#aa78c4f62ef4f9acf88d14aefd121f133" title="Java_com_jcble_map3d\l_map_Floor_floorGetRight" alt="" coords="160,80,338,119"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="525,5,575,31"/>
+</map>

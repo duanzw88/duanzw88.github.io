@@ -1,6 +1,14 @@
 <map id="cJSON_GetArraySize" name="cJSON_GetArraySize">
-<area shape="rect" id="node2" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="485,5,587,31"/>
-<area shape="rect" id="node4" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="352,31,437,56"/>
-<area shape="rect" id="node5" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="204,81,304,107"/>
-<area shape="rect" id="node3" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="635,5,744,31"/>
+<area shape="rect" id="node2" href="$d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="386,5,517,31"/>
+<area shape="rect" id="node4" href="$d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="404,55,498,80"/>
+<area shape="rect" id="node5" href="$d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="204,105,313,131"/>
+<area shape="rect" id="node7" href="$d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="210,155,306,180"/>
+<area shape="rect" id="node8" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="618,231,720,256"/>
+<area shape="rect" id="node12" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="409,256,494,281"/>
+<area shape="rect" id="node13" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="208,307,309,332"/>
+<area shape="rect" id="node3" href="$d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="590,55,748,80"/>
+<area shape="rect" id="node6" href="$d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="361,105,542,131"/>
+<area shape="rect" id="node9" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="796,231,904,256"/>
+<area shape="rect" id="node10" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1012,203,1063,228"/>
+<area shape="rect" id="node11" href="$dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="952,252,1123,291"/>
 </map>

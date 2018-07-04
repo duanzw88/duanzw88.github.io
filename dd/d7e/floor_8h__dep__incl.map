@@ -1,9 +1,21 @@
 <map id="floor.h" name="floor.h">
-<area shape="rect" id="node2" href="$d5/d95/building_8h.html" title="building.h" alt="" coords="82,79,161,104"/>
-<area shape="rect" id="node5" href="$d7/d58/navichain_8c.html" title="navichain.c" alt="" coords="120,225,208,251"/>
-<area shape="rect" id="node6" href="$d4/d2b/parse_8h.html" title="parse.h" alt="" coords="238,152,304,177"/>
-<area shape="rect" id="node8" href="$dc/de3/floor_8c.html" title="floor.c" alt="" coords="288,79,345,104"/>
-<area shape="rect" id="node3" href="$d2/d23/navichain_8h.html" title="navichain.h" alt="" coords="74,152,163,177"/>
-<area shape="rect" id="node4" href="$d6/d32/building_8c.html" title="building.c" alt="" coords="5,225,83,251"/>
-<area shape="rect" id="node7" href="$db/d97/parse_8c.html" title="parse.c" alt="" coords="238,225,303,251"/>
+<area shape="rect" id="node2" href="$d3/d8e/proxy__floor_8c.html" title="proxy_floor.c" alt="" coords="719,79,816,104"/>
+<area shape="rect" id="node3" href="$d5/d95/building_8h.html" title="building.h" alt="" coords="889,79,968,104"/>
+<area shape="rect" id="node11" href="$d4/d2b/parse_8h.html" title="parse.h" alt="" coords="285,152,351,177"/>
+<area shape="rect" id="node19" href="$d7/d58/navichain_8c.html" title="navichain.c" alt="" coords="1011,225,1099,251"/>
+<area shape="rect" id="node20" href="$dc/de3/floor_8c.html" title="floor.c" alt="" coords="1092,79,1149,104"/>
+<area shape="rect" id="node4" href="$da/d41/proxy__building_8c.html" title="proxy_building.c" alt="" coords="870,225,987,251"/>
+<area shape="rect" id="node5" href="$d2/d0a/proxy__location_8c.html" title="proxy_location.c" alt="" coords="1123,225,1241,251"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html" title="main.c" alt="" coords="337,225,398,251"/>
+<area shape="rect" id="node7" href="$d9/dfa/mem__chk_8c.html" title="mem_chk.c" alt="" coords="224,225,313,251"/>
+<area shape="rect" id="node8" href="$dd/dcf/location_8h.html" title="location.h" alt="" coords="1183,152,1261,177"/>
+<area shape="rect" id="node9" href="$d0/dad/location_8c.html" title="location.c" alt="" coords="1264,225,1342,251"/>
+<area shape="rect" id="node10" href="$de/d24/location__bak_8c.html" title="location_bak.c" alt="" coords="1366,225,1472,251"/>
+<area shape="rect" id="node14" href="$d6/d32/building_8c.html" title="building.c" alt="" coords="890,152,967,177"/>
+<area shape="rect" id="node15" href="$d2/d23/navichain_8h.html" title="navichain.h" alt="" coords="661,152,750,177"/>
+<area shape="rect" id="node12" href="$dd/dc1/proxy__parse_8c.html" title="proxy_parse.c" alt="" coords="5,225,110,251"/>
+<area shape="rect" id="node13" href="$db/d97/parse_8c.html" title="parse.c" alt="" coords="135,225,200,251"/>
+<area shape="rect" id="node16" href="$de/dea/proxy__navichain_8c.html" title="proxy_navichain.c" alt="" coords="577,225,705,251"/>
+<area shape="rect" id="node17" href="$d9/d43/proxy__naviseg_8c.html" title="proxy_naviseg.c" alt="" coords="728,225,846,251"/>
+<area shape="rect" id="node18" href="$da/d9b/proxy__navistatus_8c.html" title="proxy_navistatus.c" alt="" coords="421,225,553,251"/>
 </map>

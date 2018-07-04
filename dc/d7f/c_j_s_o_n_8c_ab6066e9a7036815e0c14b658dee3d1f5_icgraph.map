@@ -1,13 +1,25 @@
 <map id="cJSON_strcasecmp" name="cJSON_strcasecmp">
-<area shape="rect" id="node2" href="$dc/d7f/c_j_s_o_n_8c.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="218,157,375,183"/>
-<area shape="rect" id="node10" href="$dc/d7f/c_j_s_o_n_8c.html#a7010822d267256f274e0adf22be2b202" title="cJSON_DetachItemFromObject" alt="" coords="192,257,401,283"/>
-<area shape="rect" id="node12" href="$dc/d7f/c_j_s_o_n_8c.html#a31202ffebc9e4f86c3db12f9793b6800" title="cJSON_ReplaceItemInObject" alt="" coords="199,307,395,332"/>
+<area shape="rect" id="node2" href="$dc/d7f/c_j_s_o_n_8c.html#aba766c9d2c20996e323522cbf2ba46c6" title="cJSON_GetObjectItem" alt="" coords="218,307,375,332"/>
+<area shape="rect" id="node22" href="$dc/d7f/c_j_s_o_n_8c.html#a7010822d267256f274e0adf22be2b202" title="cJSON_DetachItemFromObject" alt="" coords="192,483,401,508"/>
+<area shape="rect" id="node24" href="$dc/d7f/c_j_s_o_n_8c.html#a31202ffebc9e4f86c3db12f9793b6800" title="cJSON_ReplaceItemInObject" alt="" coords="199,532,395,557"/>
 <area shape="rect" id="node3" href="$dc/d7f/c_j_s_o_n_8c.html#a6449a77e7df86441d35bf074d92faf80" title="cJSON_HasObjectItem" alt="" coords="472,5,631,31"/>
-<area shape="rect" id="node4" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="984,81,1086,107"/>
-<area shape="rect" id="node6" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="851,107,936,132"/>
-<area shape="rect" id="node7" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="702,183,803,208"/>
-<area shape="rect" id="node8" href="$db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="507,208,597,233"/>
-<area shape="rect" id="node9" href="$db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="502,257,602,283"/>
-<area shape="rect" id="node5" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1134,81,1243,107"/>
-<area shape="rect" id="node11" href="$dc/d7f/c_j_s_o_n_8c.html#a148a56617a2a97921d9b9dfbe5dc85bf" title="cJSON_DeleteItemFromObject" alt="" coords="449,307,654,332"/>
+<area shape="rect" id="node4" href="$d0/dad/location_8c.html#a17a9c3492fc1012a331c176e76c46332" title="calc_location_map" alt="" coords="727,57,859,83"/>
+<area shape="rect" id="node6" href="$d0/dad/location_8c.html#aa38689d3e38f62044514511c601d0491" title="get_envelop" alt="" coords="746,107,840,132"/>
+<area shape="rect" id="node7" href="$d0/dad/location_8c.html#a1920ed8501ef97fb012fe7355332481b" title="get_rssi_range" alt="" coords="497,157,607,183"/>
+<area shape="rect" id="node9" href="$d0/dad/location_8c.html#a9d563cdd1fdc14877e11d12a0ba705e1" title="set_distance" alt="" coords="504,207,600,232"/>
+<area shape="rect" id="node10" href="$de/d24/location__bak_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="461,256,642,281"/>
+<area shape="rect" id="node13" href="$db/d97/parse_8c.html#af40c37aee1fa0709356ac8e22f57e8bc" title="parseBuilding" alt="" coords="1181,396,1283,421"/>
+<area shape="rect" id="node17" href="$db/d97/parse_8c.html#a4b293828897332641be51f1c207b6dff" title="parseFloor" alt="" coords="989,396,1074,421"/>
+<area shape="rect" id="node18" href="$db/d97/parse_8c.html#aa0c8e4b6c0b8454eb42533d5baabc044" title="parseFeature" alt="" coords="742,433,843,459"/>
+<area shape="rect" id="node19" href="$db/d97/parse_8c.html#a9f8968657fe006ea711a307f573ddbba" title="parseRoute" alt="" coords="507,459,597,484"/>
+<area shape="rect" id="node20" href="$db/d97/parse_8c.html#a87735b3dda3f6534c587e98aeae9ebde" title="parseBeacon" alt="" coords="502,508,602,533"/>
+<area shape="rect" id="node21" href="$db/d97/parse_8c.html#a1ef62d3fd8cf3940adb652e4cf9da7f2" title="parseConn" alt="" coords="989,496,1075,521"/>
+<area shape="rect" id="node5" href="$d0/dad/location_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="953,107,1111,132"/>
+<area shape="rect" id="node8" href="$d0/dad/location_8c.html#ac45780fb840ca619c56f1954bb569d1f" title="filter_beacon_and_location" alt="" coords="702,157,883,183"/>
+<area shape="rect" id="node11" href="$de/d24/location__bak_8c.html#a27bc7173502b7070a2c41918586f1387" title="location_by_scan_data" alt="" coords="714,249,872,275"/>
+<area shape="rect" id="node12" href="$d2/d0a/proxy__location_8c.html#a3ac8158eef8fd44327c4861e41019e40" title="Java_com_jcble_map3d\l_location_JCLocationManager\l_requestLocation" alt="" coords="931,229,1133,281"/>
+<area shape="rect" id="node14" href="$db/d97/parse_8c.html#acda46c21735d15b6432465144bd1fe23" title="parseOpenFile" alt="" coords="1331,396,1439,421"/>
+<area shape="rect" id="node15" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1547,368,1598,393"/>
+<area shape="rect" id="node16" href="$dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="1487,417,1658,456"/>
+<area shape="rect" id="node23" href="$dc/d7f/c_j_s_o_n_8c.html#a148a56617a2a97921d9b9dfbe5dc85bf" title="cJSON_DeleteItemFromObject" alt="" coords="449,609,654,635"/>
 </map>

@@ -1,0 +1,9 @@
+<map id="building_new" name="building_new">
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#a0ef2fd4ca9deac10b65930b27308b063" title="seq_new" alt="" coords="177,5,252,31"/>
+<area shape="rect" id="node4" href="$d3/d61/sparsearray_8h.html#aceb31ad9b44adf423066ad38109f44d9" title="sparsearray_new" alt="" coords="153,55,276,80"/>
+<area shape="rect" id="node3" href="$d8/dc1/arrayrep_8h.html#a6847f4a511370986362451a2f5116b34" title="arrayrep_init" alt="" coords="324,5,420,31"/>
+<area shape="rect" id="node5" href="$d0/d6d/ring_8h.html#a193cfdf6ed064a80500f303d2d90a715" title="ring_new" alt="" coords="334,55,410,80"/>
+<area shape="rect" id="node6" href="$dd/d98/table_8h.html#a18cd22145a9504ee14d2928e2e06ab02" title="table_new" alt="" coords="331,104,413,129"/>
+<area shape="rect" id="node7" href="$dc/d33/table_8c.html#a46002fa21bef6b07e4b0b8093cd7b4cd" title="cmpatom" alt="" coords="469,79,546,104"/>
+<area shape="rect" id="node8" href="$dc/d33/table_8c.html#a8b92f9ce10af3b50b5c2e0067ac2b535" title="hashatom" alt="" coords="468,128,547,153"/>
+</map>

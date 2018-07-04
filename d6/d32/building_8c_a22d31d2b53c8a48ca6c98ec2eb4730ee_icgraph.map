@@ -1,0 +1,6 @@
+<map id="building_get_name" name="building_get_name">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="252,5,342,31"/>
+<area shape="rect" id="node4" href="$da/d41/proxy__building_8c.html#a5c5c412997a8ad57345575af2bc4ba1b" title="Java_com_jcble_map3d\l_map_Building_buildingGetName" alt="" coords="187,55,407,93"/>
+<area shape="rect" id="node5" href="$dd/dc1/proxy__parse_8c.html#a8d96577bb57ffacd13db66125a998a63" title="Java_com_jcble_map3d\l_map_Parse_getBuilding" alt="" coords="212,117,383,156"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="455,5,506,31"/>
+</map>

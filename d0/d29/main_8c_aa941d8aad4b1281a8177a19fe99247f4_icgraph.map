@@ -1,0 +1,6 @@
+<map id="drawing_line" name="drawing_line">
+<area shape="rect" id="node2" href="$d0/d29/main_8c.html#a6cf9e271cda5d35ae44ed54e4ffd5aac" title="draw_navigate" alt="" coords="150,5,258,31"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#aaa02d935e2114a031aff07780a52776e" title="draw_all" alt="" coords="306,5,377,31"/>
+<area shape="rect" id="node4" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="425,5,515,31"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="563,5,613,31"/>
+</map>

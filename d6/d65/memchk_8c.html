@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: memchk.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_c6f4a65c654ae4763e93a22dd50e0317.html">module</a></li><li class="navelem"><a class="el" href="../../dir_5a3b161ddc44ceed719a1f8eb5429336.html">alg</a></li><li class="navelem"><a class="el" href="../../dir_cd16c2705fca4e08149156ad3db61bec.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">memchk.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/da7/assert_8h_source.html">assert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d65/except_8h_source.html">except.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d9a/mem_8h_source.html">mem.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+memchk.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dad/memchk_8c__incl.png" border="0" usemap="#memchk_8c" alt=""/></div>
+<map name="memchk_8c" id="memchk_8c">
+<area shape="rect" id="node6" href="../../dc/da7/assert_8h.html" title="assert.h" alt="" coords="360,79,429,104"/>
+<area shape="rect" id="node7" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="431,152,502,177"/>
+<area shape="rect" id="node9" href="../../d9/d9a/mem_8h.html" title="mem.h" alt="" coords="503,79,565,104"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dca/unionalign.html">align</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a885d44d02bf904728d7499b9f5dba03f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a885d44d02bf904728d7499b9f5dba03f">HTAB_LEN</a>&#160;&#160;&#160;2048</td></tr>
+<tr class="separator:a885d44d02bf904728d7499b9f5dba03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19c92f3510d88d327336afc24f490a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#af19c92f3510d88d327336afc24f490a4">NDESCRIPTORS</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:af19c92f3510d88d327336afc24f490a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6dcef7a1829fc392ee1ed77205ec2ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#ac6dcef7a1829fc392ee1ed77205ec2ff">NALLOC</a>&#160;&#160;&#160;( (4096 + sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>) - 1) / (sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>))) * (sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>))</td></tr>
+<tr class="separator:ac6dcef7a1829fc392ee1ed77205ec2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca786a485210420159ac642d1306353d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#aca786a485210420159ac642d1306353d">hash</a>(p,  t)&#160;&#160;&#160;(((unsigned long)(p) &gt;&gt; 3) &amp; (sizeof((t)) / sizeof((t)[0]) - 1))</td></tr>
+<tr class="separator:aca786a485210420159ac642d1306353d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a163433500ed00b946557ac6f0432df11"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a163433500ed00b946557ac6f0432df11">find</a> (const void *ptr)</td></tr>
+<tr class="separator:a163433500ed00b946557ac6f0432df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5aebd3fd98703f54899ead96761cc21"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#ae5aebd3fd98703f54899ead96761cc21">dalloc</a> (void *ptr, long size, const char *file, int line)</td></tr>
+<tr class="separator:ae5aebd3fd98703f54899ead96761cc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783959b899b6d70901a5a73fe4bf0b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a783959b899b6d70901a5a73fe4bf0b01">mem_free</a> (void *ptr, const char *file, int line)</td></tr>
+<tr class="separator:a783959b899b6d70901a5a73fe4bf0b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f643eba6d02a3e32a7285df36f4a5e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a45f643eba6d02a3e32a7285df36f4a5e">mem_resize</a> (void *ptr, long nbytes, const char *file, int line)</td></tr>
+<tr class="separator:a45f643eba6d02a3e32a7285df36f4a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958eb5712100fccc1c79a028994a64f7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a958eb5712100fccc1c79a028994a64f7">mem_alloc</a> (long nbytes, const char *file, int line)</td></tr>
+<tr class="separator:a958eb5712100fccc1c79a028994a64f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416889a84c062a24c5b65dd00d862f1a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a416889a84c062a24c5b65dd00d862f1a">mem_calloc</a> (long count, long nbytes, const char *file, int line)</td></tr>
+<tr class="separator:a416889a84c062a24c5b65dd00d862f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2670adca12bc28243341b43b067ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a1e2670adca12bc28243341b43b067ea2">mem_leak</a> (void(*<a class="el" href="../../de/d24/location__bak_8c.html#ad0102446dc70f81265a7a321ffd7b784">apply</a>)(const void *ptr, long size, const char *file, int line, void *cl), void *cl)</td></tr>
+<tr class="separator:a1e2670adca12bc28243341b43b067ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a4bc14a9be0eec9d47e4ffce4e014f66a"><td class="memItemLeft" align="right" valign="top">const Except_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a4bc14a9be0eec9d47e4ffce4e014f66a">Mem_Failed</a> = {&quot;Allocation Failed&quot;}</td></tr>
+<tr class="separator:a4bc14a9be0eec9d47e4ffce4e014f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e47ca41e2a8c68dd8154ce7067f4a76"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a3e47ca41e2a8c68dd8154ce7067f4a76">htab</a> [<a class="el" href="../../d6/d65/memchk_8c.html#a885d44d02bf904728d7499b9f5dba03f">HTAB_LEN</a>]</td></tr>
+<tr class="separator:a3e47ca41e2a8c68dd8154ce7067f4a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420a790ef2255174603ac4008fad2ede"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/memchk_8c.html#a420a790ef2255174603ac4008fad2ede">freelist</a> = {.free = &amp;freelist}</td></tr>
+<tr class="separator:a420a790ef2255174603ac4008fad2ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="aca786a485210420159ac642d1306353d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca786a485210420159ac642d1306353d">&#9670;&nbsp;</a></span>hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define hash</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((unsigned long)(p) &gt;&gt; 3) &amp; (sizeof((t)) / sizeof((t)[0]) - 1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a885d44d02bf904728d7499b9f5dba03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885d44d02bf904728d7499b9f5dba03f">&#9670;&nbsp;</a></span>HTAB_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTAB_LEN&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6dcef7a1829fc392ee1ed77205ec2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dcef7a1829fc392ee1ed77205ec2ff">&#9670;&nbsp;</a></span>NALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NALLOC&#160;&#160;&#160;( (4096 + sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>) - 1) / (sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>))) * (sizeof(union <a class="el" href="../../d8/dca/unionalign.html">align</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af19c92f3510d88d327336afc24f490a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19c92f3510d88d327336afc24f490a4">&#9670;&nbsp;</a></span>NDESCRIPTORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NDESCRIPTORS&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae5aebd3fd98703f54899ead96761cc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5aebd3fd98703f54899ead96761cc21">&#9670;&nbsp;</a></span>dalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a>* dalloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_ae5aebd3fd98703f54899ead96761cc21_icgraph.png" border="0" usemap="#d6/d65/memchk_8c_ae5aebd3fd98703f54899ead96761cc21_icgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_ae5aebd3fd98703f54899ead96761cc21_icgraph" id="d6/d65/memchk_8c_ae5aebd3fd98703f54899ead96761cc21_icgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a958eb5712100fccc1c79a028994a64f7" title="mem_alloc" alt="" coords="110,31,195,56"/>
+<area shape="rect" id="node3" href="../../d6/d65/memchk_8c.html#a45f643eba6d02a3e32a7285df36f4a5e" title="mem_resize" alt="" coords="243,5,337,31"/>
+<area shape="rect" id="node4" href="../../d6/d65/memchk_8c.html#a416889a84c062a24c5b65dd00d862f1a" title="mem_calloc" alt="" coords="244,55,337,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a163433500ed00b946557ac6f0432df11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163433500ed00b946557ac6f0432df11">&#9670;&nbsp;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a>* find </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>搜索ptr地址的描述符 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>目标地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指向描述符的指针或者NULL值 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a163433500ed00b946557ac6f0432df11_icgraph.png" border="0" usemap="#d6/d65/memchk_8c_a163433500ed00b946557ac6f0432df11_icgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a163433500ed00b946557ac6f0432df11_icgraph" id="d6/d65/memchk_8c_a163433500ed00b946557ac6f0432df11_icgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a783959b899b6d70901a5a73fe4bf0b01" title="mem_free" alt="" coords="96,5,178,31"/>
+<area shape="rect" id="node3" href="../../d6/d65/memchk_8c.html#a45f643eba6d02a3e32a7285df36f4a5e" title="mem_resize" alt="" coords="226,31,319,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a958eb5712100fccc1c79a028994a64f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958eb5712100fccc1c79a028994a64f7">&#9670;&nbsp;</a></span>mem_alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* mem_alloc </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_cgraph.png" border="0" usemap="#d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_cgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_cgraph" id="d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_cgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#ae5aebd3fd98703f54899ead96761cc21" title="dalloc" alt="" coords="160,5,216,31"/>
+<area shape="rect" id="node3" href="../../dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="139,55,238,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_icgraph.png" border="0" usemap="#d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_icgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_icgraph" id="d6/d65/memchk_8c_a958eb5712100fccc1c79a028994a64f7_icgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a45f643eba6d02a3e32a7285df36f4a5e" title="mem_resize" alt="" coords="139,5,233,31"/>
+<area shape="rect" id="node3" href="../../d6/d65/memchk_8c.html#a416889a84c062a24c5b65dd00d862f1a" title="mem_calloc" alt="" coords="140,55,232,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a416889a84c062a24c5b65dd00d862f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416889a84c062a24c5b65dd00d862f1a">&#9670;&nbsp;</a></span>mem_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* mem_calloc </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a416889a84c062a24c5b65dd00d862f1a_cgraph.png" border="0" usemap="#d6/d65/memchk_8c_a416889a84c062a24c5b65dd00d862f1a_cgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a416889a84c062a24c5b65dd00d862f1a_cgraph" id="d6/d65/memchk_8c_a416889a84c062a24c5b65dd00d862f1a_cgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a958eb5712100fccc1c79a028994a64f7" title="mem_alloc" alt="" coords="146,31,232,56"/>
+<area shape="rect" id="node3" href="../../d6/d65/memchk_8c.html#ae5aebd3fd98703f54899ead96761cc21" title="dalloc" alt="" coords="301,5,357,31"/>
+<area shape="rect" id="node4" href="../../dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="280,55,378,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a783959b899b6d70901a5a73fe4bf0b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783959b899b6d70901a5a73fe4bf0b01">&#9670;&nbsp;</a></span>mem_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mem_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_cgraph.png" border="0" usemap="#d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_cgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_cgraph" id="d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_cgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a163433500ed00b946557ac6f0432df11" title="find" alt="" coords="135,5,178,31"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_icgraph.png" border="0" usemap="#d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_icgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_icgraph" id="d6/d65/memchk_8c_a783959b899b6d70901a5a73fe4bf0b01_icgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a45f643eba6d02a3e32a7285df36f4a5e" title="mem_resize" alt="" coords="135,5,229,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e2670adca12bc28243341b43b067ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2670adca12bc28243341b43b067ea2">&#9670;&nbsp;</a></span>mem_leak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mem_leak </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(const void *ptr, long size, const char *file, int line, void *cl)&#160;</td>
+          <td class="paramname"><em>apply</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45f643eba6d02a3e32a7285df36f4a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f643eba6d02a3e32a7285df36f4a5e">&#9670;&nbsp;</a></span>mem_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* mem_resize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d65/memchk_8c_a45f643eba6d02a3e32a7285df36f4a5e_cgraph.png" border="0" usemap="#d6/d65/memchk_8c_a45f643eba6d02a3e32a7285df36f4a5e_cgraph" alt=""/></div>
+<map name="d6/d65/memchk_8c_a45f643eba6d02a3e32a7285df36f4a5e_cgraph" id="d6/d65/memchk_8c_a45f643eba6d02a3e32a7285df36f4a5e_cgraph">
+<area shape="rect" id="node2" href="../../d6/d65/memchk_8c.html#a163433500ed00b946557ac6f0432df11" title="find" alt="" coords="309,5,352,31"/>
+<area shape="rect" id="node3" href="../../dc/d65/except_8h.html#a74a6737ffcaaf94b7c8137a651f9d94b" title="Except_raise" alt="" coords="281,81,379,107"/>
+<area shape="rect" id="node4" href="../../d6/d65/memchk_8c.html#a958eb5712100fccc1c79a028994a64f7" title="mem_alloc" alt="" coords="147,132,233,157"/>
+<area shape="rect" id="node6" href="../../d6/d65/memchk_8c.html#a783959b899b6d70901a5a73fe4bf0b01" title="mem_free" alt="" coords="150,31,231,56"/>
+<area shape="rect" id="node5" href="../../d6/d65/memchk_8c.html#ae5aebd3fd98703f54899ead96761cc21" title="dalloc" alt="" coords="302,132,358,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a420a790ef2255174603ac4008fad2ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420a790ef2255174603ac4008fad2ede">&#9670;&nbsp;</a></span>freelist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a> freelist = {.free = &amp;freelist}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e47ca41e2a8c68dd8154ce7067f4a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e47ca41e2a8c68dd8154ce7067f4a76">&#9670;&nbsp;</a></span>htab</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../dd/d17/structdescriptor.html">descriptor</a>* htab[<a class="el" href="../../d6/d65/memchk_8c.html#a885d44d02bf904728d7499b9f5dba03f">HTAB_LEN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bc14a9be0eec9d47e4ffce4e014f66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc14a9be0eec9d47e4ffce4e014f66a">&#9670;&nbsp;</a></span>Mem_Failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Except_T Mem_Failed = {&quot;Allocation Failed&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

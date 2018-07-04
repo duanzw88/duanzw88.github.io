@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mapapi: proxy_naviseg.c 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mapapi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="../../dir_d7b5d2a8d1076a7d89fe8d73a18e0f93.html">map</a></li><li class="navelem"><a class="el" href="../../dir_7ead125015346ae890d482a04652d27d.html">map3d</a></li><li class="navelem"><a class="el" href="../../dir_94cf820174b2735be23c47a851adf4bc.html">android</a></li><li class="navelem"><a class="el" href="../../dir_de8fe7ecf534f23ddea04e3cedb49cf0.html">api</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">proxy_naviseg.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;jni.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d23/navichain_8h_source.html">navichain.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+proxy_naviseg.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dae/proxy__naviseg_8c__incl.png" border="0" usemap="#proxy__naviseg_8c" alt=""/></div>
+<map name="proxy__naviseg_8c" id="proxy__naviseg_8c">
+<area shape="rect" id="node3" href="../../d2/d23/navichain_8h.html" title="navichain.h" alt="" coords="223,79,312,104"/>
+<area shape="rect" id="node4" href="../../d6/d3c/seq_8h.html" title="seq.h" alt="" coords="278,445,332,471"/>
+<area shape="rect" id="node5" href="../../d5/d95/building_8h.html" title="building.h" alt="" coords="190,152,268,177"/>
+<area shape="rect" id="node6" href="../../de/dec/floor_8h.html" title="floor.h" alt="" coords="200,225,258,251"/>
+<area shape="rect" id="node7" href="../../d9/d7f/route_8h.html" title="route.h" alt="" coords="152,299,215,324"/>
+<area shape="rect" id="node13" href="../../dc/d99/beacon_8h.html" title="beacon.h" alt="" coords="5,299,82,324"/>
+<area shape="rect" id="node14" href="../../d3/da4/dquadtree_8h.html" title="dquadtree.h" alt="" coords="345,299,438,324"/>
+<area shape="rect" id="node8" href="../../d3/d59/routenode_8h.html" title="routenode.h" alt="" coords="33,372,126,397"/>
+<area shape="rect" id="node10" href="../../da/d0c/arena_8h.html" title="arena.h" alt="" coords="150,372,217,397"/>
+<area shape="rect" id="node9" href="../../d2/d91/point_8h.html" title="point.h" alt="" coords="7,445,69,471"/>
+<area shape="rect" id="node11" href="../../dc/d65/except_8h.html" title="except.h" alt="" coords="148,445,219,471"/>
+<area shape="rect" id="node15" href="../../d8/d49/dquadnode_8h.html" title="dquadnode.h" alt="" coords="342,372,441,397"/>
+<area shape="rect" id="node16" href="../../d6/d54/denvelop_8h.html" title="denvelop.h" alt="" coords="395,445,481,471"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afa72ee4685073d29f72b4c034f1c181d"><td class="memItemLeft" align="right" valign="top">jint JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#afa72ee4685073d29f72b4c034f1c181d">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateSegGetIndex</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:afa72ee4685073d29f72b4c034f1c181d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e5b0695b2550311b5f196ac4fd5d5e"><td class="memItemLeft" align="right" valign="top">jint JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#ab2e5b0695b2550311b5f196ac4fd5d5e">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartIndex</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:ab2e5b0695b2550311b5f196ac4fd5d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553bb475df431fba642661a66f5a903f"><td class="memItemLeft" align="right" valign="top">jdouble JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#a553bb475df431fba642661a66f5a903f">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartX</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a553bb475df431fba642661a66f5a903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0807bde0ebaa3aae33620ef9bc4182"><td class="memItemLeft" align="right" valign="top">jdouble JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#a0f0807bde0ebaa3aae33620ef9bc4182">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartY</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a0f0807bde0ebaa3aae33620ef9bc4182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e38277f24deec78a0c121b6c625cf2f"><td class="memItemLeft" align="right" valign="top">jint JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#a8e38277f24deec78a0c121b6c625cf2f">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndIndex</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a8e38277f24deec78a0c121b6c625cf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abed752af91f0110fdf124db826ff9d"><td class="memItemLeft" align="right" valign="top">jdouble JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#a6abed752af91f0110fdf124db826ff9d">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndX</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a6abed752af91f0110fdf124db826ff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10e476863d7b0ae3af47d7afab245f9"><td class="memItemLeft" align="right" valign="top">jdouble JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#ae10e476863d7b0ae3af47d7afab245f9">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndY</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:ae10e476863d7b0ae3af47d7afab245f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7957851da234a8557b8122371a39e971"><td class="memItemLeft" align="right" valign="top">jdouble JNICALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/proxy__naviseg_8c.html#a7957851da234a8557b8122371a39e971">Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetAzimuth</a> (JNIEnv *env, jobject thiz, jlong handle)</td></tr>
+<tr class="separator:a7957851da234a8557b8122371a39e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a7957851da234a8557b8122371a39e971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7957851da234a8557b8122371a39e971">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetAzimuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jdouble JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetAzimuth </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e38277f24deec78a0c121b6c625cf2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e38277f24deec78a0c121b6c625cf2f">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jint JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndIndex </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6abed752af91f0110fdf124db826ff9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abed752af91f0110fdf124db826ff9d">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jdouble JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndX </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae10e476863d7b0ae3af47d7afab245f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10e476863d7b0ae3af47d7afab245f9">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jdouble JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetEndY </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2e5b0695b2550311b5f196ac4fd5d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e5b0695b2550311b5f196ac4fd5d5e">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jint JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartIndex </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a553bb475df431fba642661a66f5a903f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553bb475df431fba642661a66f5a903f">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jdouble JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartX </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f0807bde0ebaa3aae33620ef9bc4182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0807bde0ebaa3aae33620ef9bc4182">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jdouble JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateGetStartY </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa72ee4685073d29f72b4c034f1c181d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa72ee4685073d29f72b4c034f1c181d">&#9670;&nbsp;</a></span>Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateSegGetIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jint JNICALL Java_com_jcble_map3d_navigate_JCNavigateSeg_navigateSegGetIndex </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>thiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jlong&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

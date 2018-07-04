@@ -1,4 +1,12 @@
 <map id="updatebox" name="updatebox">
-<area shape="rect" id="node2" href="$d2/d91/point_8h.html#a021a03015034991e0a45a7a78231b093" title="point_get_x" alt="" coords="137,5,227,31"/>
-<area shape="rect" id="node3" href="$d2/d91/point_8h.html#ac92e723730bb660aacf74f7ea7dd8c77" title="point_get_y" alt="" coords="137,55,227,80"/>
+<area shape="rect" id="node2" href="$d2/d91/point_8h.html#a05b6e6904abab9388be6b6d628d9cc9f" title="point_get_lon" alt="" coords="161,5,262,31"/>
+<area shape="rect" id="node3" href="$d2/d91/point_8h.html#af879f044b59befdd2a061ee66a937447" title="point_get_lat" alt="" coords="163,55,261,80"/>
+<area shape="rect" id="node4" href="$d6/d54/denvelop_8h.html#a358142258c1ea7ee1bd5bb2e917db199" title="denvelop_get_left" alt="" coords="148,104,275,129"/>
+<area shape="rect" id="node5" href="$d6/d54/denvelop_8h.html#a92355445edbddff7df7d8c6f293ba290" title="denvelop_get_right" alt="" coords="144,153,279,179"/>
+<area shape="rect" id="node6" href="$d6/d54/denvelop_8h.html#a17be7eaceef5af0b927a25ca9680de4d" title="denvelop_get_top" alt="" coords="148,203,275,228"/>
+<area shape="rect" id="node7" href="$d6/d54/denvelop_8h.html#aa64db4ec3787d3477f568441dcbde887" title="denvelop_get_bottom" alt="" coords="137,252,287,277"/>
+<area shape="rect" id="node8" href="$d6/d54/denvelop_8h.html#a15ea51a95bf2d8fd4a3fcf1190ae404a" title="denvelop_set_left" alt="" coords="149,301,275,327"/>
+<area shape="rect" id="node9" href="$d6/d54/denvelop_8h.html#a02e17856fb9e0ffc6d8ba213fbffa23d" title="denvelop_set_right" alt="" coords="145,351,279,376"/>
+<area shape="rect" id="node10" href="$d6/d54/denvelop_8h.html#ae1fe022c6b7516c3aeed2abfa4598779" title="denvelop_set_top" alt="" coords="148,400,275,425"/>
+<area shape="rect" id="node11" href="$d6/d54/denvelop_8h.html#a4112ace912900244523083380ea89561" title="denvelop_set_bottom" alt="" coords="137,449,286,475"/>
 </map>

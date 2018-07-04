@@ -1,0 +1,10 @@
+<map id="get_navi_routenodes" name="get_navi_routenodes">
+<area shape="rect" id="node2" href="$d6/d32/building_8c.html#ac8164a54f41db66f63de5997e05decd8" title="building_route_plan\l_by_walk" alt="" coords="199,61,337,100"/>
+<area shape="rect" id="node5" href="$d6/d32/building_8c.html#acedc87bc6a030644bb3c495ac59ceab3" title="building_route_plan\l_by_car" alt="" coords="199,124,337,163"/>
+<area shape="rect" id="node3" href="$d9/dfa/mem__chk_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="459,5,509,31"/>
+<area shape="rect" id="node4" href="$da/d41/proxy__building_8c.html#a5dfe417f7316e6255b0af0de7f7b88ee" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByWalk" alt="" coords="385,55,583,107"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#a11f5153778a65769712a1adf28e9ca03" title="clicked" alt="" coords="453,131,515,156"/>
+<area shape="rect" id="node9" href="$da/d41/proxy__building_8c.html#afc5e54078d21093acc9057021e4ea333" title="Java_com_jcble_map3d\l_map_Building_buildingRoute\lPlanByCar" alt="" coords="385,180,583,232"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#ae7c6ad179bfbc7a4563496b0239b0d77" title="init_window" alt="" coords="631,131,722,156"/>
+<area shape="rect" id="node8" href="$d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="770,131,820,156"/>
+</map>

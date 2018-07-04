@@ -1,3 +1,5 @@
 <map id="building_get_floor_by_name" name="building_get_floor_by_name">
-<area shape="rect" id="node2" href="$de/dec/floor_8h.html#a933031b64bf83e89258880a01f0af2a4" title="floor_get_name" alt="" coords="180,12,294,37"/>
+<area shape="rect" id="node2" href="$d6/d3c/seq_8h.html#aa122515f868b1d2508b22c2eb2fd83ed" title="seq_length" alt="" coords="194,5,280,31"/>
+<area shape="rect" id="node3" href="$d6/d3c/seq_8h.html#ac5d4f01ef0550d3fb3e714149857db16" title="seq_get" alt="" coords="203,55,271,80"/>
+<area shape="rect" id="node4" href="$de/dec/floor_8h.html#a933031b64bf83e89258880a01f0af2a4" title="floor_get_name" alt="" coords="180,104,294,129"/>
 </map>
